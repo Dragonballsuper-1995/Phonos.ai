@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import styles from './results.module.css';
 import { api } from '@/lib/api';
@@ -71,7 +71,8 @@ function categorizeSpecs(specs: any, rawSpecs: any) {
   return categories;
 }
 
-export default function Results() {
+// ── Inner component that uses useSearchParams ──────────────────────────────
+function ResultsContent() {
   const searchParams = useSearchParams();
   const [results, setResults] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
@@ -234,5 +235,21 @@ export default function Results() {
         })}
       </div>
     </div>
+  );
+}
+
+// ── Page export: wraps the inner component in Suspense ─────────────────────
+// Required by Next.js App Router — useSearchParams() must be inside Suspense
+// during static generation to prevent prerender errors.
+export default function Results() {
+  return (
+    <Suspense fallback={
+      <div className={styles.loadingScreen}>
+        <div className={styles.spinner}></div>
+        <h2 className="display-text blink" style={{marginLeft: '2rem', letterSpacing: '4px'}}>LOADING...</h2>
+      </div>
+    }>
+      <ResultsContent />
+    </Suspense>
   );
 }
