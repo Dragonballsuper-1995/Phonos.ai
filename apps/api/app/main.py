@@ -32,3 +32,13 @@ app.include_router(health.router, tags=["health"])
 app.include_router(phones.router, prefix=f"{settings.API_V1_STR}/phones", tags=["phones"])
 app.include_router(recommend.router, prefix=f"{settings.API_V1_STR}/recommend", tags=["recommend"])
 app.include_router(compare.router, prefix=f"{settings.API_V1_STR}/compare", tags=["compare"])
+
+@app.get("/", tags=["root"])
+async def root():
+    return {
+        "name": "Phonos.ai API",
+        "version": settings.VERSION,
+        "status": "online",
+        "docs": "/docs",
+        "health": "/health",
+    }
