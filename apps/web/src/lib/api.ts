@@ -1,5 +1,5 @@
 import { API_BASE_URL } from './constants';
-import { Phone, Recommendation } from './types';
+import { Phone, RecommendationResponse } from './types';
 
 export class ApiError extends Error {
   constructor(public status: number, message: string) {
@@ -40,14 +40,14 @@ export const api = {
   },
 
   recommendEasy: (data: any) => {
-    return fetchApi<Recommendation>('/recommend/easy', {
+    return fetchApi<RecommendationResponse>('/recommend/easy', {
       method: 'POST',
       body: JSON.stringify(data),
     });
   },
 
   recommendMedium: (data: any) => {
-    return fetchApi<Recommendation>('/recommend/medium', {
+    return fetchApi<RecommendationResponse>('/recommend/medium', {
       method: 'POST',
       body: JSON.stringify(data),
     });
