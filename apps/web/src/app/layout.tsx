@@ -9,8 +9,8 @@ import { CinematicPreloader } from "@/components/ui/CinematicPreloader";
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
-  title: "FONE.AI | Discover / Decide",
-  description: "Cinematic smartphone discovery engine.",
+  title: "PHONOS.AI | Decode Your Companion",
+  description: "Intelligent, persona-based smartphone recommendation engine.",
 };
 
 export default function RootLayout({
