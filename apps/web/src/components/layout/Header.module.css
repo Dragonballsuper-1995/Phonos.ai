@@ -1,0 +1,92 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: var(--header-height, 80px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 1000;
+  mix-blend-mode: difference;
+  pointer-events: none; /* Let clicks pass through empty areas */
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 0 4rem;
+  }
+}
+
+.logo {
+  pointer-events: auto;
+}
+
+.logo a {
+  font-size: 2rem;
+  color: #fff; /* mix-blend-mode difference will invert this correctly */
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.actions {
+  pointer-events: auto;
+}
+
+.magneticLink {
+  color: #fff;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: none;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 1rem;
+}
+
+.magneticLink:hover {
+  transform: scale(1.1);
+}
+
+/* Menu Overlay */
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--accent);
+  z-index: 999; /* Below header (1000) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.menuLink {
+  font-size: clamp(3rem, 8vw, 6rem);
+  text-decoration: none;
+  color: var(--text-primary);
+  line-height: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: none;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.menuLink:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.activeLink {
+  opacity: 1;
+  -webkit-text-stroke: 2px var(--bg-primary);
+  color: transparent;
+}

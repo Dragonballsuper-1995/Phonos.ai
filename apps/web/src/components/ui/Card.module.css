@@ -1,0 +1,55 @@
+.card {
+  background: var(--color-background-glass, rgba(30, 41, 59, 0.7));
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
+  border-radius: var(--radius-lg, 1rem);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+[data-theme='light'] .card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* Padding options */
+.pad-none { padding: 0; }
+.pad-sm { padding: var(--space-4, 1rem); }
+.pad-md { padding: var(--space-6, 1.5rem); }
+.pad-lg { padding: var(--space-8, 2rem); }
+
+/* Variants */
+.default {
+  /* Default styles above */
+}
+
+.interactive {
+  cursor: pointer;
+}
+
+.interactive:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme='light'] .interactive:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.highlighted {
+  position: relative;
+  border-color: var(--color-accent-indigo, #6366f1);
+}
+
+.highlighted::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--color-accent-indigo, #6366f1), var(--color-accent-pink, #ec4899));
+}

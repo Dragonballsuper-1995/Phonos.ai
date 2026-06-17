@@ -1,0 +1,60 @@
+.container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg {
+  transform: rotate(-90deg);
+}
+
+.bgCircle {
+  stroke: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='light'] .bgCircle {
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.progressCircle {
+  transition: stroke-dashoffset 0.1s linear;
+}
+
+.excellent { color: #10b981; }
+.good { color: #f59e0b; }
+.fair { color: #ef4444; }
+
+.textContainer {
+  position: absolute;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.value {
+  font-family: var(--font-heading, 'Cabinet Grotesk', sans-serif);
+  font-weight: 800;
+  color: var(--color-text, #fff);
+  line-height: 1;
+}
+
+[data-theme='light'] .value {
+  color: #0f172a;
+}
+
+.percent {
+  font-family: var(--font-body, 'Satoshi', sans-serif);
+  font-weight: 600;
+  color: var(--color-text-muted, #94a3b8);
+}
+
+/* Sizes */
+.sm .value { font-size: 0.875rem; }
+.sm .percent { font-size: 0.5rem; }
+
+.md .value { font-size: 1.5rem; }
+.md .percent { font-size: 0.75rem; margin-left: 1px; }
+
+.lg .value { font-size: 3rem; }
+.lg .percent { font-size: 1.25rem; margin-left: 2px; }

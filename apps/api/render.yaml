@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: fone-api
+    env: docker
+    region: singapore
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: POSTGRES_SERVER
+        value: # Set in dashboard
+      - key: POSTGRES_USER
+        value: # Set in dashboard
+      - key: POSTGRES_PASSWORD
+        value: # Set in dashboard
+      - key: POSTGRES_DB
+        value: # Set in dashboard
+      - key: GEMINI_API_KEY
+        value: # Set in dashboard

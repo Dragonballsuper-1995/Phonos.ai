@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-muted, #94a3b8);
+  text-align: center;
+}
+
+.track {
+  height: 4px;
+  background: var(--color-background-muted, rgba(255, 255, 255, 0.1));
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-theme='light'] .track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(to right, var(--color-accent-indigo, #6366f1), var(--color-accent-pink, #ec4899));
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+}
+
+.dots {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-background-muted, rgba(255, 255, 255, 0.2));
+  transition: all 0.3s;
+}
+
+[data-theme='light'] .dot {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.activeDot {
+  background: var(--color-accent-pink, #ec4899);
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.5);
+}
+
+.completedDot {
+  background: var(--color-accent-indigo, #6366f1);
+}

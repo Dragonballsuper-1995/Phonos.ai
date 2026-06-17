@@ -1,0 +1,125 @@
+/* ============================================================
+   FONE.AI — ULTIMATE DESIGN SYSTEM
+   ============================================================ */
+
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Oswald:wght@200..700&display=swap');
+
+:root {
+  /* Typography */
+  --font-display: 'Clash Display', 'Oswald', sans-serif;
+  --font-body: 'JetBrains Mono', monospace;
+
+  /* Colors - Light Theme Default */
+  --bg-primary: #EAE6DF;
+  --bg-secondary: #DCD8D1;
+  --text-primary: #1A1514;
+  --text-secondary: #4A4544;
+  --accent: #FF4500;
+  
+  /* Utilities */
+  --cursor-size: 20px;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #000000;
+  --bg-secondary: #0A0A0A;
+  --text-primary: #F4F4F0;
+  --text-secondary: #A0A09A;
+  --accent: #FF4500;
+}
+
+/* Reset & Setup */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none !important; /* Hide native cursor everywhere */
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  transition: background-color 0.8s ease, color 0.8s ease;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/* Magnetic Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  background-color: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-cursor.active {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+}
+
+/* Typography Utilities */
+.display-text {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 0.9;
+}
+
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-primary);
+  transition: color 0.5s ease;
+}
+
+.outline-text:hover {
+  color: var(--text-primary);
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Lenis smooth scrolling base classes */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

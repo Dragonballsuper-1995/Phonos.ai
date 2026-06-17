@@ -1,0 +1,118 @@
+Phone Specifications API
+3 min read
+This API provides access to a comprehensive database of phone specifications. It allows you to search for phone models, retrieve detailed specifications for a specific device, and get a list of all available phone brands.
+
+API Endpoints
+1. Search Phone Models
+This endpoint allows you to search for phone models using a keyword. You can refine the search with an optional brand filter and control the output with pagination.
+
+Functionality: Search for phone models.
+Method: GET
+Endpoint: /phone-spec/v1/search
+Query Parameters
+Parameter	Required	Type	Description
+apikey	Yes	string	Your API Key.
+keyword	Yes	string	The search term (e.g., 'iPhone 16'). Max length: 100.
+brand	No	string	Filter results by a specific brand name. Max length: 50.
+page	No	integer	The page number for results. Defaults to 1.
+limit	No	integer	Number of results per page (min: 1, max: 50). Defaults to 10.
+Responses
+A successful response returns a paginated list of phone models matching the search criteria.
+
+Successful Response (Code 200)
+
+{
+  "code": "200",
+  "msg": "Success",
+  "data": {
+    "total_results": 1,
+    "page": 1,
+    "limit": 10,
+    "results": [
+      {
+        "id": "apple_iphone_16_pro-13204",
+        "device_name": "Apple iPhone 16 Pro",
+        "brand_name": "Apple",
+        "main_image": "https://fdn2.juheapi.com/vv/bigpic/apple-iphone-16-pro.jpg",
+        "quick_summary": "Apple's 2024 Pro model with new features."
+      }
+    ]
+  }
+}
+
+
+An error response will be returned for invalid requests or server issues.
+
+2. Get Phone Model Details
+Retrieve a complete set of specifications for a single phone model using its unique ID.
+
+Functionality: Get detailed specifications for one phone model.
+Method: GET
+Endpoint: /phone-spec/v1/detail
+Query Parameters
+Parameter	Required	Type	Description
+apikey	Yes	string	Your API Key.
+id	Yes	string	The unique identifier of the phone model (from search results).
+Responses
+A successful response returns a detailed JSON object with all specifications for the requested phone.
+
+Successful Response (Code 200)
+
+{
+  "code": "200",
+  "msg": "Success",
+  "data": {
+    "id": "samsung_galaxy_s24_ultra-12773",
+    "device_name": "Samsung Galaxy S24 Ultra",
+    "brand_name": "Samsung",
+    "main_image": "https://fdn2.juheapi.com/vv/bigpic/samsung-galaxy-s24-ultra-5g-sm-s928-stylus.jpg",
+    "comment": "Samsung's 2024 flagship...",
+    "specs": [
+      {
+        "category": "Platform",
+        "name": "OS",
+        "value": "Android 14, One UI 6.1.1"
+      }
+    ]
+  }
+}
+
+
+An error response indicates that the request failed.
+
+3. List All Phone Brands
+Retrieve a complete list of all unique phone brand names available in the database.
+
+Functionality: Get a list of all phone brands.
+Method: GET
+Endpoint: /phone-spec/v1/brands
+Query Parameters
+Parameter	Required	Type	Description
+apikey	Yes	string	Your API Key.
+Responses
+A successful response returns a JSON object containing an array of brand names.
+
+Successful Response (Code 200)
+
+{
+  "code": "200",
+  "msg": "Success",
+  "data": {
+    "brands": [
+      "Acer",
+      "alcatel",
+      "Allview",
+      "Amazon",
+      "Apple",
+      "Asus"
+    ]
+  }
+}
+
+
+An error response indicates that the request failed.
+
+Usage Notes
+An apikey is required for all endpoints. Ensure it is included in every request.
+A common workflow is to first use the /search or /brands endpoint to find a phone and its id, and then use that id with the /detail endpoint to fetch its full specifications.
+When using the /search endpoint, the keyword parameter is required.

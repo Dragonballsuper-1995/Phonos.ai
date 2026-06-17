@@ -1,0 +1,206 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-8, 2rem) var(--space-4, 1rem);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-12, 3rem);
+}
+
+.header h1 {
+  font-family: var(--font-heading, 'Cabinet Grotesk', sans-serif);
+  font-size: 2.5rem;
+  color: var(--color-text, #fff);
+  margin-bottom: 0.5rem;
+}
+
+[data-theme='light'] .header h1 {
+  color: #0f172a;
+}
+
+.header p {
+  color: var(--color-text-muted, #94a3b8);
+}
+
+.compareContainer {
+  background: var(--color-background-glass, rgba(30, 41, 59, 0.4));
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
+  border-radius: var(--radius-2xl, 2rem);
+  overflow: hidden;
+}
+
+[data-theme='light'] .compareContainer {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.featureCol {
+  width: 20%;
+  text-align: left;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--color-text-muted, #94a3b8);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+}
+
+[data-theme='light'] .featureCol {
+  background: #f8fafc;
+}
+
+.phoneCol, .addCol {
+  width: 40%;
+  padding: 2rem;
+  text-align: center;
+  vertical-align: bottom;
+  border-left: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
+}
+
+[data-theme='light'] .phoneCol, [data-theme='light'] .addCol {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.phoneHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.imageWrapper {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.brand {
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #94a3b8);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.nameLink {
+  font-family: var(--font-heading, 'Cabinet Grotesk', sans-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text, #fff);
+  text-decoration: none;
+}
+
+.nameLink:hover {
+  color: var(--color-accent-indigo, #6366f1);
+}
+
+[data-theme='light'] .nameLink {
+  color: #0f172a;
+}
+
+[data-theme='light'] .nameLink:hover {
+  color: #6366f1;
+}
+
+.price {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-accent-pink, #ec4899);
+}
+
+.addCard {
+  height: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  border-style: dashed;
+  background: transparent;
+}
+
+.addIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-background-muted, rgba(255, 255, 255, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--color-text-muted, #94a3b8);
+}
+
+[data-theme='light'] .addIcon {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Table Body */
+.tableRow {
+  border-top: 1px solid var(--color-border, rgba(255, 255, 255, 0.05));
+}
+
+[data-theme='light'] .tableRow {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.tableRow:nth-child(even) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='light'] .tableRow:nth-child(even) {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.specLabel {
+  padding: 1.5rem 2rem;
+  font-weight: 500;
+  color: var(--color-text-muted, #94a3b8);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='light'] .specLabel {
+  background: #f8fafc;
+}
+
+.specValue {
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: var(--color-text, #fff);
+  border-left: 1px solid var(--color-border, rgba(255, 255, 255, 0.05));
+}
+
+[data-theme='light'] .specValue {
+  color: #0f172a;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.actions {
+  margin-top: var(--space-8, 2rem);
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,71 @@
+.chip {
+  background: var(--color-background-muted, rgba(255, 255, 255, 0.05));
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--color-text-muted, #94a3b8);
+  font-size: 0.875rem;
+}
+
+[data-theme='light'] .chip {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #64748b;
+}
+
+.chip:hover {
+  background: var(--color-background-glass, rgba(255, 255, 255, 0.1));
+  color: var(--color-text, #fff);
+  transform: translateY(-2px);
+}
+
+[data-theme='light'] .chip:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #0f172a;
+}
+
+.selected {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(236, 72, 153, 0.2));
+  border-color: var(--color-accent-indigo, #6366f1);
+  color: var(--color-text, #fff);
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+}
+
+[data-theme='light'] .selected {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
+  color: #0f172a;
+}
+
+.selected:hover {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(236, 72, 153, 0.3));
+}
+
+[data-theme='light'] .selected:hover {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(236, 72, 153, 0.15));
+}
+
+.icon {
+  font-size: 1.125rem;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: var(--color-accent-indigo, #6366f1);
+  color: white;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  font-weight: bold;
+}

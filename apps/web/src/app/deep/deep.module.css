@@ -1,0 +1,81 @@
+.terminalContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: var(--accent);
+  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--header-height, 80px) + 2rem) 2rem 2rem;
+  overflow: hidden;
+}
+
+[data-theme="light"] .terminalContainer {
+  background-color: #000; /* Terminal is ALWAYS black */
+  color: var(--accent);
+}
+
+.terminalLog {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.terminalLog::-webkit-scrollbar {
+  display: none;
+}
+
+.messageLine {
+  display: flex;
+  gap: 1rem;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.4;
+}
+
+.aiMsg {
+  color: #F4F4F0;
+}
+
+.userMsg {
+  color: var(--text-secondary);
+}
+
+.prompt {
+  color: var(--accent);
+  opacity: 0.7;
+}
+
+.inputArea {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 69, 0, 0.3);
+  position: relative;
+}
+
+.massiveInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  width: 100%;
+  caret-color: transparent; /* Hide native caret */
+}
+
+.cursorBlink {
+  width: 20px;
+  height: clamp(1.5rem, 4vw, 3rem);
+  background-color: var(--accent);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
