@@ -19,7 +19,9 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# Python lib directories (scoped to not catch apps/web/src/lib)
+apps/api/lib/
+apps/api/lib64/
 lib64/
 parts/
 sdist/
