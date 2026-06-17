@@ -83,3 +83,6 @@ data/*.json
 # Docker
 docker-data/
 postgres_data/
+
+# Local Transcripts & Conversation Logs
+Previous Conversations/
