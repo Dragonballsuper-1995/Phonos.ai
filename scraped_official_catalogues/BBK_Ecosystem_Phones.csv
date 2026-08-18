@@ -1,0 +1,252 @@
+brand,parent_ecosystem,model_name,full_name,series,price_inr,price_raw,launch_status,sale_start_date,market,official_india_presence,brand_status,catalogue_url,product_url,specs_summary,scraped_at
+vivo,BBK Ecosystem,X300 Ultranew,vivo X300 Ultranew,vivo X Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765321
+vivo,BBK Ecosystem,X300 Ultra,vivo X300 Ultra,vivo X Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765333
+vivo,BBK Ecosystem,X300 FEnew,vivo X300 FEnew,vivo X Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765359
+vivo,BBK Ecosystem,X300 FE,vivo X300 FE,vivo X Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765830
+vivo,BBK Ecosystem,V70 Elitenew,vivo V70 Elitenew,vivo V Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765397
+vivo,BBK Ecosystem,V70 Elite,vivo V70 Elite,vivo V Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766519
+vivo,BBK Ecosystem,V70new,vivo V70new,vivo V Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765438
+vivo,BBK Ecosystem,V70,vivo V70,vivo V Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766510
+vivo,BBK Ecosystem,X300 Pro,vivo X300 Pro,vivo X Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766493
+vivo,BBK Ecosystem,X300,vivo X300,vivo X Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766501
+vivo,BBK Ecosystem,X Fold 5,vivo X Fold 5,vivo X Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765541
+vivo,BBK Ecosystem,Y31t 5G,vivo Y31t 5G,vivo Y Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765796
+vivo,BBK Ecosystem,T5x,vivo T5x,vivo T Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765881
+vivo,BBK Ecosystem,T5 Lite 5G,vivo T5 Lite 5G,vivo T Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765917
+vivo,BBK Ecosystem,T5e,vivo T5e,vivo T Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766527
+vivo,BBK Ecosystem,X200 Pro 5G,vivo X200 Pro 5G,vivo X Series,94999.0,"₹94,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766752
+vivo,BBK Ecosystem,X200 5G,vivo X200 5G,vivo X Series,64999.0,"₹64,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766759
+vivo,BBK Ecosystem,X Fold 3 Pro,vivo X Fold 3 Pro,vivo X Series,149999.0,"₹149,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766763
+vivo,BBK Ecosystem,V50 Pro 5G,vivo V50 Pro 5G,vivo V Series,42999.0,"₹42,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766767
+vivo,BBK Ecosystem,V50 5G,vivo V50 5G,vivo V Series,34999.0,"₹34,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766771
+vivo,BBK Ecosystem,V40 Pro 5G,vivo V40 Pro 5G,vivo V Series,49999.0,"₹49,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766774
+vivo,BBK Ecosystem,V40 5G,vivo V40 5G,vivo V Series,34999.0,"₹34,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766778
+vivo,BBK Ecosystem,V40e 5G,vivo V40e 5G,vivo V Series,28999.0,"₹28,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766782
+vivo,BBK Ecosystem,T3 Pro 5G,vivo T3 Pro 5G,vivo T Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766788
+vivo,BBK Ecosystem,T3 Ultra 5G,vivo T3 Ultra 5G,vivo T Series,31999.0,"₹31,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766791
+vivo,BBK Ecosystem,T3 5G,vivo T3 5G,vivo T Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766794
+vivo,BBK Ecosystem,T3x 5G,vivo T3x 5G,vivo T Series,13499.0,"₹13,499",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766797
+vivo,BBK Ecosystem,Y300 5G,vivo Y300 5G,vivo Y Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766800
+vivo,BBK Ecosystem,Y200 Pro 5G,vivo Y200 Pro 5G,vivo Y Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766804
+vivo,BBK Ecosystem,Y58 5G,vivo Y58 5G,vivo Y Series,19499.0,"₹19,499",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766807
+vivo,BBK Ecosystem,Y28 5G,vivo Y28 5G,vivo Y Series,13999.0,"₹13,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766811
+,,,,,,,,,,,,,,,
+iQOO,BBK Ecosystem,iQOO15Rnew,iQOO15Rnew,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576245
+iQOO,BBK Ecosystem,iQOO15R,iQOO15R,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576252
+iQOO,BBK Ecosystem,iQOO 15new,iQOO 15new,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576266
+iQOO,BBK Ecosystem,iQOO 15,iQOO 15,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576417
+iQOO,BBK Ecosystem,iQOO Neo 10R,iQOO Neo 10R,iQOO Neo Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576300
+iQOO,BBK Ecosystem,iQOO 15RNew,iQOO 15RNew,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576380
+iQOO,BBK Ecosystem,iQOO 15R,iQOO 15R,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576388
+iQOO,BBK Ecosystem,iQOO 15New,iQOO 15New,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576409
+iQOO,BBK Ecosystem,iQOO 13,iQOO 13,iQOO Number Series,54999.0,"₹54,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576497
+iQOO,BBK Ecosystem,iQOO 12 5G,iQOO 12 5G,iQOO Number Series,52999.0,"₹52,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576502
+iQOO,BBK Ecosystem,iQOO Neo 9 Pro 5G,iQOO Neo 9 Pro 5G,iQOO Neo Series,35999.0,"₹35,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576505
+iQOO,BBK Ecosystem,iQOO Neo 7 Pro 5G,iQOO Neo 7 Pro 5G,iQOO Neo Series,32999.0,"₹32,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576508
+iQOO,BBK Ecosystem,iQOO Z9 Turbo,iQOO Z9 Turbo,iQOO Z Series,26999.0,"₹26,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576511
+iQOO,BBK Ecosystem,iQOO Z9s Pro 5G,iQOO Z9s Pro 5G,iQOO Z Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576514
+iQOO,BBK Ecosystem,iQOO Z9s 5G,iQOO Z9s 5G,iQOO Z Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576517
+iQOO,BBK Ecosystem,iQOO Z9 5G,iQOO Z9 5G,iQOO Z Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576519
+iQOO,BBK Ecosystem,iQOO Z9x 5G,iQOO Z9x 5G,iQOO Z Series,12999.0,"₹12,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576523
+,,,,,,,,,,,,,,,
+OPPO,BBK Ecosystem,OPPO Find X9 Ultra,OPPO Find X9 Ultra,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921629
+OPPO,BBK Ecosystem,OPPO Find X9s,OPPO Find X9s,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921681
+OPPO,BBK Ecosystem,OPPO Reno16 5GNew,OPPO Reno16 5GNew,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918219
+OPPO,BBK Ecosystem,OPPO Reno16c 5GNew,OPPO Reno16c 5GNew,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918258
+OPPO,BBK Ecosystem,OPPO F33 Pro 5G,OPPO F33 Pro 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923169
+OPPO,BBK Ecosystem,OPPO K14 5G,OPPO K14 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923712
+OPPO,BBK Ecosystem,OPPO Pad 5New,OPPO Pad 5New,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918471
+OPPO,BBK Ecosystem,OPPO Pad SE,OPPO Pad SE,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925123
+OPPO,BBK Ecosystem,OPPO Pad Air,OPPO Pad Air,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918554
+OPPO,BBK Ecosystem,OPPO Enco Air5New,OPPO Enco Air5New,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918609
+OPPO,BBK Ecosystem,OPPO Enco Air5 Pro,OPPO Enco Air5 Pro,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925132
+OPPO,BBK Ecosystem,OPPO Enco Buds3 Pro+,OPPO Enco Buds3 Pro+,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925149
+OPPO,BBK Ecosystem,OPPO Enco Buds3 Pro,OPPO Enco Buds3 Pro,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925158
+OPPO,BBK Ecosystem,OPPO Enco Air2 Pro,OPPO Enco Air2 Pro,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.919040
+OPPO,BBK Ecosystem,OPPO BubbleNew,OPPO BubbleNew,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.919107
+OPPO,BBK Ecosystem,OPPO Magnetic Charger 2 AIRVOOC 50W,OPPO Magnetic Charger 2 AIRVOOC 50W,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.919188
+OPPO,BBK Ecosystem,OPPO Magnetic Cooling Card,OPPO Magnetic Cooling Card,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.919278
+OPPO,BBK Ecosystem,OPPO SUPERVOOC 80W Power Adapter,OPPO SUPERVOOC 80W Power Adapter,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.919423
+OPPO,BBK Ecosystem,OPPO AI,OPPO AI,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.919503
+OPPO,BBK Ecosystem,OPPO Apex Guard,OPPO Apex Guard,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925199
+OPPO,BBK Ecosystem,OPPO Reno16 5G,OPPO Reno16 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922359
+OPPO,BBK Ecosystem,OPPO Reno16c 5G,OPPO Reno16c 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922405
+OPPO,BBK Ecosystem,OPPO Pad 5NewOPPO Pad SEOPPO Pad Air,OPPO Pad 5NewOPPO Pad SEOPPO Pad Air,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918456
+OPPO,BBK Ecosystem,OPPO Pad 5,OPPO Pad 5,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925115
+OPPO,BBK Ecosystem,OPPO Enco Air5,OPPO Enco Air5,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925140
+OPPO,BBK Ecosystem,OPPO Bubble,OPPO Bubble,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925106
+OPPO,BBK Ecosystem,OPPO A6c 4G,OPPO A6c 4G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924333
+OPPO,BBK Ecosystem,OPPO Find X Series,OPPO Find X Series,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925054
+OPPO,BBK Ecosystem,OPPO Find X9 Pro,OPPO Find X9 Pro,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921723
+OPPO,BBK Ecosystem,OPPO Find X9,OPPO Find X9,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921765
+OPPO,BBK Ecosystem,OPPO Find X8 Pro,OPPO Find X8 Pro,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921808
+OPPO,BBK Ecosystem,OPPO Find X8,OPPO Find X8,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921852
+OPPO,BBK Ecosystem,OPPO Find N Series,OPPO Find N Series,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925064
+OPPO,BBK Ecosystem,OPPO Find N3 Flip,OPPO Find N3 Flip,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921954
+OPPO,BBK Ecosystem,OPPO Find N2 Flip,OPPO Find N2 Flip,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921999
+OPPO,BBK Ecosystem,OPPO Reno Series,OPPO Reno Series,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925072
+OPPO,BBK Ecosystem,OPPO Reno15c 5G,OPPO Reno15c 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922445
+OPPO,BBK Ecosystem,OPPO Reno15 Pro 5G,OPPO Reno15 Pro 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922486
+OPPO,BBK Ecosystem,OPPO Reno15 Pro Mini 5G,OPPO Reno15 Pro Mini 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922532
+OPPO,BBK Ecosystem,OPPO Reno15 5G,OPPO Reno15 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922576
+OPPO,BBK Ecosystem,OPPO Reno14 Pro 5G,OPPO Reno14 Pro 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922618
+OPPO,BBK Ecosystem,OPPO Reno14 5G,OPPO Reno14 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922664
+OPPO,BBK Ecosystem,OPPO Reno13 Pro 5G,OPPO Reno13 Pro 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922706
+OPPO,BBK Ecosystem,OPPO Reno13 5G,OPPO Reno13 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922752
+OPPO,BBK Ecosystem,OPPO Reno12 Pro 5G,OPPO Reno12 Pro 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922794
+OPPO,BBK Ecosystem,OPPO Reno12 5G,OPPO Reno12 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922839
+OPPO,BBK Ecosystem,OPPO Reno11 Pro 5G,OPPO Reno11 Pro 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922881
+OPPO,BBK Ecosystem,OPPO Reno11 5G,OPPO Reno11 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922924
+OPPO,BBK Ecosystem,OPPO F Series,OPPO F Series,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925080
+OPPO,BBK Ecosystem,OPPO F33 5G,OPPO F33 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923212
+OPPO,BBK Ecosystem,OPPO F31 Pro+ 5G,OPPO F31 Pro+ 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923257
+OPPO,BBK Ecosystem,OPPO F31 Pro 5G,OPPO F31 Pro 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923298
+OPPO,BBK Ecosystem,OPPO F31 5G,OPPO F31 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923341
+OPPO,BBK Ecosystem,OPPO F29 Pro 5G,OPPO F29 Pro 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923380
+OPPO,BBK Ecosystem,OPPO F29 5G,OPPO F29 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923421
+OPPO,BBK Ecosystem,OPPO F27 5G,OPPO F27 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923462
+OPPO,BBK Ecosystem,OPPO F27 Pro+ 5G,OPPO F27 Pro+ 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923507
+OPPO,BBK Ecosystem,OPPO K Series,OPPO K Series,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925096
+OPPO,BBK Ecosystem,OPPO K14x 5G,OPPO K14x 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923754
+OPPO,BBK Ecosystem,OPPO K13 Turbo Pro 5G,OPPO K13 Turbo Pro 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923801
+OPPO,BBK Ecosystem,OPPO K13 Turbo 5G,OPPO K13 Turbo 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923849
+OPPO,BBK Ecosystem,OPPO K13x 5G,OPPO K13x 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923897
+OPPO,BBK Ecosystem,OPPO K13 5G,OPPO K13 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923940
+OPPO,BBK Ecosystem,OPPO K12x 5G,OPPO K12x 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923988
+OPPO,BBK Ecosystem,OPPO A Series,OPPO A Series,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925088
+OPPO,BBK Ecosystem,OPPO A6s 5G,OPPO A6s 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924379
+OPPO,BBK Ecosystem,OPPO A6 5G,OPPO A6 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924423
+OPPO,BBK Ecosystem,OPPO A6x,OPPO A6x,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924467
+OPPO,BBK Ecosystem,OPPO A6 Pro 5G,OPPO A6 Pro 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924508
+OPPO,BBK Ecosystem,OPPO A6x 5G,OPPO A6x 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924547
+OPPO,BBK Ecosystem,OPPO A5x,OPPO A5x,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924589
+OPPO,BBK Ecosystem,OPPO A5 5G,OPPO A5 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924631
+OPPO,BBK Ecosystem,OPPO A5x 5G,OPPO A5x 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924674
+OPPO,BBK Ecosystem,OPPO A5 Pro 5G,OPPO A5 Pro 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924716
+OPPO,BBK Ecosystem,OPPO A3 Pro 5G,OPPO A3 Pro 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924759
+OPPO,BBK Ecosystem,OPPO A3x 5G,OPPO A3x 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924805
+OPPO,BBK Ecosystem,OPPO A3 5G,OPPO A3 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924847
+OPPO,BBK Ecosystem,OPPO A3x,OPPO A3x,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924888
+OPPO,BBK Ecosystem,OPPO Update,OPPO Update,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925172
+OPPO,BBK Ecosystem,OPPO Lock,OPPO Lock,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925184
+OPPO,BBK Ecosystem,OPPO Community,OPPO Community,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925214
+OPPO,BBK Ecosystem,OPPO F25 Pro 5G,OPPO F25 Pro 5G,F Series,23999.0,"₹23,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925360
+OPPO,BBK Ecosystem,OPPO A79 5G,OPPO A79 5G,A Series,17499.0,"₹17,499",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925366
+,,,,,,,,,,,,,,,
+OnePlus,BBK Ecosystem,OnePlus Nord 6,OnePlus Nord 6,OnePlus Nord Series,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-nord-6,,2026-08-18T23:46:29.150819
+OnePlus,BBK Ecosystem,OnePlus 15R,OnePlus 15R,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-15r,,2026-08-18T23:46:29.150868
+OnePlus,BBK Ecosystem,OnePlus Nord CE 3 Lite 5G,OnePlus Nord CE 3 Lite 5G,OnePlus Nord Series,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-nord-ce-3-lite-5g,,2026-08-18T23:46:29.150928
+OnePlus,BBK Ecosystem,OnePlus 15,OnePlus 15,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-15,,2026-08-18T23:46:29.150953
+OnePlus,BBK Ecosystem,OnePlus Nord CE6 Lite,OnePlus Nord CE6 Lite,OnePlus Nord Series,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-nord-ce6-lite,,2026-08-18T23:46:29.150976
+OnePlus,BBK Ecosystem,OnePlus Nord CE6,OnePlus Nord CE6,OnePlus Nord Series,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-nord-ce6,,2026-08-18T23:46:29.150997
+OnePlus,BBK Ecosystem,OnePlus 13s,OnePlus 13s,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-13s,,2026-08-18T23:46:29.151016
+OnePlus,BBK Ecosystem,OnePlus Nord 3 5G,OnePlus Nord 3 5G,OnePlus Nord Series,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-nord-3-5g,,2026-08-18T23:46:29.151037
+OnePlus,BBK Ecosystem,OnePlus 12,OnePlus 12,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-12,,2026-08-18T23:46:29.151056
+OnePlus,BBK Ecosystem,OnePlus Nord CE 2 Lite 5G,OnePlus Nord CE 2 Lite 5G,OnePlus Nord Series,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-nord-ce-2-lite-5g,,2026-08-18T23:46:29.151080
+OnePlus,BBK Ecosystem,OnePlus Nord CE3 5G,OnePlus Nord CE3 5G,OnePlus Nord Series,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-nord-ce3-5g,,2026-08-18T23:46:29.151101
+OnePlus,BBK Ecosystem,OnePlus 12R,OnePlus 12R,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-12r,,2026-08-18T23:46:29.151120
+OnePlus,BBK Ecosystem,OnePlus 11R 5G,OnePlus 11R 5G,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-11r,,2026-08-18T23:46:29.151140
+OnePlus,BBK Ecosystem,OnePlus Open,OnePlus Open,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-open,,2026-08-18T23:46:29.151159
+OnePlus,BBK Ecosystem,OnePlus 12R Genshin Impact Edition,OnePlus 12R Genshin Impact Edition,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-12r-genshin-impact-edition,,2026-08-18T23:46:29.151184
+OnePlus,BBK Ecosystem,OnePlus 11 5G,OnePlus 11 5G,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-11,,2026-08-18T23:46:29.151205
+OnePlus,BBK Ecosystem,OnePlus 13,OnePlus 13,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-13,,2026-08-18T23:46:29.151223
+OnePlus,BBK Ecosystem,OnePlus Nord 4,OnePlus Nord 4,OnePlus Nord Series,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-nord-4,,2026-08-18T23:46:29.151242
+OnePlus,BBK Ecosystem,OnePlus 10 Pro 5G,OnePlus 10 Pro 5G,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-10-pro,,2026-08-18T23:46:29.151263
+OnePlus,BBK Ecosystem,OnePlus 13R,OnePlus 13R,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-13r,,2026-08-18T23:46:29.151282
+OnePlus,BBK Ecosystem,OnePlus Nord CE4 5G,OnePlus Nord CE4 5G,OnePlus Nord Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,,,2026-08-18T23:46:29.151369
+OnePlus,BBK Ecosystem,OnePlus Nord CE4 Lite 5G,OnePlus Nord CE4 Lite 5G,OnePlus Nord Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,,,2026-08-18T23:46:29.151381
+,,,,,,,,,,,,,,,
+realme,BBK Ecosystem,realme 16x 5G,realme 16x 5G,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801163
+realme,BBK Ecosystem,realme C100x,realme C100x,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805151
+realme,BBK Ecosystem,realme NARZO 100x 5G,realme NARZO 100x 5G,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802832
+realme,BBK Ecosystem,realme P4R 5G,realme P4R 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801603
+realme,BBK Ecosystem,realme 16T 5G,realme 16T 5G,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801222
+realme,BBK Ecosystem,realme NARZO 100 Lite 5G₹₹,realme NARZO 100 Lite 5G₹₹,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.800569
+realme,BBK Ecosystem,realme NARZO 100 Lite 5G,realme NARZO 100 Lite 5G,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804774
+realme,BBK Ecosystem,NARZO Series,NARZO Series,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802785
+realme,BBK Ecosystem,realme GT 8 Pro₹₹,realme GT 8 Pro₹₹,GT Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.800991
+realme,BBK Ecosystem,realme GT 8 Pro,realme GT 8 Pro,GT Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801027
+realme,BBK Ecosystem,realme GT 7T₹₹,realme GT 7T₹₹,GT Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801059
+realme,BBK Ecosystem,realme GT 7T,realme GT 7T,GT Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801087
+realme,BBK Ecosystem,realme 16T 5G₹₹,realme 16T 5G₹₹,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801194
+realme,BBK Ecosystem,realme 16 5G₹₹,realme 16 5G₹₹,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801254
+realme,BBK Ecosystem,realme 16 5G,realme 16 5G,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801281
+realme,BBK Ecosystem,realme 16 Pro+ 5G₹₹,realme 16 Pro+ 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801315
+realme,BBK Ecosystem,realme 16 Pro+ 5G,realme 16 Pro+ 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801345
+realme,BBK Ecosystem,realme 16 Pro 5G₹₹,realme 16 Pro 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801377
+realme,BBK Ecosystem,realme 16 Pro 5G,realme 16 Pro 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801407
+realme,BBK Ecosystem,realme 15x 5G₹₹,realme 15x 5G₹₹,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801437
+realme,BBK Ecosystem,realme 15x 5G,realme 15x 5G,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801465
+realme,BBK Ecosystem,realme 15T₹₹,realme 15T₹₹,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801496
+realme,BBK Ecosystem,realme 15T,realme 15T,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801522
+realme,BBK Ecosystem,realme P4 Lite 5G₹₹,realme P4 Lite 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801663
+realme,BBK Ecosystem,realme P4 Lite 5G,realme P4 Lite 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801710
+realme,BBK Ecosystem,realme P4 Lite₹₹,realme P4 Lite₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801756
+realme,BBK Ecosystem,realme P4 Lite,realme P4 Lite,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801796
+realme,BBK Ecosystem,realme P4 Power 5G₹₹,realme P4 Power 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802004
+realme,BBK Ecosystem,realme P4 Power 5G,realme P4 Power 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802053
+realme,BBK Ecosystem,realme P4x 5G₹₹,realme P4x 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802092
+realme,BBK Ecosystem,realme P4x 5G,realme P4x 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802592
+realme,BBK Ecosystem,realme P4 5G₹₹,realme P4 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802639
+realme,BBK Ecosystem,realme P4 5G,realme P4 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802669
+realme,BBK Ecosystem,realme P4 Pro 5G₹₹,realme P4 Pro 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802701
+realme,BBK Ecosystem,realme P4 Pro 5G,realme P4 Pro 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802730
+realme,BBK Ecosystem,realme NARZO Power 5G₹₹,realme NARZO Power 5G₹₹,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804840
+realme,BBK Ecosystem,realme NARZO Power 5G,realme NARZO Power 5G,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804877
+realme,BBK Ecosystem,realme NARZO 90 5G₹₹,realme NARZO 90 5G₹₹,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804913
+realme,BBK Ecosystem,realme NARZO 90 5G,realme NARZO 90 5G,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804946
+realme,BBK Ecosystem,realme NARZO 90x 5G₹₹,realme NARZO 90x 5G₹₹,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804981
+realme,BBK Ecosystem,realme NARZO 90x 5G,realme NARZO 90x 5G,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805015
+realme,BBK Ecosystem,realme NARZO 80 Lite₹₹,realme NARZO 80 Lite₹₹,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805050
+realme,BBK Ecosystem,realme NARZO 80 Lite,realme NARZO 80 Lite,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805082
+realme,BBK Ecosystem,realme C83 5G₹₹,realme C83 5G₹₹,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805185
+realme,BBK Ecosystem,realme C83 5G,realme C83 5G,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805214
+realme,BBK Ecosystem,realme C85 5G₹₹,realme C85 5G₹₹,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805246
+realme,BBK Ecosystem,realme C85 5G,realme C85 5G,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805277
+realme,BBK Ecosystem,realme 80W SUPERVOOC Power Adapter₹₹,realme 80W SUPERVOOC Power Adapter₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807036
+realme,BBK Ecosystem,realme 80W SUPERVOOC Power Adapter,realme 80W SUPERVOOC Power Adapter,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807074
+realme,BBK Ecosystem,realme SUPERVOOC 45W Power Adapter₹₹,realme SUPERVOOC 45W Power Adapter₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807113
+realme,BBK Ecosystem,realme SUPERVOOC 45W Power Adapter,realme SUPERVOOC 45W Power Adapter,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807148
+realme,BBK Ecosystem,realme Power Charger 10W₹₹,realme Power Charger 10W₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807183
+realme,BBK Ecosystem,realme Power Charger 10W,realme Power Charger 10W,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807215
+realme,BBK Ecosystem,realme USB-A to Type-C SUPERVOOC Cable,realme USB-A to Type-C SUPERVOOC Cable,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807266
+realme,BBK Ecosystem,realme Type-C Hub₹₹,realme Type-C Hub₹₹,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807299
+realme,BBK Ecosystem,realme Type-C Hub,realme Type-C Hub,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807328
+realme,BBK Ecosystem,realme Smart Pen,realme Smart Pen,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807391
+realme,BBK Ecosystem,realme Magnetic Cooling Clip₹₹,realme Magnetic Cooling Clip₹₹,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807443
+realme,BBK Ecosystem,realme Magnetic Cooling Clip,realme Magnetic Cooling Clip,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807476
+realme,BBK Ecosystem,realme UI,realme UI,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807549
+realme,BBK Ecosystem,realme Coins Reward,realme Coins Reward,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807903
+realme,BBK Ecosystem,realme VIPEnjoy Exclusive VIP Benefits,realme VIPEnjoy Exclusive VIP Benefits,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807918
+realme,BBK Ecosystem,realme VIP,realme VIP,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807931
+realme,BBK Ecosystem,realme Phones,realme Phones,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808027
+realme,BBK Ecosystem,realme Care+,realme Care+,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808042
+realme,BBK Ecosystem,realme Coins,realme Coins,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808061
+realme,BBK Ecosystem,realme NEXT AI,realme NEXT AI,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808073
+realme,BBK Ecosystem,realmeow,realmeow,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808111
+realme,BBK Ecosystem,realme GT 7 Pro,realme GT 7 Pro,GT Series,59999.0,"₹59,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808609
+realme,BBK Ecosystem,realme GT 6,realme GT 6,GT Series,40999.0,"₹40,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808616
+realme,BBK Ecosystem,realme GT 6T,realme GT 6T,GT Series,30999.0,"₹30,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808622
+realme,BBK Ecosystem,realme 15 Pro+ 5G,realme 15 Pro+ 5G,Number Series,31999.0,"₹31,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808626
+realme,BBK Ecosystem,realme 15 Pro 5G,realme 15 Pro 5G,Number Series,25999.0,"₹25,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808630
+realme,BBK Ecosystem,realme 15 5G,realme 15 5G,Number Series,18999.0,"₹18,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808633
+realme,BBK Ecosystem,realme 14 Pro+ 5G,realme 14 Pro+ 5G,Number Series,29999.0,"₹29,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808637
+realme,BBK Ecosystem,realme 14 Pro 5G,realme 14 Pro 5G,Number Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808641
+realme,BBK Ecosystem,realme 14x 5G,realme 14x 5G,Number Series,14999.0,"₹14,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808645
+realme,BBK Ecosystem,realme 13 Pro+ 5G,realme 13 Pro+ 5G,Number Series,29999.0,"₹29,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808649
+realme,BBK Ecosystem,realme 13 Pro 5G,realme 13 Pro 5G,Number Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808653
+realme,BBK Ecosystem,realme 13+ 5G,realme 13+ 5G,Number Series,22999.0,"₹22,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808657
+realme,BBK Ecosystem,realme 13 5G,realme 13 5G,Number Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808661
+realme,BBK Ecosystem,realme P2 Pro 5G,realme P2 Pro 5G,P Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808665
+realme,BBK Ecosystem,realme P1 Pro 5G,realme P1 Pro 5G,P Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808668
+realme,BBK Ecosystem,realme P1 Speed 5G,realme P1 Speed 5G,P Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808672
+realme,BBK Ecosystem,realme P1 5G,realme P1 5G,P Series,14999.0,"₹14,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808675
+realme,BBK Ecosystem,realme NARZO 70 Turbo 5G,realme NARZO 70 Turbo 5G,NARZO Series,16999.0,"₹16,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808678
+realme,BBK Ecosystem,realme NARZO 70 Pro 5G,realme NARZO 70 Pro 5G,NARZO Series,18999.0,"₹18,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808686
+realme,BBK Ecosystem,realme NARZO 70 5G,realme NARZO 70 5G,NARZO Series,14999.0,"₹14,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808689
+realme,BBK Ecosystem,realme NARZO 70x 5G,realme NARZO 70x 5G,NARZO Series,11999.0,"₹11,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808692
+realme,BBK Ecosystem,realme NARZO N65 5G,realme NARZO N65 5G,NARZO Series,11499.0,"₹11,499",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808696
+realme,BBK Ecosystem,realme C67 5G,realme C67 5G,C Series,11999.0,"₹11,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808700
+realme,BBK Ecosystem,realme C65 5G,realme C65 5G,C Series,10499.0,"₹10,499",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808704
+realme,BBK Ecosystem,realme C63 5G,realme C63 5G,C Series,8999.0,"₹8,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808708
+realme,BBK Ecosystem,realme C61,realme C61,C Series,7699.0,"₹7,699",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808712

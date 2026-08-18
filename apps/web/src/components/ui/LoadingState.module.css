@@ -1,0 +1,53 @@
+.loadingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: var(--space-xxl) var(--space-base);
+  text-align: center;
+}
+
+.barTrack {
+  width: 240px;
+  height: 2px;
+  background-color: var(--color-hairline);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+}
+
+.barFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background-color: var(--color-vermilion);
+  animation: barSlide 1.8s infinite ease-in-out;
+}
+
+@keyframes barSlide {
+  0% {
+    left: -40%;
+    width: 30%;
+  }
+  50% {
+    left: 40%;
+    width: 60%;
+  }
+  100% {
+    left: 100%;
+    width: 30%;
+  }
+}
+
+.statusLabel {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  min-height: 18px;
+}

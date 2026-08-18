@@ -41,6 +41,10 @@ class PhoneDetails(BaseModel):
     price_numeric: Optional[float] = None
     released_in_india: Optional[int] = None
     launch_year: Optional[int] = None
+    is_current_catalogue: Optional[int] = 0
+    india_official_catalogue: Optional[int] = 0
+    launch_status: Optional[str] = "available"
+
 
     @model_validator(mode='before')
     @classmethod

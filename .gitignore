@@ -79,6 +79,7 @@ ehthumbs_vista.db
 
 # Data files
 *.csv
+!scraped_official_catalogues/*.csv
 *.xlsx
 *.xls
 *.db
@@ -86,6 +87,7 @@ ehthumbs_vista.db
 data/*.json
 !data/sample_phones.json
 !data/examples/
+
 
 # Environment
 .env
@@ -115,6 +117,8 @@ PROGRESS.md
 guide-1.md
 guide-2.md
 what_is_design.md
+REBUILT_PROMPT.md
+walkthrough.md
 
 # Screenshots & Capture Scripts
 screenshots/

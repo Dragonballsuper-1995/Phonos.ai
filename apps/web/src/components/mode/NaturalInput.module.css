@@ -1,0 +1,117 @@
+.container {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-xxl) var(--page-gutter);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: var(--space-xl);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 7vw, 78px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  margin-top: var(--space-xs);
+}
+
+.inputCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.textInput {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-hairline);
+  padding: var(--space-base) 0;
+  font-family: var(--font-body);
+  font-size: clamp(18px, 2.8vw, 26px);
+  font-weight: 500;
+  color: var(--color-ink);
+  outline: none;
+  line-height: 1.4;
+  transition: border-color var(--transition-fast);
+}
+
+.textInput:focus {
+  border-bottom-color: var(--color-ink);
+}
+
+.textInput::placeholder {
+  color: var(--color-muted);
+  font-weight: 400;
+}
+
+.charCount {
+  align-self: flex-end;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-muted);
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.suggestionLabel {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.chipsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.chipBtn {
+  font-size: 13px;
+  padding: 8px 14px;
+  background-color: var(--color-surface-elevated);
+  border: 1px solid var(--color-hairline);
+  color: var(--color-body);
+  text-align: left;
+  line-height: 1.3;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.chipBtn:hover {
+  border-color: var(--color-ink);
+  color: var(--color-ink);
+  background-color: var(--color-canvas);
+}
+
+.actionRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-base);
+  border-top: 1px solid var(--color-hairline);
+}

@@ -1,0 +1,327 @@
+.rowWrapper {
+  border-bottom: 1px solid var(--color-hairline);
+  background-color: var(--color-canvas);
+  transition: background-color var(--transition-fast);
+}
+
+.rowWrapper:hover {
+  background-color: var(--color-surface);
+}
+
+.rowExpanded {
+  background-color: var(--color-surface);
+}
+
+.rowHeader {
+  display: grid;
+  grid-template-columns: 48px 1fr 120px 130px 32px;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-base);
+  cursor: pointer;
+  user-select: none;
+  min-height: 72px;
+}
+
+.rankBadge {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-muted);
+  letter-spacing: 0.04em;
+}
+
+.rankTop {
+  color: var(--color-vermilion);
+}
+
+.nameBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.brandLabel {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.yearBadge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 1px 5px;
+  border: 1px solid var(--color-hairline);
+  background-color: var(--color-surface-elevated);
+  color: var(--color-muted);
+}
+
+.yearBadge2026 {
+  border-color: var(--color-ink);
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+.modelName {
+  font-size: clamp(16px, 2vw, 19px);
+  font-weight: 600;
+  color: var(--color-ink);
+  line-height: 1.25;
+}
+
+.scoreBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.scoreText {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-ink);
+  letter-spacing: -0.02em;
+}
+
+.priceBlock {
+  font-family: var(--font-mono);
+  font-size: clamp(16px, 1.8vw, 18px);
+  font-weight: 600;
+  color: var(--color-ink);
+  text-align: right;
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  transition: transform var(--transition-normal);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+  color: var(--color-ink);
+}
+
+/* Expanded View */
+.expandedPanel {
+  padding: var(--space-xl) var(--space-base);
+  background-color: var(--color-surface-elevated);
+  border-top: 1px solid var(--color-hairline);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+/* Section 1: AI Pitch */
+.pitchBox {
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-hairline);
+  border-left: 3px solid var(--color-vermilion);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.pitchTitle {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-vermilion);
+}
+
+.pitchText {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-ink);
+}
+
+/* Section 2: Strengths & Tradeoffs */
+.twoColGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.insightCard {
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-hairline);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.insightTitle {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  border-bottom: 1px solid var(--color-hairline);
+  padding-bottom: var(--space-xs);
+}
+
+.bulletsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.strengthItem {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-body);
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+}
+
+.arrowBullet {
+  color: var(--color-vermilion);
+  font-weight: bold;
+}
+
+.compromiseItem {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-body);
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+}
+
+.dashBullet {
+  color: var(--color-muted);
+}
+
+.verifyBox {
+  grid-column: 1 / -1;
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-india-verified);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+}
+
+.verifyTitle {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-india-verified);
+  white-space: nowrap;
+}
+
+.verifyText {
+  font-size: 13px;
+  color: var(--color-body);
+}
+
+/* Section 3: Spec Table */
+.specsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-hairline);
+  padding: var(--space-lg);
+}
+
+.specBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.specCategoryHeader {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  border-bottom: 1px solid var(--color-hairline);
+  padding-bottom: 4px;
+}
+
+.specGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-sm) var(--space-lg);
+}
+
+.specPair {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.specKey {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.specValue {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-ink);
+}
+
+/* Section 4: Action Bar */
+.actionBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-hairline);
+  padding-top: var(--space-lg);
+  flex-wrap: wrap;
+  gap: var(--space-base);
+}
+
+.buyBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+@media (max-width: 768px) {
+  .rowHeader {
+    grid-template-columns: 32px 1fr 100px 24px;
+    gap: var(--space-sm);
+  }
+  .scoreBlock {
+    display: none;
+  }
+  .twoColGrid {
+    grid-template-columns: 1fr;
+  }
+  .actionBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

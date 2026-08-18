@@ -1,18 +1,13 @@
-import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/layout/ThemeProvider";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
-import { PageTransition } from "@/components/layout/PageTransition";
-import { SmoothScroll } from "@/components/layout/SmoothScroll";
-import { CustomCursor } from "@/components/ui/CustomCursor";
-import { CinematicPreloader } from "@/components/ui/CinematicPreloader";
-import "@/app/globals.css";
-
-import { CSPostHogProvider } from "./providers";
+import type { Metadata } from 'next';
+import { CSPostHogProvider } from './providers';
+import Nav from '@/components/layout/Nav';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "PHONOS.AI | Decode Your Companion",
-  description: "Intelligent, persona-based smartphone recommendation engine.",
+  title: 'Phonos.ai — Smartphone Intelligence for India',
+  description:
+    'AI-powered smartphone intelligence and recommendation system for the Indian market. Precision filtering, multi-factor ranking, and explainable choices.',
+  keywords: ['smartphone recommendation', 'mobile phone advisor', 'india smartphone buying guide', 'phonos ai'],
 };
 
 export default function RootLayout({
@@ -22,23 +17,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <CSPostHogProvider>
-          <ThemeProvider>
-            <SmoothScroll>
-              <CustomCursor />
-              <CinematicPreloader />
-              <div className="app-container">
-                <Header />
-                <main className="main-content">
-                  <PageTransition>
-                    {children}
-                  </PageTransition>
-                </main>
-                {/* <Footer /> We might remove standard footer if the page has a massive one, but keeping for mode pages */}
-              </div>
-            </SmoothScroll>
-          </ThemeProvider>
+          <Nav />
+          {children}
         </CSPostHogProvider>
       </body>
     </html>

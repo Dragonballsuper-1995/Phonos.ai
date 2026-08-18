@@ -1,83 +1,57 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { formatPrice } from '@/lib/utils';
-import { cn } from '@/lib/utils';
+import { BUDGET_MIN, BUDGET_MAX, BUDGET_STEP } from '@/lib/constants';
 import styles from './BudgetSlider.module.css';
 
 interface BudgetSliderProps {
   value: number;
-  onChange: (value: number) => void;
-  min?: number;
-  max?: number;
-  step?: number;
-  className?: string;
+  onChange: (val: number) => void;
+  label?: string;
 }
 
-const PRESETS = [
-  { label: 'Under ₹15K', value: 15000 },
-  { label: '₹15K - 25K', value: 25000 },
-  { label: '₹25K - 40K', value: 40000 },
-  { label: '₹40K+', value: 80000 },
-];
+const PRESETS = [15000, 25000, 40000, 60000, 100000];
 
-export function BudgetSlider({ 
-  value, 
-  onChange, 
-  min = 5000, 
-  max = 150000, 
-  step = 1000,
-  className 
+export default function BudgetSlider({
+  value,
+  onChange,
+  label = 'Maximum Budget',
 }: BudgetSliderProps) {
-  const [localValue, setLocalValue] = useState(value);
-
-  useEffect(() => {
-    setLocalValue(value);
-  }, [value]);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newValue = parseInt(e.target.value, 10);
-    setLocalValue(newValue);
-    onChange(newValue);
-  };
-
-  const percentage = ((localValue - min) / (max - min)) * 100;
-
   return (
-    <div className={cn(styles.container, className)}>
-      <div className={styles.header}>
-        <span className={styles.label}>Max Budget</span>
-        <span className={styles.value}>{formatPrice(localValue)}</span>
+    <div className={styles.wrapper}>
+      <div className={styles.readoutBlock}>
+        <span className={styles.label}>{label}</span>
+        <div className={styles.amount}>
+          <span className={styles.currency}>&#8377;</span>
+          {value.toLocaleString('en-IN')}
+        </div>
       </div>
-      
-      <div className={styles.sliderWrapper}>
-        <div 
-          className={styles.trackFill} 
-          style={{ width: `${percentage}%` }}
-        />
+
+      <div className={styles.sliderContainer}>
         <input
           type="range"
-          min={min}
-          max={max}
-          step={step}
-          value={localValue}
-          onChange={handleChange}
-          className={styles.slider}
+          id="budget-range-input"
+          aria-label={label}
+          min={BUDGET_MIN}
+          max={BUDGET_MAX}
+          step={BUDGET_STEP}
+          value={value}
+          onChange={(e) => onChange(parseInt(e.target.value, 10))}
         />
+        <div className={styles.bounds}>
+          <span>&#8377;{BUDGET_MIN.toLocaleString('en-IN')}</span>
+          <span>&#8377;{BUDGET_MAX.toLocaleString('en-IN')}+</span>
+        </div>
       </div>
-      
+
       <div className={styles.presets}>
         {PRESETS.map((preset) => (
           <button
-            key={preset.label}
-            className={cn(styles.presetBtn, localValue === preset.value && styles.activePreset)}
-            onClick={() => {
-              setLocalValue(preset.value);
-              onChange(preset.value);
-            }}
+            key={preset}
             type="button"
+            className={`${styles.presetBtn} ${value === preset ? styles.presetBtnActive : ''}`}
+            onClick={() => onChange(preset)}
           >
-            {preset.label}
+            &#8377;{preset >= 100000 ? `${preset / 100000}L` : `${preset / 1000}K`}
           </button>
         ))}
       </div>

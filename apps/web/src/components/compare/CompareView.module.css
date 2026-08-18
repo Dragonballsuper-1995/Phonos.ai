@@ -1,0 +1,171 @@
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--page-gutter) var(--space-hero);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+/* Search Adder */
+.searchSection {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  padding: var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-base);
+  flex-wrap: wrap;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 260px;
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-hairline);
+  padding: 10px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-ink);
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: var(--color-ink);
+}
+
+.searchResults {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.searchChip {
+  font-size: 12px;
+  padding: 6px 12px;
+  background-color: var(--color-surface-elevated);
+  border: 1px solid var(--color-hairline);
+  color: var(--color-ink);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.searchChip:hover {
+  border-color: var(--color-ink);
+  background-color: var(--color-canvas);
+}
+
+/* Matrix Table */
+.matrixWrapper {
+  overflow-x: auto;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+}
+
+.matrixTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.matrixTh {
+  background-color: var(--color-surface-elevated);
+  border-bottom: 2px solid var(--color-hairline);
+  border-right: 1px solid var(--color-hairline);
+  padding: var(--space-lg);
+  vertical-align: top;
+  min-width: 220px;
+}
+
+.labelCol {
+  width: 200px;
+  min-width: 160px;
+  background-color: var(--color-surface);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.phoneColHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.phoneBrand {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.phoneName {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  line-height: 1.1;
+}
+
+.phonePrice {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.matrixTd {
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-hairline);
+  border-right: 1px solid var(--color-hairline);
+  font-size: 14px;
+  color: var(--color-body);
+  vertical-align: top;
+}
+
+.sectionRow {
+  background-color: var(--color-canvas);
+  border-bottom: 1px solid var(--color-hairline);
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-vermilion);
+}
+
+.emptyCompare {
+  padding: var(--space-hero) var(--space-base);
+  text-align: center;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-base);
+}

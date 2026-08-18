@@ -1,5 +1,11 @@
 import { API_BASE_URL } from './constants';
-import { Phone, RecommendationResponse } from './types';
+import type {
+  PhoneDetails,
+  RecommendationResponse,
+  EasyRecommendRequest,
+  MediumRecommendRequest,
+  DeepRecommendRequest,
+} from './types';
 
 export class ApiError extends Error {
   constructor(public status: number, message: string) {
@@ -19,7 +25,7 @@ async function fetchApi<T>(endpoint: string, options: RequestInit = {}): Promise
   });
 
   if (!response.ok) {
-    throw new ApiError(response.status, `API Error: ${response.statusText}`);
+    throw new ApiError(response.status, `API Error: ${response.statusText} (${response.status})`);
   }
 
   return response.json();
@@ -28,48 +34,46 @@ async function fetchApi<T>(endpoint: string, options: RequestInit = {}): Promise
 export const api = {
   getPhones: (params?: Record<string, string>) => {
     const queryString = params ? `?${new URLSearchParams(params).toString()}` : '';
-    return fetchApi<{ phones: Phone[], total: number }>(`/phones${queryString}`);
+    return fetchApi<{ phones: PhoneDetails[]; total: number }>(`/phones${queryString}`);
   },
 
   getPhone: (slug: string) => {
-    return fetchApi<Phone>(`/phones/${slug}`);
+    return fetchApi<PhoneDetails>(`/phones/${encodeURIComponent(slug)}`);
   },
 
   searchPhones: (query: string) => {
-    return fetchApi<Phone[]>(`/phones/search?q=${encodeURIComponent(query)}`);
+    return fetchApi<PhoneDetails[]>(`/phones/search?q=${encodeURIComponent(query)}`);
   },
 
-  recommendEasy: (data: any) => {
+  recommendEasy: (data: EasyRecommendRequest) => {
     return fetchApi<RecommendationResponse>('/recommend/easy', {
       method: 'POST',
       body: JSON.stringify(data),
     });
   },
 
-  recommendMedium: (data: any) => {
+  recommendMedium: (data: MediumRecommendRequest) => {
     return fetchApi<RecommendationResponse>('/recommend/medium', {
       method: 'POST',
       body: JSON.stringify(data),
     });
   },
 
-  recommendDeep: (data: { query: string, budget: number }) => {
+  recommendDeep: (data: DeepRecommendRequest) => {
     return fetchApi<RecommendationResponse>('/recommend/deep', {
       method: 'POST',
       body: JSON.stringify(data),
     });
   },
 
-  comparePhones: (slugs: string[]) => {
-    const queryString = slugs.map(slug => `slug=${encodeURIComponent(slug)}`).join('&');
-    return fetchApi<Phone[]>(`/phones/compare?${queryString}`);
+  comparePhones: (ids: (string | number)[]) => {
+    const idsStr = ids.join(',');
+    return fetchApi<{ phones: PhoneDetails[]; differences: Record<string, any> }>(
+      `/compare?ids=${encodeURIComponent(idsStr)}`
+    );
   },
 
   getBrands: () => {
     return fetchApi<string[]>('/brands');
   },
-
-  getFilters: () => {
-    return fetchApi<any>('/filters');
-  }
 };

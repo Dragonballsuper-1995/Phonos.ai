@@ -9,6 +9,7 @@ from app.core.config import settings
 CACHE_DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data/pricing_cache.db'))
 
 def init_db():
+    os.makedirs(os.path.dirname(CACHE_DB_PATH), exist_ok=True)
     conn = sqlite3.connect(CACHE_DB_PATH)
     cursor = conn.cursor()
     cursor.execute('''
@@ -38,39 +39,45 @@ def init_db():
     conn.close()
 
 def get_cached_price(phone_id: str) -> Optional[Dict[str, Any]]:
-    init_db()
-    conn = sqlite3.connect(CACHE_DB_PATH)
-    conn.row_factory = sqlite3.Row
-    cursor = conn.cursor()
-    cursor.execute("SELECT price, store, store_url, last_updated FROM price_cache WHERE phone_id = ?", (str(phone_id),))
-    row = cursor.fetchone()
-    conn.close()
-    
-    if row:
-        price, store, store_url, last_updated = row["price"], row["store"], row["store_url"], row["last_updated"]
-        ttl_seconds = settings.PRICE_CACHE_TTL_HOURS * 3600
-        if time.time() - last_updated < ttl_seconds and price and price > 0:
-            return {
-                "price": price,
-                "store": store or "Amazon India",
-                "store_url": store_url or f"https://www.amazon.in/s?k={phone_id}",
-                "last_updated": last_updated
-            }
+    try:
+        init_db()
+        conn = sqlite3.connect(CACHE_DB_PATH)
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
+        cursor.execute("SELECT price, store, store_url, last_updated FROM price_cache WHERE phone_id = ?", (str(phone_id),))
+        row = cursor.fetchone()
+        conn.close()
+        
+        if row:
+            price, store, store_url, last_updated = row["price"], row["store"], row["store_url"], row["last_updated"]
+            ttl_seconds = settings.PRICE_CACHE_TTL_HOURS * 3600
+            if time.time() - last_updated < ttl_seconds and price and price > 0:
+                return {
+                    "price": price,
+                    "store": store or "Amazon India",
+                    "store_url": store_url or f"https://www.amazon.in/s?k={phone_id}",
+                    "last_updated": last_updated
+                }
+    except Exception as e:
+        print(f"[LivePricing] Cache read error: {e}")
     return None
 
 def set_cached_price(phone_id: str, phone_name: str, price: float, store: str = "Amazon India", store_url: str = ""):
-    init_db()
-    conn = sqlite3.connect(CACHE_DB_PATH)
-    cursor = conn.cursor()
-    cursor.execute('''
-        INSERT OR REPLACE INTO price_cache (phone_id, phone_name, price, store, store_url, last_updated)
-        VALUES (?, ?, ?, ?, ?, ?)
-    ''', (str(phone_id), phone_name, float(price), store, store_url, int(time.time())))
-    conn.commit()
-    conn.close()
+    try:
+        init_db()
+        conn = sqlite3.connect(CACHE_DB_PATH)
+        cursor = conn.cursor()
+        cursor.execute('''
+            INSERT OR REPLACE INTO price_cache (phone_id, phone_name, price, store, store_url, last_updated)
+            VALUES (?, ?, ?, ?, ?, ?)
+        ''', (str(phone_id), phone_name, float(price), store, store_url, int(time.time())))
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        print(f"[LivePricing] Cache write error: {e}")
 
 def _fetch_serpapi(phone_name: str) -> Optional[Dict[str, Any]]:
-    serp_key = os.getenv("SERPAPI_KEY", "07b86314716b37da967ddf05d35e4056cad84b2713f1f1195e5fe4ed5329405e")
+    serp_key = os.getenv("SERPAPI_KEY", "")
     if not serp_key:
         return None
     try:
@@ -81,9 +88,10 @@ def _fetch_serpapi(phone_name: str) -> Optional[Dict[str, Any]]:
             "google_domain": "google.co.in",
             "gl": "in",
             "hl": "en",
-            "api_key": serp_key
+            "api_key": serp_key,
         }
         search = GoogleSearch(params)
+        # Fast query
         results = search.get_dict()
         shopping_results = results.get("shopping_results", [])
         if shopping_results:
@@ -98,7 +106,7 @@ def _fetch_serpapi(phone_name: str) -> Optional[Dict[str, Any]]:
                     "store_url": first.get("link", f"https://www.amazon.in/s?k={phone_name}")
                 }
     except Exception as e:
-        print(f"[LivePricing] SerpAPI Google Shopping failed: {e}")
+        print(f"[LivePricing] SerpAPI failed: {e}")
     return None
 
 def _fetch_apify_amazon(phone_name: str) -> Optional[Dict[str, Any]]:
@@ -112,7 +120,7 @@ def _fetch_apify_amazon(phone_name: str) -> Optional[Dict[str, Any]]:
             "domain": "in",
             "maxItems": 1
         }
-        resp = requests.post(url, json=payload, timeout=12.0)
+        resp = requests.post(url, json=payload, timeout=2.0)
         if resp.status_code == 200:
             items = resp.json()
             if items and isinstance(items, list):
@@ -129,47 +137,40 @@ def _fetch_apify_amazon(phone_name: str) -> Optional[Dict[str, Any]]:
     return None
 
 def get_live_price(phone_id: str, phone_name: str) -> Optional[float]:
-    """
-    Returns the real-time Indian Rupee price for a phone, checking SQLite cache first.
-    """
     cached = get_cached_price(phone_id)
     if cached:
         return cached["price"]
 
-    # 1. Try SerpAPI Google Shopping India
+    # 1. Try SerpAPI (only if configured)
     res = _fetch_serpapi(phone_name)
-    if res and res["price"] > 0:
-        set_cached_price(phone_id, phone_name, res["price"], res["store"], res["store_url"])
+    if res and res.get("price", 0) > 0:
+        set_cached_price(phone_id, phone_name, res["price"], res.get("store", "Amazon India"), res.get("store_url", ""))
         return res["price"]
 
-    # 2. Try Apify Amazon India Scraper
+    # 2. Try Apify Amazon (only if configured)
     res = _fetch_apify_amazon(phone_name)
-    if res and res["price"] > 0:
-        set_cached_price(phone_id, phone_name, res["price"], res["store"], res["store_url"])
+    if res and res.get("price", 0) > 0:
+        set_cached_price(phone_id, phone_name, res["price"], res.get("store", "Amazon India"), res.get("store_url", ""))
         return res["price"]
 
     return None
 
 def get_live_pricing_details(phone_id: str, phone_name: str, default_price: float = 0.0) -> Dict[str, Any]:
     """
-    Returns full details: price, store, direct affiliate/store URL.
+    Returns live pricing details instantly. If cached, uses cache.
+    Otherwise uses verified database default_price immediately to prevent query hangs.
     """
     cached = get_cached_price(phone_id)
-    if cached:
+    if cached and cached.get("price", 0) > 0:
         return cached
 
-    live_p = get_live_price(phone_id, phone_name)
-    if live_p and live_p > 0:
-        return {
-            "price": live_p,
-            "store": "Amazon India",
-            "store_url": f"https://www.amazon.in/s?k={requests.utils.quote(phone_name)}",
-            "last_updated": int(time.time())
-        }
+    # Use default_price from database immediately without stalling pipeline
+    final_price = default_price if default_price > 0 else 0.0
+    safe_name = requests.utils.quote(phone_name)
 
     return {
-        "price": default_price,
+        "price": final_price,
         "store": "Amazon India",
-        "store_url": f"https://www.amazon.in/s?k={requests.utils.quote(phone_name)}",
+        "store_url": f"https://www.amazon.in/s?k={safe_name}",
         "last_updated": int(time.time())
     }

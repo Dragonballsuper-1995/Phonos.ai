@@ -1,0 +1,95 @@
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-height);
+  background-color: var(--color-canvas);
+  border-bottom: 1px solid var(--color-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--page-gutter);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-ink);
+  text-transform: uppercase;
+}
+
+.brandDot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-vermilion);
+  display: inline-block;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  list-style: none;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  padding: var(--space-sm) 0;
+  transition: color var(--transition-fast);
+  display: inline-block;
+}
+
+.navLink:hover {
+  color: var(--color-ink);
+}
+
+.activeLink {
+  color: var(--color-ink);
+}
+
+.activeLink::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-vermilion);
+}
+
+.backLink {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  transition: color var(--transition-fast);
+}
+
+.backLink:hover {
+  color: var(--color-ink);
+}
+
+@media (max-width: 640px) {
+  .navLinks {
+    gap: var(--space-base);
+  }
+}

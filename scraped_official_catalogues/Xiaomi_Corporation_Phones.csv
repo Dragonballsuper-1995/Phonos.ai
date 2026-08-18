@@ -1,0 +1,51 @@
+brand,parent_ecosystem,model_name,full_name,series,price_inr,price_raw,launch_status,sale_start_date,market,official_india_presence,brand_status,catalogue_url,product_url,specs_summary,scraped_at
+Xiaomi,Xiaomi Corporation,Xiaomi 17T,Xiaomi 17T,Xiaomi Flagship,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731025
+Xiaomi,Xiaomi Corporation,Xiaomi 17 Ultra,Xiaomi 17 Ultra,Xiaomi Flagship,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731085
+Xiaomi,Xiaomi Corporation,Xiaomi 17,Xiaomi 17,Xiaomi Flagship,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731132
+Xiaomi,Xiaomi Corporation,Xiaomi 17 Pro,Xiaomi 17 Pro,Xiaomi Flagship,89999.0,"₹89,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731157
+Xiaomi,Xiaomi Corporation,Xiaomi 14 Ultra,Xiaomi 14 Ultra,Xiaomi Flagship,99999.0,"₹99,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731172
+Xiaomi,Xiaomi Corporation,Xiaomi 14,Xiaomi 14,Xiaomi Flagship,69999.0,"₹69,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731182
+Xiaomi,Xiaomi Corporation,Xiaomi 14 Civi,Xiaomi 14 Civi,Xiaomi Flagship,39999.0,"₹39,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731191
+Xiaomi,Xiaomi Corporation,Xiaomi 13 Pro,Xiaomi 13 Pro,Xiaomi Flagship,74999.0,"₹74,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731199
+,,,,,,,,,,,,,,,
+Redmi,Xiaomi Corporation,REDMI Turbo 5,Redmi REDMI Turbo 5,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449627
+Redmi,Xiaomi Corporation,Redmi Note 15 Pro+ 5G,Redmi Note 15 Pro+ 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449706
+Redmi,Xiaomi Corporation,Redmi Note 15 Pro 5G,Redmi Note 15 Pro 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449746
+Redmi,Xiaomi Corporation,Redmi Note 15 SE 5G,Redmi Note 15 SE 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449778
+Redmi,Xiaomi Corporation,Redmi A7 Pro 5G,Redmi A7 Pro 5G,Redmi A Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449808
+Redmi,Xiaomi Corporation,Redmi A7 Pro,Redmi A7 Pro,Redmi A Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449836
+Redmi,Xiaomi Corporation,Redmi A7,Redmi A7,Redmi A Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449861
+Redmi,Xiaomi Corporation,Redmi 15A 5G,Redmi 15A 5G,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449888
+Redmi,Xiaomi Corporation,Redmi Note 15 5G,Redmi Note 15 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449915
+Redmi,Xiaomi Corporation,Redmi 15C 5G,Redmi 15C 5G,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449939
+Redmi,Xiaomi Corporation,Redmi 15 5G,Redmi 15 5G,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449963
+Redmi,Xiaomi Corporation,Redmi Note 14 SE 5G,Redmi Note 14 SE 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449992
+Redmi,Xiaomi Corporation,Redmi A5,Redmi A5,Redmi A Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450015
+Redmi,Xiaomi Corporation,Redmi 14C 5G,Redmi 14C 5G,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450038
+Redmi,Xiaomi Corporation,Redmi Note 14 Pro+ 5G,Redmi Note 14 Pro+ 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450066
+Redmi,Xiaomi Corporation,Redmi Note 14 Pro 5G,Redmi Note 14 Pro 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450094
+Redmi,Xiaomi Corporation,Redmi Note 14 5G,Redmi Note 14 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450120
+Redmi,Xiaomi Corporation,Redmi A4 5G,Redmi A4 5G,Redmi A Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450144
+Redmi,Xiaomi Corporation,Redmi 13 5G,Redmi 13 5G,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450168
+Redmi,Xiaomi Corporation,Redmi 13C 5G,Redmi 13C 5G,Redmi Number Series,9999.0,"₹9,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450222
+Redmi,Xiaomi Corporation,Redmi A3,Redmi A3,Redmi A Series,6499.0,"₹6,499",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450240
+,,,,,,,,,,,,,,,
+POCO,Xiaomi Corporation,POCO X8 Pro Max,POCO X8 Pro Max,POCO X Series,32999.0,"₹32,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/X8ProMax,,2026-08-18T23:46:27.510885
+POCO,Xiaomi Corporation,POCO X8 Pro,POCO X8 Pro,POCO X Series,27999.0,"₹27,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/X8Pro,,2026-08-18T23:46:27.510918
+POCO,Xiaomi Corporation,POCO X7 Pro,POCO X7 Pro,POCO X Series,25999.0,"₹25,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/X7Pro,,2026-08-18T23:46:27.510926
+POCO,Xiaomi Corporation,POCO X7,POCO X7,POCO X Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/X7,,2026-08-18T23:46:27.510934
+POCO,Xiaomi Corporation,POCO F7,POCO F7,POCO F Series,34999.0,"₹34,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/F7,,2026-08-18T23:46:27.510941
+POCO,Xiaomi Corporation,POCO F6,POCO F6,POCO F Series,29999.0,"₹29,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/F6,,2026-08-18T23:46:27.510948
+POCO,Xiaomi Corporation,POCO M8 Power,POCO M8 Power,POCO M Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M8Power,,2026-08-18T23:46:27.510955
+POCO,Xiaomi Corporation,POCO M8 5G,POCO M8 5G,POCO M Series,13999.0,"₹13,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M85G,,2026-08-18T23:46:27.510961
+POCO,Xiaomi Corporation,POCO M7 Plus,POCO M7 Plus,POCO M Series,14999.0,"₹14,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M7Plus,,2026-08-18T23:46:27.510967
+POCO,Xiaomi Corporation,POCO M7 Pro,POCO M7 Pro,POCO M Series,13499.0,"₹13,499",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M7Pro,,2026-08-18T23:46:27.510974
+POCO,Xiaomi Corporation,POCO M7 5G,POCO M7 5G,POCO M Series,10999.0,"₹10,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M75G,,2026-08-18T23:46:27.510980
+POCO,Xiaomi Corporation,POCO M6 Pro 5G,POCO M6 Pro 5G,POCO M Series,9999.0,"₹9,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M6Pro5G,,2026-08-18T23:46:27.510987
+POCO,Xiaomi Corporation,POCO C85x,POCO C85x,POCO C Series,8999.0,"₹8,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/C85x,,2026-08-18T23:46:27.510993
+POCO,Xiaomi Corporation,POCO C85,POCO C85,POCO C Series,7999.0,"₹7,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/C85,,2026-08-18T23:46:27.511000
+POCO,Xiaomi Corporation,POCO C81x,POCO C81x,POCO C Series,7499.0,"₹7,499",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/C81x,,2026-08-18T23:46:27.511006
+POCO,Xiaomi Corporation,POCO C81,POCO C81,POCO C Series,6999.0,"₹6,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/C81,,2026-08-18T23:46:27.511012
+POCO,Xiaomi Corporation,POCO C75,POCO C75,POCO C Series,7999.0,"₹7,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/C75,,2026-08-18T23:46:27.511018
+POCO,Xiaomi Corporation,POCO C71,POCO C71,POCO C Series,6499.0,"₹6,499",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/C71,,2026-08-18T23:46:27.511025
+POCO,Xiaomi Corporation,POCO C61,POCO C61,POCO C Series,5999.0,"₹5,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/C61,,2026-08-18T23:46:27.511031

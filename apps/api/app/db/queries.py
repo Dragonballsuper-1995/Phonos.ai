@@ -9,14 +9,15 @@ async def get_all_phones(max_budget: Optional[float] = None, limit: int = 20, of
     # We filter only for phones officially released in India (released_in_india = 1).
     if max_budget is not None:
         cursor = await conn.execute(
-            "SELECT rowid as id, * FROM phones WHERE price_numeric <= ? AND released_in_india = 1 ORDER BY price_numeric DESC, launch_year DESC, rowid DESC LIMIT ? OFFSET ?",
+            "SELECT rowid as id, * FROM phones WHERE price_numeric <= ? AND released_in_india = 1 ORDER BY is_current_catalogue DESC, price_numeric DESC, launch_year DESC, rowid DESC LIMIT ? OFFSET ?",
             (max_budget, limit, offset)
         )
     else:
         cursor = await conn.execute(
-            "SELECT rowid as id, * FROM phones WHERE released_in_india = 1 ORDER BY launch_year DESC, rowid DESC LIMIT ? OFFSET ?",
+            "SELECT rowid as id, * FROM phones WHERE released_in_india = 1 ORDER BY is_current_catalogue DESC, launch_year DESC, rowid DESC LIMIT ? OFFSET ?",
             (limit, offset)
         )
+
     rows = await cursor.fetchall()
     result = []
     for row in rows:
@@ -145,3 +146,13 @@ async def get_phones_by_ids(ids: List[int]) -> List[PhoneDetails]:
                 d['raw_specs'] = {}
         result.append(PhoneDetails(**d))
     return result
+
+async def get_brand_catalogues() -> List[dict]:
+    conn = await get_db_pool()
+    try:
+        cursor = await conn.execute("SELECT * FROM brand_catalogues ORDER BY brand ASC")
+        rows = await cursor.fetchall()
+        return [dict(r) for r in rows]
+    except Exception:
+        return []
+

@@ -2,24 +2,24 @@
 Hardware & Benchmark Scoring Matrix for Phonos.ai
 ===================================================
 Granular multi-dimensional hardware evaluation engine:
-1. SoC Benchmark Index (60+ Mobile Processors: Snapdragon, Dimensity, Apple, Tensor)
-2. Camera Optics & Sensor Index (OIS, Periscope Zoom, Zeiss/Hasselblad/Leica, 4K60)
+1. SoC Benchmark Index (Snapdragon 8 Elite, Dimensity 9400, Apple A18/A17, Tensor G4)
+2. Camera & Creator Optics Index (4K120, 10-bit Log, Dolby Vision, Periscope Zoom, Zeiss APO/Leica, 1-inch sensor)
 3. Display Engineering Index (LTPO, 1.5K/2K, AMOLED vs LCD, Refresh Rate, Peak Nits)
 4. Battery Endurance & Flash Charge Index (mAh capacity, Wattage tiers, Wireless)
 5. Build Quality & Durability Index (IP68/IP69, Victus 2/Ceramic Shield, Titanium)
 """
 
 import re
-from typing import Dict, Any, Tuple
+from typing import Dict, Any
 from app.models.phone import PhoneDetails
 
 # ─── 1. COMPREHENSIVE SOC BENCHMARK INDEX (0 to 100) ─────────────────────────
 SOC_BENCHMARK_MAP = {
-    # Flagship Extreme (1.8M - 3M+ AnTuTu)
+    # Flagship Extreme (2.0M - 3M+ AnTuTu / Geekbench 6)
     "snapdragon 8 elite": 100.0,
     "dimensity 9400": 98.0,
     "a18 pro": 98.0,
-    "a18": 94.0,
+    "a18": 95.0,
     "snapdragon 8 gen 3": 92.0,
     "dimensity 9300+": 92.0,
     "dimensity 9300": 90.0,
@@ -32,7 +32,7 @@ SOC_BENCHMARK_MAP = {
     "snapdragon 8 gen 2": 82.0,
     "a16 bionic": 82.0,
     "a15 bionic": 78.0,
-    "tensor g4": 76.0,
+    "tensor g4": 78.0,
     "dimensity 8200 ultimate": 76.0,
     "dimensity 8200": 75.0,
     "dimensity 8100": 73.0,
@@ -80,33 +80,39 @@ def evaluate_soc_score(raw_text: str) -> float:
             return score
             
     # Generic fallbacks
-    if "snapdragon 8" in t or "dimensity 9" in t: return 88.0
-    if "snapdragon 7" in t or "dimensity 8" in t: return 72.0
+    if "snapdragon 8" in t or "dimensity 9" in t or "a18" in t or "a17" in t: return 90.0
+    if "snapdragon 7" in t or "dimensity 8" in t or "a16" in t: return 75.0
     if "snapdragon 6" in t or "dimensity 7" in t: return 60.0
     if "snapdragon 4" in t or "dimensity 6" in t: return 48.0
     if "octa-core" in t or "octa core" in t: return 45.0
     return 35.0
 
 def evaluate_camera_score(raw_text: str, name: str) -> float:
-    """Calculates 0-100 camera optics and sensor score."""
+    """Calculates 0-100 camera optics, video capabilities, and sensor score."""
     t = (raw_text + " " + name).lower()
-    score = 40.0 # baseline
+    score = 42.0 # baseline
     
     # Dedicated Optical Image Stabilization (OIS)
-    if "ois" in t or "optical image stabilization" in t:
-        score += 18.0
+    if "ois" in t or "optical image stabilization" in t or "sensor-shift" in t:
+        score += 15.0
         
-    # Periscope / Telephoto Optical Zoom
-    if "periscope" in t or "telephoto" in t or "optical zoom" in t or "3x" in t or "5x" in t:
-        score += 22.0
+    # Periscope / Telephoto Optical Zoom / ZEISS APO
+    if "periscope" in t or "telephoto" in t or "apo" in t or "optical zoom" in t or "3.5x" in t or "5x" in t:
+        score += 20.0
         
-    # High-end sensor or optical co-engineering
-    if any(k in t for k in ["zeiss", "hasselblad", "leica", "sony lyt", "imx989", "imx890", "hp2", "isocell"]):
+    # High-end sensor & optical co-engineering
+    if any(k in t for k in ["zeiss", "hasselblad", "leica", "sony lyt", "imx989", "imx890", "hp2", "photonic"]):
         score += 12.0
         
-    # Video capabilities
-    if "4k@60fps" in t or "8k" in t or "4k 60" in t:
-        score += 8.0
+    # Creator Pro Video: 4K120, 10-bit Log, Dolby Vision
+    if any(k in t for k in ["4k@120fps", "4k 120", "120fps", "dolby vision", "log video", "pro video", "cinematic mode"]):
+        score += 12.0
+    elif "4k@60fps" in t or "8k" in t or "4k 60" in t:
+        score += 6.0
+        
+    # Front camera quality (for creators / social media / reels)
+    if any(k in t for k in ["center stage", "32 mp", "32mp", "50 mp front", "50mp front", "4k front", "autofocus selfie"]):
+        score += 6.0
         
     # Megapixel primary thresholds
     if "200 mp" in t or "200mp" in t: score += 6.0
@@ -117,14 +123,14 @@ def evaluate_camera_score(raw_text: str, name: str) -> float:
 def evaluate_display_score(raw_text: str) -> float:
     """Calculates 0-100 display engineering and panel quality score."""
     t = raw_text.lower()
-    score = 50.0 # baseline LCD
+    score = 50.0
     
     # Panel Type
-    if "amoled" in t or "oled" in t or "poled" in t:
+    if "amoled" in t or "oled" in t or "poled" in t or "super retina" in t:
         score += 20.0
         
     # LTPO dynamic refresh
-    if "ltpo" in t:
+    if "ltpo" in t or "promotion" in t:
         score += 12.0
         
     # Refresh Rate
@@ -148,7 +154,7 @@ def evaluate_battery_charge_score(raw_text: str) -> float:
     score = 50.0
     
     # Battery Capacity
-    if "8000 mah" in t or "7000 mah" in t or "7000mah" in t: score += 25.0
+    if "8000 mah" in t or "7300 mah" in t or "7000 mah" in t or "7000mah" in t: score += 25.0
     elif "6500 mah" in t or "6000 mah" in t or "6000mah" in t: score += 20.0
     elif "5500 mah" in t or "5500mah" in t: score += 15.0
     elif "5000 mah" in t or "5000mah" in t: score += 10.0
@@ -159,8 +165,8 @@ def evaluate_battery_charge_score(raw_text: str) -> float:
     elif any(k in t for k in ["45w", "33w"]): score += 10.0
     elif "25w" in t: score += 5.0
     
-    # Wireless Charging
-    if "wireless charging" in t or "magcharge" in t:
+    # Wireless Charging / MagSafe
+    if "wireless charging" in t or "magsafe" in t or "magcharge" in t:
         score += 8.0
         
     return min(100.0, score)
@@ -182,9 +188,6 @@ def evaluate_build_score(raw_text: str) -> float:
     return min(100.0, score)
 
 def extract_hardware_spec_vector(phone: PhoneDetails) -> Dict[str, float]:
-    """
-    Returns a normalized 0-100 score dictionary for all key hardware dimensions.
-    """
     raw_str = str(phone.raw_specs or "")
     name = str(phone.name or "")
     

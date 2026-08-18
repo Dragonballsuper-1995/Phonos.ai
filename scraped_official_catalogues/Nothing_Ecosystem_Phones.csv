@@ -1,0 +1,14 @@
+brand,parent_ecosystem,model_name,full_name,series,price_inr,price_raw,launch_status,sale_start_date,market,official_india_presence,brand_status,catalogue_url,product_url,specs_summary,scraped_at
+Nothing,Nothing Ecosystem,Phone (4a),Nothing Phone (4a),Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319220
+Nothing,Nothing Ecosystem,Phone (4a) Pro,Nothing Phone (4a) Pro,Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319335
+Nothing,Nothing Ecosystem,Phone (4b),Nothing Phone (4b),Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319435
+Nothing,Nothing Ecosystem,Phone (3),Nothing Phone (3),Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319497
+Nothing,Nothing Ecosystem,Phone (3a) Lite,Nothing Phone (3a) Lite,Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319599
+Nothing,Nothing Ecosystem,Phone (3a) Pro,Nothing Phone (3a) Pro,Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319652
+Nothing,Nothing Ecosystem,Phone (3a),Nothing Phone (3a),Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319721
+Nothing,Nothing Ecosystem,Phone (2),Nothing Phone (2),Nothing Phone Series,39999.0,"₹39,999",available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319825
+Nothing,Nothing Ecosystem,Phone (2a) Plus,Nothing Phone (2a) Plus,Nothing Phone Series,27999.0,"₹27,999",available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319837
+Nothing,Nothing Ecosystem,Phone (2a),Nothing Phone (2a),Nothing Phone Series,23999.0,"₹23,999",available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319845
+,,,,,,,,,,,,,,,
+CMF,Nothing Ecosystem,CMF Phone 2 Pro,CMF Phone 2 Pro,CMF by Nothing,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.696273
+CMF,Nothing Ecosystem,CMF Phone 1,CMF Phone 1,CMF by Nothing,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.696413

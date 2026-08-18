@@ -1,8 +1,7 @@
 /* ============================================================
    Phonos.ai — TypeScript Type Definitions
+   Aligned with FastAPI backend models & DESIGN.md
    ============================================================ */
-
-// ---- Phone & Specs ----
 
 export interface PhoneSpecs {
   display: string;
@@ -25,180 +24,68 @@ export interface PhoneSpecs {
   biometrics: string;
 }
 
-export interface Phone {
-  id: string;
+export interface PhoneDetails {
+  id?: number;
   slug: string;
   brand: string;
   model: string;
   fullName: string;
   price: number;
-  imageUrl?: string;
+  imageUrl?: string | null;
   specs: PhoneSpecs;
-  releaseDate?: string;
-  priceTier: PriceTier;
+  releaseDate?: string | null;
+  priceTier: string;
   highlights: string[];
-  buyLinks?: BuyLink[];
+  name?: string;
+  price_numeric?: number;
+  released_in_india?: number;
+  launch_year?: number;
+  raw_specs?: Record<string, any>;
 }
 
-export interface BuyLink {
-  store: string;
-  url: string;
-  price: number;
-}
+// Alias for convenience
+export type Phone = PhoneDetails;
 
-// ---- Recommendations ----
-
-export interface Recommendation {
-  phone: Phone;
-  matchScore: number; // 0-100
-  explanation: string;
-  strengths: string[];
-  weaknesses: string[];
-  categoryScores: CategoryScore[];
-}
-
-export interface CategoryScore {
-  category: string;
+export interface RecommendedPhone {
+  phone: PhoneDetails;
   score: number; // 0-100
-  label: string;
+  match_reasons: string[];
+  trade_offs: string[];
+  ai_verified: boolean;
+  verify_reason?: string | null;
+  ai_explanation?: string | null;
 }
 
 export interface RecommendationResponse {
-  recommendations: Recommendation[];
-  totalPhonesAnalyzed: number;
-  queryParams: QueryParams;
+  recommendations: RecommendedPhone[];
+  persona_detected?: string | null;
+  budget_used: number;
 }
 
-// ---- Query Parameters ----
+// ---- Query Requests ----
 
-export interface EasyModeParams {
-  persona: PersonaType;
-  budgetMin: number;
-  budgetMax: number;
-  brandPreferences: string[];
-  features: string[];
+export interface EasyRecommendRequest {
+  persona: string;
+  budget: number;
 }
 
-export interface MediumModeParams {
-  priorities: PriorityRanking[];
-  budgetMin: number;
-  budgetMax: number;
-  osPreference: OSPreference;
-  brandPreferences: string[];
+export interface MediumRecommendRequest {
+  budget: number;
+  priorities: Record<string, number>;
+  preferences?: string[];
+  preferred_brands?: string[];
+  avoid_brands?: string[];
 }
 
-export interface PriorityRanking {
-  feature: FeatureType;
-  rank: number; // 1 = highest priority
+export interface DeepRecommendRequest {
+  query: string;
+  budget?: number;
 }
 
-export type QueryParams = EasyModeParams | MediumModeParams;
-
-// ---- Enums & Union Types ----
-
-export type PersonaType =
-  | 'student'
-  | 'professional'
-  | 'gamer'
-  | 'content-creator'
-  | 'senior'
-  | 'photography'
-  | 'general';
-
-export type PriceTier = 'budget' | 'mid-range' | 'premium' | 'flagship';
-
-export type OSPreference = 'android' | 'ios' | 'any';
-
-export type FeatureType =
-  | 'camera'
-  | 'performance'
-  | 'battery'
-  | 'display'
-  | 'storage'
-  | 'build'
-  | 'value';
-
-export type QuickFeature =
-  | '5g'
-  | 'big-battery'
-  | 'fast-charging'
-  | 'expandable-storage'
-  | 'waterproof'
-  | 'wireless-charging';
-
-// ---- UI Types ----
+// ---- Persona UI Types ----
 
 export interface Persona {
-  id: PersonaType;
-  name: string;
-  icon: string;
-  description: string;
-  color: string;
-}
-
-export interface Feature {
-  id: FeatureType;
-  name: string;
-  icon: string;
-  description: string;
-}
-
-export interface QuickFeatureOption {
-  id: QuickFeature;
-  name: string;
-  icon: string;
-}
-
-export interface Brand {
   id: string;
   name: string;
-  logo?: string;
-}
-
-export interface PriceTierOption {
-  id: string;
-  label: string;
-  min: number;
-  max: number;
-}
-
-// ---- Comparison ----
-
-export interface CompareResult {
-  phones: Phone[];
-  specComparison: SpecComparisonRow[];
-  winners: Record<string, string>; // category → phone id
-}
-
-export interface SpecComparisonRow {
-  label: string;
-  category: string;
-  values: Record<string, string>; // phone id → value
-  winnerId?: string;
-}
-
-// ---- API Response Wrappers ----
-
-export interface ApiResponse<T> {
-  data: T;
-  success: boolean;
-  message?: string;
-}
-
-export interface PaginatedResponse<T> {
-  data: T[];
-  total: number;
-  page: number;
-  pageSize: number;
-  totalPages: number;
-}
-
-// ---- Theme ----
-
-export type Theme = 'dark' | 'light';
-
-export interface ThemeContextType {
-  theme: Theme;
-  toggleTheme: () => void;
-  setTheme: (theme: Theme) => void;
+  description: string;
 }

@@ -2,17 +2,30 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 import time
+import asyncio
 
 from app.core.config import settings
 from app.core.posthog import init_posthog, shutdown_posthog, posthog
 from app.routers import health, phones, recommend, compare
 from app.db.database import get_db_pool, close_db_pool
+from app.services.recommender import get_ranker_model
+from app.services.retrieval import get_chroma_collection
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
     init_posthog()
     await get_db_pool()
+    
+    # Pre-warm ML models in background thread so initial request is instant
+    loop = asyncio.get_event_loop()
+    try:
+        await loop.run_in_executor(None, get_ranker_model)
+        await loop.run_in_executor(None, get_chroma_collection)
+        print("[Startup] Machine learning ranker and vector collection pre-warmed.")
+    except Exception as e:
+        print(f"[Startup] Pre-warm note: {e}")
+        
     yield
     # Shutdown
     await close_db_pool()

@@ -1,0 +1,181 @@
+.container {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-xl) var(--page-gutter);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.stepHeader {
+  margin-bottom: var(--space-xl);
+}
+
+.stepIndicator {
+  display: inline-block;
+  margin-bottom: var(--space-xs);
+}
+
+.stepTitle {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 6.5vw, 76px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  margin-bottom: var(--space-sm);
+}
+
+.stepSubtitle {
+  font-size: 15px;
+  color: var(--color-body);
+  max-width: 600px;
+}
+
+/* Persona List */
+.personaList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.personaRow {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-hairline);
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  transition: border-color var(--transition-fast);
+}
+
+.personaRow:hover {
+  border-bottom-color: var(--color-vermilion);
+}
+
+.personaIndex {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.personaContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.personaName {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  transition: color var(--transition-fast);
+}
+
+.personaRow:hover .personaName {
+  color: var(--color-vermilion);
+}
+
+.personaDesc {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.personaAction {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all var(--transition-fast);
+}
+
+.personaRow:hover .personaAction {
+  opacity: 1;
+  transform: translateX(0);
+  color: var(--color-vermilion);
+}
+
+/* Step 2 Budget View */
+.budgetCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.selectedSummary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-hairline);
+  padding-bottom: var(--space-base);
+}
+
+.selectedTag {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.selectedPersonaName {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+.backBtn {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  transition: color var(--transition-fast);
+}
+
+.backBtn:hover {
+  color: var(--color-ink);
+}
+
+.actionRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-base);
+  padding-top: var(--space-base);
+}
+
+@media (max-width: 640px) {
+  .personaRow {
+    grid-template-columns: 32px 1fr;
+  }
+  .personaAction {
+    display: none;
+  }
+  .actionRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

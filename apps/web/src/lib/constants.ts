@@ -2,207 +2,92 @@
    Phonos.ai — Constants
    ============================================================ */
 
-import type {
-  Persona,
-  Feature,
-  QuickFeatureOption,
-  Brand,
-  PriceTierOption,
-} from './types';
+import type { Persona } from './types';
 
-// ---- API ----
-
+// ---- API Base URL ----
 export const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_URL
     ? `${process.env.NEXT_PUBLIC_API_URL}/api/v1`
     : 'http://localhost:8000/api/v1';
 
-// ---- Personas ----
-
+// ---- Personas (Easy Mode) ----
 export const PERSONAS: Persona[] = [
   {
     id: 'student',
     name: 'Student',
-    icon: '🎓',
-    description: 'Best value for college life — notes, socials, and everything in between',
-    color: '#6366F1',
+    description: 'High value, reliable battery, and social-first cameras on a realistic budget.',
   },
   {
     id: 'professional',
     name: 'Professional',
-    icon: '💼',
-    description: 'Productivity powerhouse for emails, calls, and multitasking',
-    color: '#8B5CF6',
+    description: 'Sleek design, flawless multi-tasking, fast charging, and dependable security.',
   },
   {
     id: 'gamer',
     name: 'Gamer',
-    icon: '🎮',
-    description: 'High-performance gaming with smooth framerates and cooling',
-    color: '#EC4899',
+    description: 'Maximum raw chipset compute, thermal stability, and high refresh displays.',
   },
   {
     id: 'content-creator',
     name: 'Content Creator',
-    icon: '🎬',
-    description: 'Create stunning content with top cameras and editing power',
-    color: '#06B6D4',
-  },
-  {
-    id: 'senior',
-    name: 'Senior',
-    icon: '👴',
-    description: 'Easy-to-use, big display, loud speakers, long battery life',
-    color: '#10B981',
+    description: '4K stabilized video, high-resolution sensors, and generous onboard storage.',
   },
   {
     id: 'photography',
     name: 'Photography',
-    icon: '📸',
-    description: 'DSLR-level photos with flagship camera systems',
-    color: '#F59E0B',
+    description: 'Flagship optics, natural color science, dynamic range, and low-light prowess.',
   },
   {
     id: 'general',
     name: 'General Use',
-    icon: '📱',
-    description: 'A well-rounded phone for everyday needs',
-    color: '#A78BFA',
+    description: 'Clean software, all-day stamina, and dependable durability for everyday life.',
+  },
+  {
+    id: 'senior',
+    name: 'Senior',
+    description: 'Crisp display legibility, loud dual speakers, intuitive UI, and long battery life.',
   },
 ];
 
-// ---- Features (for priority ranking) ----
+// ---- Medium Mode Aspects ----
+export const HEURISTIC_ASPECTS = [
+  { key: 'performance', label: 'Performance', description: 'CPU speed, gaming, daily responsiveness' },
+  { key: 'camera', label: 'Camera', description: 'Photo quality, sensor size, video clarity' },
+  { key: 'battery', label: 'Battery', description: 'Endurance, screen-on time, fast charge rate' },
+  { key: 'display', label: 'Display', description: 'OLED/AMOLED, brightness, 120Hz refresh' },
+  { key: 'value', label: 'Value', description: 'Price-to-specification ratio in Indian rupees' },
+] as const;
 
-export const FEATURES: Feature[] = [
-  {
-    id: 'camera',
-    name: 'Camera',
-    icon: '📷',
-    description: 'Photo and video quality',
-  },
-  {
-    id: 'performance',
-    name: 'Performance',
-    icon: '⚡',
-    description: 'Speed, multitasking, gaming',
-  },
-  {
-    id: 'battery',
-    name: 'Battery',
-    icon: '🔋',
-    description: 'Battery life and charging speed',
-  },
-  {
-    id: 'display',
-    name: 'Display',
-    icon: '🖥️',
-    description: 'Screen quality, size, and refresh rate',
-  },
-  {
-    id: 'storage',
-    name: 'Storage',
-    icon: '💾',
-    description: 'RAM and internal storage capacity',
-  },
-  {
-    id: 'build',
-    name: 'Build Quality',
-    icon: '🛡️',
-    description: 'Materials, water resistance, durability',
-  },
-  {
-    id: 'value',
-    name: 'Value for Money',
-    icon: '💰',
-    description: 'Best specs at the lowest price',
-  },
-];
-
-// ---- Quick Features (Easy Mode chips) ----
-
-export const QUICK_FEATURES: QuickFeatureOption[] = [
-  { id: '5g', name: '5G Connectivity', icon: '📡' },
-  { id: 'big-battery', name: 'Big Battery (5000mAh+)', icon: '🔋' },
-  { id: 'fast-charging', name: 'Fast Charging (65W+)', icon: '⚡' },
-  { id: 'expandable-storage', name: 'Expandable Storage', icon: '💾' },
-  { id: 'waterproof', name: 'Water Resistant', icon: '💧' },
-  { id: 'wireless-charging', name: 'Wireless Charging', icon: '🔌' },
-];
-
-// ---- Brands (Indian market) ----
-
-export const BRANDS: Brand[] = [
-  { id: 'samsung', name: 'Samsung' },
-  { id: 'apple', name: 'Apple' },
-  { id: 'oneplus', name: 'OnePlus' },
-  { id: 'xiaomi', name: 'Xiaomi' },
-  { id: 'realme', name: 'Realme' },
-  { id: 'vivo', name: 'Vivo' },
-  { id: 'oppo', name: 'OPPO' },
-  { id: 'motorola', name: 'Motorola' },
-  { id: 'nothing', name: 'Nothing' },
-  { id: 'google', name: 'Google' },
-  { id: 'iqoo', name: 'iQOO' },
-  { id: 'poco', name: 'POCO' },
-  { id: 'nokia', name: 'Nokia' },
-  { id: 'asus', name: 'ASUS' },
-  { id: 'sony', name: 'Sony' },
-  { id: 'tecno', name: 'Tecno' },
-];
-
-// ---- Price Tiers ----
-
-export const PRICE_TIERS: PriceTierOption[] = [
-  { id: 'budget', label: 'Under ₹15K', min: 5000, max: 15000 },
-  { id: 'mid-range', label: '₹15K – ₹25K', min: 15000, max: 25000 },
-  { id: 'premium', label: '₹25K – ₹40K', min: 25000, max: 40000 },
-  { id: 'upper-premium', label: '₹40K – ₹60K', min: 40000, max: 60000 },
-  { id: 'flagship', label: '₹60K+', min: 60000, max: 150000 },
-];
-
-// ---- Budget Limits ----
-
+// ---- Budget Configuration ----
 export const BUDGET_MIN = 5000;
 export const BUDGET_MAX = 150000;
 export const BUDGET_STEP = 1000;
+export const BUDGET_DEFAULT = 35000;
 
-// ---- Navigation ----
-
-export const NAV_LINKS = [
-  { label: 'Home', href: '/' },
-  { label: 'Easy', href: '/easy' },
-  { label: 'Medium', href: '/medium' },
-  { label: 'Deep', href: '/deep' },
-] as const;
-
-// ---- Mode Descriptions ----
-
+// ---- Modes ----
 export const MODES = [
   {
     id: 'easy',
-    title: 'Easy Mode',
-    subtitle: '60 seconds',
-    description: 'Answer 4 quick questions and we\'ll find your perfect phone. Great for people who know what they want.',
-    icon: '🚀',
+    name: 'Easy',
+    tagline: 'Persona & Budget',
+    description: 'Select your lifestyle profile and allocation limit. The engine filters and ranks verified candidates in two quick steps.',
     href: '/easy',
-    gradient: 'linear-gradient(135deg, #6366F1, #8B5CF6)',
+    badge: '2 STEPS',
   },
   {
     id: 'medium',
-    title: 'Medium Mode',
-    subtitle: '2-3 minutes',
-    description: 'Rank your priorities and fine-tune your preferences. Best for people who want more control.',
-    icon: '🎯',
+    name: 'Medium',
+    tagline: 'Parameter Control',
+    description: 'Fine-tune precise heuristic weights for performance, camera, battery, display, and value to match exact demands.',
     href: '/medium',
-    gradient: 'linear-gradient(135deg, #8B5CF6, #EC4899)',
+    badge: 'EXACT WEIGHTS',
   },
   {
     id: 'deep',
-    title: 'Deep Mode',
-    subtitle: 'Coming Soon',
-    description: 'AI-powered chat that understands your lifestyle and recommends phones tailored just for you.',
-    icon: '🧠',
+    name: 'Deep',
+    tagline: 'Neural Search',
+    description: 'Describe requirements in natural language. Semantic vector embeddings extract latent constraints automatically.',
     href: '/deep',
-    gradient: 'linear-gradient(135deg, #EC4899, #F59E0B)',
+    badge: 'NATURAL LANGUAGE',
   },
 ] as const;
