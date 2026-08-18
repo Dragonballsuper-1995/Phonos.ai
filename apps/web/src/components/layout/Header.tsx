@@ -23,7 +23,7 @@ export function Header() {
       <header className={styles.header}>
         <div className={styles.logo}>
           <Link href="/" className="display-text" onClick={() => setIsMenuOpen(false)}>
-            FONE.AI
+            PHONOS.ai
           </Link>
         </div>
 

@@ -47,7 +47,7 @@ export function Loader() {
               letterSpacing: '-0.04em'
             }}
           >
-            FONE.AI
+            PHONOS.ai
           </motion.div>
           <motion.div
             initial={{ width: 0 }}

@@ -106,7 +106,7 @@ export default async function PhonePage({ params }: { params: { slug: string } }
 
         <div className={styles.sideCol}>
           <Card className={styles.section}>
-            <h2>Fone.ai Scores</h2>
+            <h2>Phonos.ai Scores</h2>
             <div className={styles.scoresList}>
               <ScoreBar label="Performance" score={phone.scores.performance} />
               <ScoreBar label="Camera" score={phone.scores.camera} />

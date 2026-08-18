@@ -17,3 +17,7 @@ class MediumRecommendRequest(BaseModel):
 
 class PhoneSearchRequest(BaseModel):
     query: str
+
+class DeepRecommendRequest(BaseModel):
+    query: str = Field(..., description="Free form text query from the user")
+    budget: float = Field(default=50000, description="Inferred or strict budget")

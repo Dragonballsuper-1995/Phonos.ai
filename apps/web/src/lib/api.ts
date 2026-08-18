@@ -53,6 +53,13 @@ export const api = {
     });
   },
 
+  recommendDeep: (data: { query: string, budget: number }) => {
+    return fetchApi<RecommendationResponse>('/recommend/deep', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  },
+
   comparePhones: (slugs: string[]) => {
     const queryString = slugs.map(slug => `slug=${encodeURIComponent(slug)}`).join('&');
     return fetchApi<Phone[]>(`/phones/compare?${queryString}`);

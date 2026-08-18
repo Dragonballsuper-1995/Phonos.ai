@@ -1,5 +1,5 @@
 /* ============================================================
-   Fone.ai — TypeScript Type Definitions
+   Phonos.ai — TypeScript Type Definitions
    ============================================================ */
 
 // ---- Phone & Specs ----

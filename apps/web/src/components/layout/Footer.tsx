@@ -22,7 +22,7 @@ export function Footer() {
             </div>
             <div className={styles.column}>
               <h4>Project</h4>
-              <a href="https://github.com/sujal/fone.ai" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://github.com/sujal/phonos.ai" target="_blank" rel="noopener noreferrer">GitHub</a>
               <Link href="/about">About</Link>
             </div>
           </div>

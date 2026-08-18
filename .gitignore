@@ -36,14 +36,27 @@ venv/
 ENV/
 env/
 
-# IDEs and Editors
+# IDEs, Editors & AI Assistants
 .vscode/
 .idea/
+.claude/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Testing & Coverage
+.pytest_cache/
+coverage/
+.coverage
+htmlcov/
+playwright-report/
+test-results/
+
+# Build & Vercel
+.vercel/
+*.tsbuildinfo
 
 # OS Files
 .DS_Store
@@ -88,3 +101,27 @@ postgres_data/
 
 # Local Transcripts & Conversation Logs
 Previous Conversations/
+Models(Nvidia)/
+research/
+Dataset Research/
+
+brands_to_be_deleted_completely.md
+SOTA_Master_Plan.md
+api.md
+models.md
+praw.md
+CONTEXT.md
+PROGRESS.md
+guide-1.md
+guide-2.md
+what_is_design.md
+
+# Screenshots & Capture Scripts
+screenshots/
+screenshot_capture.py
+capture_expanded_results.py
+
+evaluation_results.json
+apps/api/=3.0.0
+apps/api/data/chroma_db/
+*.sqbpro

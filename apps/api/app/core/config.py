@@ -17,10 +17,30 @@ class Settings(BaseSettings):
             return ["*"]
         return [origin.strip() for origin in self.CORS_ORIGINS.split(",") if origin.strip()]
 
-    # APIs (optional — not used in current production code)
+    # PostHog analytics
+    POSTHOG_API_KEY: Optional[str] = None
+    POSTHOG_HOST: str = "https://eu.i.posthog.com"
+
+    # AI APIs — Nvidia NIM → Gemini → Groq (priority order)
+    NVIDIA_API_KEY: Optional[str] = None
+    NVIDIA_MODEL: str = "meta/llama-3.3-70b-instruct"
     GEMINI_API_KEY: Optional[str] = None
     GROQ_API_KEY: Optional[str] = None
+    GROQ_MODEL: str = "openai/gpt-oss-120b"
 
-    model_config = SettingsConfigDict(env_file=".env", case_sensitive=True, extra="ignore")
+    # Live Data & Pricing APIs
+    MOBILEAPI_KEY: Optional[str] = None
+    TECHSPECS_API_ID: Optional[str] = None
+    TECHSPECS_API_KEY: Optional[str] = None
+    YOUTUBE_API_KEY: Optional[str] = None
+    APIFY_TOKEN: Optional[str] = None
+    PRICE_CACHE_TTL_HOURS: int = 24
+
+    _ENV_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.env"))
+    model_config = SettingsConfigDict(
+        env_file=_ENV_PATH if os.path.exists(_ENV_PATH) else ".env",
+        case_sensitive=True,
+        extra="ignore"
+    )
 
 settings = Settings()

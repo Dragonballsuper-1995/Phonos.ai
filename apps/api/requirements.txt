@@ -1,4 +1,5 @@
 fastapi[all]>=0.109.2
+posthog>=3.0.0
 uvicorn[standard]>=0.27.1
 pydantic>=2.6.1
 pydantic-settings>=2.1.0
@@ -9,3 +10,19 @@ pandas>=2.2.0
 httpx>=0.26.0
 pytest>=8.0.0
 pytest-asyncio>=0.23.5
+# AI providers
+openai>=1.30.0
+google-genai>=1.0.0
+groq>=0.9.0
+# ML Pipeline Phase 1
+chromadb>=0.4.24
+sentence-transformers>=2.5.1
+torch>=2.2.1
+xgboost>=2.0.3
+scikit-learn>=1.4.1.post1
+networkx>=3.2.1
+
+# Phase 2: Live Data & Scrapers
+google-api-python-client>=2.120.0
+google-search-results>=2.4.2
+playwright>=1.42.0

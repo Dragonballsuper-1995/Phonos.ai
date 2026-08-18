@@ -1,7 +1,7 @@
 import sqlite3
 import json
 
-conn = sqlite3.connect('C:/Users/sujal/Documents/Projects/fone.ai/apps/api/data/fone_master.db')
+conn = sqlite3.connect('C:/Users/sujal/Documents/Projects/Phonos.ai/apps/api/data/fone_master.db')
 cursor = conn.cursor()
 cursor.execute("SELECT brand, name, raw_specs FROM phones")
 
