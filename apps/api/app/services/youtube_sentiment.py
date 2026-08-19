@@ -1,44 +1,60 @@
+"""
+youtube_sentiment.py — SQLite-Backed Aspect Sentiment Store
+===========================================================
+Reads ABSA aspect scores directly from fone_master.db.
+In-process memory cache with lazy loading ensures 0ms latency during recommendation scoring.
+"""
 import os
-import re
-import pandas as pd
-from typing import Dict, Any, Optional
+import sqlite3
+from typing import Dict
 
-CSV_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data/absa_phone_summary.csv'))
+DB_PATH = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '../../data/fone_master.db')
+)
 
-# In-memory fast cache
-_absa_cache: Dict[str, Dict[str, float]] = {}
+_cache: Dict[str, Dict[str, float]] = {}
+_loaded: bool = False
 
-def load_cached_absa():
-    """Load existing sentiment scores from CSV."""
-    global _absa_cache
-    if not _absa_cache and os.path.exists(CSV_PATH):
-        try:
-            df = pd.read_csv(CSV_PATH)
-            for _, row in df.iterrows():
-                model = str(row.get("model", "")).strip().lower()
-                if model:
-                    _absa_cache[model] = {
-                        "camera": float(row.get("camera", 0.0)),
-                        "battery": float(row.get("battery", 0.0)),
-                        "performance": float(row.get("performance", 0.0)),
-                        "display": float(row.get("display", 0.0)),
-                    }
-        except Exception as e:
-            print(f"[YouTubeABSA] Error loading cached ABSA: {e}")
+NEUTRAL = {"camera": 0.0, "battery": 0.0, "performance": 0.0, "display": 0.0, "build": 0.0}
+
+def _load():
+    global _loaded, _cache
+    if _loaded:
+        return
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        rows = conn.execute(
+            "SELECT name, absa_camera, absa_battery, absa_performance, absa_display, absa_build "
+            "FROM phones "
+            "WHERE absa_camera IS NOT NULL OR absa_battery IS NOT NULL OR absa_performance IS NOT NULL"
+        ).fetchall()
+        conn.close()
+        for name, cam, bat, perf, disp, build in rows:
+            if name:
+                _cache[name.lower().strip()] = {
+                    "camera": float(cam or 0.0),
+                    "battery": float(bat or 0.0),
+                    "performance": float(perf or 0.0),
+                    "display": float(disp or 0.0),
+                    "build": float(build or 0.0),
+                }
+        print(f"[ABSA] Loaded {len(_cache)} phone sentiment profiles from database.")
+    except Exception as e:
+        print(f"[ABSA] DB load warning: {e}")
+    _loaded = True
 
 def fetch_live_sentiment(phone_name: str) -> Dict[str, float]:
     """
-    Fetches sentiment scores instantly from CSV cache without blocking on live API requests.
+    Fetches sentiment scores instantly from in-memory cache backed by fone_master.db.
     """
-    global _absa_cache
-    load_cached_absa()
+    _load()
+    if not phone_name:
+        return NEUTRAL
     key = phone_name.lower().strip()
-    if key in _absa_cache:
-        return _absa_cache[key]
-        
-    for cached_k, scores in _absa_cache.items():
-        if cached_k in key or key in cached_k:
-            return scores
-            
-    # Default neutral sentiment with 0ms latency
-    return {"camera": 0.0, "battery": 0.0, "performance": 0.0, "display": 0.0}
+    if key in _cache:
+        return _cache[key]
+    for k, v in _cache.items():
+        if k in key or key in k:
+            return v
+    return NEUTRAL
+

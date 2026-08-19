@@ -166,7 +166,12 @@ function ResultsContent() {
           </div>
         </div>
       ) : (
-        <ResultsAccordion initialRecommendations={recommendations} />
+        <ResultsAccordion
+          initialRecommendations={recommendations}
+          persona={persona || undefined}
+          budget={parseInt(budget, 10) || 35000}
+          mode={mode}
+        />
       )}
     </div>
   );

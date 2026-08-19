@@ -73,6 +73,23 @@ export const api = {
     );
   },
 
+  getSimilarPhones: (name: string, budget?: number, topK: number = 4) => {
+    const params = new URLSearchParams();
+    if (budget) params.append('budget', budget.toString());
+    params.append('top_k', topK.toString());
+    return fetchApi<{
+      source: string;
+      similar_phones: Array<{
+        id: number;
+        name: string;
+        brand: string;
+        price: number;
+        similarity_score: number;
+        specs?: Record<string, any>;
+      }>;
+    }>(`/phones/${encodeURIComponent(name)}/similar?${params.toString()}`);
+  },
+
   getBrands: () => {
     return fetchApi<string[]>('/brands');
   },

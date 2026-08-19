@@ -8,10 +8,16 @@ import styles from './ResultsAccordion.module.css';
 
 interface ResultsAccordionProps {
   initialRecommendations: RecommendedPhone[];
+  persona?: string;
+  budget?: number;
+  mode?: string;
 }
 
 export default function ResultsAccordion({
   initialRecommendations,
+  persona,
+  budget,
+  mode,
 }: ResultsAccordionProps) {
   const posthog = usePostHog();
   const [recommendations, setRecommendations] = useState<RecommendedPhone[]>(
@@ -26,10 +32,14 @@ export default function ResultsAccordion({
 
     if (nextIndex !== null && posthog) {
       posthog.capture('phone_expanded', {
+        phone_name: phone.phone.fullName || phone.phone.name || phone.phone.model,
         phone_model: phone.phone.model,
         brand: phone.phone.brand,
         price: phone.phone.price,
         ai_rank: index + 1,
+        persona,
+        budget,
+        mode,
       });
     }
   };
@@ -77,6 +87,9 @@ export default function ResultsAccordion({
             isExpanded={expandedIndex === index}
             onToggle={() => handleToggle(index, item)}
             onReject={handleReject}
+            persona={persona}
+            budget={budget}
+            mode={mode}
           />
         ))}
       </div>

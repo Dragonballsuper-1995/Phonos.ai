@@ -36,22 +36,24 @@ def filter_by_knowledge_graph(phone_candidates: list) -> list:
     for phone in phone_candidates:
         model = phone.model or ""
         specs = str(phone.raw_specs) if phone.raw_specs else ""
+        full_name = f"{phone.brand} {phone.name} {phone.model} {phone.fullName}".lower()
         
         # Check model name for exact hardware defects
         has_critical_issue = False
         for node in G.nodes:
-            if node.lower() in model.lower() and G.out_degree(node) > 0:
+            n_lower = node.lower()
+            if (n_lower in full_name or (model and model.lower() in n_lower)) and G.out_degree(node) > 0:
                 for target in G.successors(node):
-                    print(f"[KnowledgeGraph] BLOCKED: {model} has critical issue: {target}")
+                    print(f"[KnowledgeGraph] BLOCKED: {full_name} has critical issue: {target}")
                     has_critical_issue = True
                     break
             
             # Check processor for thermal issues
-            if specs and node.lower() in specs.lower() and G.out_degree(node) > 0:
+            if specs and n_lower in specs.lower() and G.out_degree(node) > 0:
                 for target in G.successors(node):
                     weight = G[node][target]['weight']
                     if weight > 0.8: # high severity
-                        print(f"[KnowledgeGraph] BLOCKED: {model} uses {node} which causes {target}")
+                        print(f"[KnowledgeGraph] BLOCKED: {full_name} uses {node} which causes {target}")
                         has_critical_issue = True
                         break
                         

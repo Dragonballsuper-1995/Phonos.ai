@@ -13,6 +13,9 @@ interface PhoneRowProps {
   isExpanded: boolean;
   onToggle: () => void;
   onReject: (phoneId: string | number) => void;
+  persona?: string;
+  budget?: number;
+  mode?: string;
 }
 
 export default function PhoneRow({
@@ -21,6 +24,9 @@ export default function PhoneRow({
   isExpanded,
   onToggle,
   onReject,
+  persona,
+  budget,
+  mode,
 }: PhoneRowProps) {
   const posthog = usePostHog();
   const phone = item.phone;
@@ -41,10 +47,14 @@ export default function PhoneRow({
     e.stopPropagation();
     if (posthog) {
       posthog.capture('buy_clicked', {
+        phone_name: phone.fullName || phone.name || phone.model,
         phone_model: phone.model,
         brand: phone.brand,
         price: phone.price,
         ai_rank: rank,
+        persona,
+        budget,
+        mode,
       });
     }
   };
@@ -53,9 +63,13 @@ export default function PhoneRow({
     e.stopPropagation();
     if (posthog) {
       posthog.capture('phone_rejected', {
+        phone_name: phone.fullName || phone.name || phone.model,
         phone_model: phone.model,
         brand: phone.brand,
         ai_rank: rank,
+        persona,
+        budget,
+        mode,
       });
     }
     onReject(phone.id || rank);

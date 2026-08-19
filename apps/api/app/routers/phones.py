@@ -49,3 +49,36 @@ async def get_phone(name: str):
             return PhoneDetails.model_validate(live_phone)
         raise HTTPException(status_code=404, detail="Phone not found")
     return phone
+
+from app.services.hardware_similarity import find_similar_phones
+from app.services.hardware_scorer import normalize_hardware_vector
+
+@router.get("/{name}/similar")
+async def get_similar_phones(
+    name: str,
+    budget: Optional[float] = Query(None, description="Max price filter in INR"),
+    top_k: int = Query(5, ge=1, le=20),
+):
+    """
+    Returns phones with the most similar hardware profile to the given phone.
+    Uses pre-computed L2-normalised hardware vectors and dot-product cosine similarity.
+    """
+    source_phone = await get_phone_by_slug(name)
+    if not source_phone:
+        live_phone = get_or_fetch_live_phone(name, auto_save=True)
+        if live_phone:
+            source_phone = PhoneDetails.model_validate(live_phone)
+        else:
+            raise HTTPException(status_code=404, detail=f"Phone '{name}' not found")
+
+    query_vec = normalize_hardware_vector(source_phone)
+    similar = find_similar_phones(
+        query_vector=query_vec,
+        top_k=top_k,
+        max_budget=budget,
+        exclude_ids=[source_phone.id] if source_phone.id else None,
+    )
+    return {
+        "source": source_phone.name or name,
+        "similar_phones": similar
+    }

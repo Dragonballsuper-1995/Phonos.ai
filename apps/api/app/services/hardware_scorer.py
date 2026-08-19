@@ -187,6 +187,10 @@ def evaluate_build_score(raw_text: str) -> float:
         
     return min(100.0, score)
 
+import numpy as np
+
+HW_VECTOR_DIM_ORDER = ["soc_score", "camera_score", "display_score", "battery_charge_score", "build_score"]
+
 def extract_hardware_spec_vector(phone: PhoneDetails) -> Dict[str, float]:
     raw_str = str(phone.raw_specs or "")
     name = str(phone.name or "")
@@ -198,3 +202,18 @@ def extract_hardware_spec_vector(phone: PhoneDetails) -> Dict[str, float]:
         "battery_charge_score": evaluate_battery_charge_score(raw_str),
         "build_score": evaluate_build_score(raw_str)
     }
+
+def normalize_hardware_vector(phone: PhoneDetails) -> np.ndarray:
+    """
+    Returns a L2-normalized float32 array of shape (5,):
+      [soc, camera, display, battery, build] all in [0.0, 1.0] before normalisation.
+
+    The vector is pre-normalized to unit length so dot product == cosine similarity.
+    """
+    scores = extract_hardware_spec_vector(phone)
+    raw = np.array(
+        [scores[dim] / 100.0 for dim in HW_VECTOR_DIM_ORDER],
+        dtype=np.float32,
+    )
+    norm = np.linalg.norm(raw)
+    return raw / norm if norm > 0 else raw

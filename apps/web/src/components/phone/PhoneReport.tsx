@@ -6,6 +6,7 @@ import { usePostHog } from 'posthog-js/react';
 import type { PhoneDetails } from '@/lib/types';
 import { cleanPhoneName, categorizeSpecs } from '@/lib/specHelpers';
 import VerifiedBadge from '@/components/ui/VerifiedBadge';
+import SimilarPhones from './SimilarPhones';
 import styles from './PhoneReport.module.css';
 
 interface PhoneReportProps {
@@ -181,6 +182,13 @@ export default function PhoneReport({ phone }: PhoneReportProps) {
           </p>
         </div>
       </section>
+
+      {/* Closest Hardware Alternatives (Cosine Spec-Clustering) */}
+      <SimilarPhones
+        phoneName={phone.name || phone.fullName || ''}
+        currentPhoneId={phone.id}
+        budget={phone.price}
+      />
 
       {/* Full Spec Matrix */}
       <section className={styles.specsSection} aria-label="Detailed Specifications">
