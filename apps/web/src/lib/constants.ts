@@ -5,10 +5,10 @@
 import type { Persona } from './types';
 
 // ---- API Base URL ----
-export const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL
-    ? `${process.env.NEXT_PUBLIC_API_URL}/api/v1`
-    : 'http://localhost:8000/api/v1';
+const cleanBaseUrl = (process.env.NEXT_PUBLIC_API_URL || '').trim().replace(/\/+$/, '');
+export const API_BASE_URL = cleanBaseUrl
+  ? (cleanBaseUrl.endsWith('/api/v1') ? cleanBaseUrl : `${cleanBaseUrl}/api/v1`)
+  : 'http://localhost:8000/api/v1';
 
 // ---- Personas (Easy Mode) ----
 export const PERSONAS: Persona[] = [
