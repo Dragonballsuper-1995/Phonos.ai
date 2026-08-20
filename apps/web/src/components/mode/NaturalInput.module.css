@@ -103,9 +103,9 @@
 }
 
 .chipBtn:hover {
-  border-color: var(--color-ink);
-  color: var(--color-ink);
-  background-color: var(--color-canvas);
+  border-color: var(--color-vermilion);
+  color: var(--color-vermilion);
+  background-color: rgba(232, 66, 10, 0.04);
 }
 
 .actionRow {

@@ -46,20 +46,21 @@
   grid-template-columns: 48px 1fr auto;
   align-items: center;
   gap: var(--space-md);
-  padding: var(--space-lg) 0;
+  padding: var(--space-lg) var(--space-md);
   border-bottom: 1px solid var(--color-hairline);
   background: none;
   border-top: none;
-  border-left: none;
+  border-left: 3px solid transparent;
   border-right: none;
   text-align: left;
   cursor: pointer;
   width: 100%;
-  transition: border-color var(--transition-fast);
+  transition: all var(--transition-fast);
 }
 
 .personaRow:hover {
-  border-bottom-color: var(--color-vermilion);
+  border-left-color: var(--color-vermilion);
+  background-color: rgba(232, 66, 10, 0.035);
 }
 
 .personaIndex {

@@ -6,19 +6,20 @@ export default function Hero() {
     <section className={styles.heroSection} aria-label="Introduction">
       <div className={styles.systemBadge}>
         <span className={styles.statusDot} />
-        <span className="label-caps">INDIA SMARTPHONE INTELLIGENCE ENGINE</span>
+        <span className="label-caps">INDIA SMARTPHONE INTELLIGENCE ENGINE &bull; DECODE YOUR COMPANION</span>
       </div>
 
       <h1 className={styles.headline}>
-        TELL US WHAT <br />
-        YOU NEED. <span className={styles.vermilionText}>WE DECIDE</span> <br />
-        WITH ZERO BIAS.
+        STOP GUESSING. <br />
+        <span className={styles.vermilionText}>START</span> <br />
+        KNOWING.
       </h1>
 
       <div className={styles.subGrid}>
         <p className={styles.subline}>
-          Phonos.ai searches India&apos;s real smartphone market, filters out hardware defects, ranks
-          candidates using 8-stage multi-factor intelligence, and explains exactly why the winners fit your life.
+          Decode your daily digital companion with zero sponsored bias. Phonos.ai runs
+          8-stage multi-factor verification across India&apos;s live smartphone catalogue &mdash;
+          no brand deals, pure engineering truth.
         </p>
 
         <div className={styles.ctaGroup}>
@@ -35,7 +36,7 @@ export default function Hero() {
           <span className={styles.metaLabel}>Waterfall Pipeline</span>
         </div>
         <div className={styles.metaItem}>
-          <span className={styles.metaValue}>1,200+</span>
+          <span className={styles.metaValue}>1,430+</span>
           <span className={styles.metaLabel}>Phones Verified</span>
         </div>
         <div className={styles.metaItem}>
