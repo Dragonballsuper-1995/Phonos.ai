@@ -123,7 +123,8 @@ FRONTEND_IMPLEMENTATION_PLAN.md
 ML_ENGINE_SUGGESTIONS_ANALYSIS.md
 
 # Screenshots & Capture Scripts
-screenshots/
+screenshots/*
+!screenshots/system_architecture.png
 screenshot_capture.py
 capture_expanded_results.py
 
