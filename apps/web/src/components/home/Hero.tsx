@@ -17,9 +17,8 @@ export default function Hero() {
 
       <div className={styles.subGrid}>
         <p className={styles.subline}>
-          Decode your daily digital companion with zero sponsored bias. Phonos.ai runs
-          8-stage multi-factor verification across India&apos;s live smartphone catalogue &mdash;
-          no brand deals, pure engineering truth.
+          Decode your daily digital companion with zero sponsored bias. Phonos.ai runs 8-stage AI verification
+          across India&apos;s live smartphone catalogue &mdash; no brand deals, pure engineering truth.
         </p>
 
         <div className={styles.ctaGroup}>

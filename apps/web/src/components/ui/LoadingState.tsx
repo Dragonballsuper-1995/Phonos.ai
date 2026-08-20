@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react';
 import styles from './LoadingState.module.css';
 
 const PHASES = [
-  '1. SHIELDING: PURGING DEFECTIVE HARDWARE CANDIDATES...',
-  '2. VECTORS: COMPUTING 5D SPEC EMBEDDINGS...',
-  '3. ABSA: MODULATING ASPECT SENTIMENT GATES...',
-  '4. DLRM: SCORING WITH XGBOOST RANKER...',
-  '5. SYNTHESIZING TOP SMARTPHONE VERDICTS...',
+  { step: '01/05', text: 'STAGE 1: PURGING DEFECTIVE HARDWARE VIA KNOWLEDGE GRAPH...' },
+  { step: '02/05', text: 'STAGE 2: COMPUTING 5D HARDWARE VECTOR EMBEDDINGS...' },
+  { step: '03/05', text: 'STAGE 3: MODULATING ASPECT SENTIMENT GATES (ABSA)...' },
+  { step: '04/05', text: 'STAGE 4: SCORING CANDIDATES WITH XGBOOST DLRM RANKER...' },
+  { step: '05/05', text: 'STAGE 5: CALIBRATING VERIFIED INDIAN MARKET VERDICTS...' },
 ];
 
 export default function LoadingState() {
@@ -21,18 +21,18 @@ export default function LoadingState() {
     return () => clearInterval(interval);
   }, []);
 
+  const current = PHASES[phaseIndex];
+
   return (
     <div className={styles.loadingWrapper} role="status" aria-live="polite">
-      <div className={styles.loadingCard}>
-        <div className={styles.pulseBadge}>
-          <span className={styles.pulseDot} />
-          <span className="label-caps">ANALYZING CANDIDATE MATRIX</span>
-        </div>
-        <div className={styles.barTrack}>
-          <div className={styles.barFill} />
-        </div>
-        <div className={styles.statusLabel}>{PHASES[phaseIndex]}</div>
+      <div className={styles.stageBadge}>
+        <span className={styles.stageDot} />
+        <span className="label-caps">{current.step} INTELLIGENCE PIPELINE</span>
       </div>
+      <div className={styles.barTrack}>
+        <div className={styles.barFill} />
+      </div>
+      <div className={styles.statusLabel}>{current.text}</div>
     </div>
   );
 }

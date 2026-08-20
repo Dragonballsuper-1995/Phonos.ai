@@ -76,8 +76,11 @@ function ResultsContent() {
       }
     } catch (err: any) {
       console.error('Failed to load recommendations:', err);
+      const isFetchFail = err?.message === 'Failed to fetch' || err?.name === 'TypeError';
       setError(
-        err.message || 'Unable to connect to Phonos.ai intelligence server. Please ensure the backend is active.'
+        isFetchFail
+          ? 'Unable to connect to Phonos.ai intelligence backend. Please verify network connectivity or that the API service is active.'
+          : err.message || 'Unable to connect to Phonos.ai intelligence server. Please ensure the backend is active.'
       );
     } finally {
       setLoading(false);

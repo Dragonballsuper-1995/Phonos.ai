@@ -8,51 +8,35 @@
   text-align: center;
 }
 
-.loadingCard {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-hairline);
-  padding: var(--space-xl) var(--space-xl);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 520px;
-  width: 100%;
-}
-
-.pulseBadge {
+.stageBadge {
   display: inline-flex;
   align-items: center;
   gap: var(--space-sm);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
+  color: var(--color-vermilion);
 }
 
-.pulseDot {
-  width: 8px;
-  height: 8px;
+.stageDot {
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background-color: var(--color-vermilion);
-  animation: pulseDotAnim 1.4s ease-in-out infinite alternate;
+  animation: pulse 1.4s ease-in-out infinite;
 }
 
-@keyframes pulseDotAnim {
-  0% {
-    opacity: 0.4;
-    transform: scale(0.85);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1.15);
-  }
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
 }
 
 .barTrack {
   width: 320px;
-  max-width: 100%;
+  max-width: 90vw;
   height: 3px;
   background-color: var(--color-hairline);
   position: relative;
   overflow: hidden;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
 }
 
 .barFill {
@@ -62,7 +46,7 @@
   height: 100%;
   width: 40%;
   background-color: var(--color-vermilion);
-  animation: barSlide 1.6s infinite ease-in-out;
+  animation: barSlide 1.8s infinite ease-in-out;
 }
 
 @keyframes barSlide {
@@ -72,7 +56,7 @@
   }
   50% {
     left: 40%;
-    width: 55%;
+    width: 60%;
   }
   100% {
     left: 100%;
@@ -82,10 +66,10 @@
 
 .statusLabel {
   font-family: var(--font-body);
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-ink);
-  min-height: 20px;
+  color: var(--color-muted);
+  min-height: 18px;
 }

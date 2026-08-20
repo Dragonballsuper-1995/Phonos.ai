@@ -270,10 +270,10 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 20px;
   height: 20px;
-  background: var(--color-vermilion);
   border-radius: 50%;
+  background: var(--color-vermilion);
   border: 2.5px solid var(--color-surface-elevated);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
   cursor: pointer;
   transition: transform var(--transition-fast), background-color var(--transition-fast);
 }
@@ -285,12 +285,12 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-moz-range-thumb {
   width: 20px;
   height: 20px;
-  background: var(--color-vermilion);
   border-radius: 50%;
+  background: var(--color-vermilion);
   border: 2.5px solid var(--color-surface-elevated);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
   cursor: pointer;
-  transition: transform var(--transition-fast), background-color var(--transition-fast);
+  transition: transform var(--transition-fast);
 }
 
 input[type="range"]::-moz-range-thumb:hover {
