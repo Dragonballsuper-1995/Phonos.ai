@@ -114,47 +114,10 @@ Phonos.ai implements a **2-Stage Deep Learning & Recommendation Model (DLRM)** c
 <br/>
 
 <div align="center">
-  <img src="screenshots/system_architecture.png" alt="Phonos.ai System Architecture Diagram" width="100%" />
+  <img src="screenshots/system_architecture.png" alt="Phonos.ai System Architecture Diagram" width="760" />
 </div>
 
 <br/>
-
-```
-                                  [ User Query & Intent Inputs ]
-                                (Persona / Budget / Priority Sliders)
-                                                  │
-                                                  ▼
-                             [ Stage 1: Candidate Retrieval & Shielding ]
-                     (Knowledge Graph Purging | India Catalogue | Budget Floor)
-                                                  │
-                         ┌────────────────────────┴────────────────────────┐
-                         ▼                                                 ▼
-        [ Semantic & Spec Embedding Branch ]             [ Aspect Sentiment Analysis Branch ]
-         (all-MiniLM-L6-v2 + 5D HW Vector)                (Pattern 2 Gated ABSA + Aspect DB)
-                         │                                                 │
-                         ▼                                                 ▼
-            [ 5D Hardware Spec Vectors ]                  [ Domain Utility Sentiment Gates ]
-            (L2-Normalized 1,430 BLOBs)                    (Domain * [1.0 + 0.10 * ABSA])
-                         │                                                 │
-                         └────────────────────────┬────────────────────────┘
-                                                  ▼
-                                [ Feature Aligner & Canonical Matrix ]
-                              (7-Feature XGBoost Schema Normalization)
-                                                  │
-                                                  ▼
-                             [ Stage 2: 2-Stage DLRM Ranking Engine ]
-                      (XGBoost ranker.xgb + 25-Pt Bonus Cap + Diversity Filter)
-                                                  │
-                         ┌────────────────────────┴────────────────────────┐
-                         ▼                                                 ▼
-          [ Top-5 Ranked Recommendations ]                  [ 5D Hardware Spec Clones ]
-          (Calibrated Match Scores 50-99%)              (Similar Spec Clones & Dual Compare)
-                         │                                                 │
-                         └────────────────────────┬────────────────────────┘
-                                                  ▼
-                            [ Presentation & Closed-Loop RLHF Feedback ]
-                         (Next.js Web UI <---> PostHog Telemetry & Retrainer)
-```
 
 ---
 
