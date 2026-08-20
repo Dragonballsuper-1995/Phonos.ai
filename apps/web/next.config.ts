@@ -55,6 +55,27 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  /* ---- Rewrites (PostHog First-Party Reverse Proxy) ---- */
+  async rewrites() {
+    return [
+      {
+        source: "/ingest/static/:path*",
+        destination: "https://eu-assets.i.posthog.com/static/:path*",
+      },
+      {
+        source: "/ingest/:path*",
+        destination: "https://eu.i.posthog.com/:path*",
+      },
+      {
+        source: "/ingest/decide",
+        destination: "https://eu.i.posthog.com/decide",
+      },
+    ];
+  },
+
+  // PostHog trailing slash support for proxied routes
+  skipTrailingSlashRedirect: true,
+
   /* ---- Redirects ---- */
   async redirects() {
     return [

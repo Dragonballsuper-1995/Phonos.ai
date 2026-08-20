@@ -44,7 +44,9 @@ export default function SimilarPhones({
           setSimilarPhones(res.similar_phones);
         }
       } catch (err) {
-        console.error('Failed to load similar phones:', err);
+        if (process.env.NODE_ENV === 'development') {
+          console.warn('Could not load similar phones:', err);
+        }
       } finally {
         if (isMounted) setLoading(false);
       }

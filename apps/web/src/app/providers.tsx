@@ -12,7 +12,8 @@ export function CSPostHogProvider({ children }: { children: React.ReactNode }) {
 
       if (key && key.trim() !== '' && key !== 'undefined') {
         posthog.init(key, {
-          api_host: host,
+          api_host: '/ingest',
+          ui_host: 'https://eu.posthog.com',
           person_profiles: 'identified_only',
           capture_pageview: false,
         });

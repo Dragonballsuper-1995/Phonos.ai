@@ -39,7 +39,9 @@ export default function CompareView() {
       const res = await api.comparePhones(idList);
       setPhones(res.phones || []);
     } catch (err) {
-      console.error('Comparison fetch error:', err);
+      if (process.env.NODE_ENV === 'development') {
+        console.warn('Comparison fetch notice:', err);
+      }
     } finally {
       setLoading(false);
     }
@@ -58,7 +60,9 @@ export default function CompareView() {
       const results = await api.searchPhones(searchQuery);
       setSearchResults(results);
     } catch (err) {
-      console.error('Search error:', err);
+      if (process.env.NODE_ENV === 'development') {
+        console.warn('Search notice:', err);
+      }
     } finally {
       setSearching(false);
     }

@@ -24,7 +24,9 @@ export default async function PhonePage({ params }: PageProps) {
   try {
     phone = await api.getPhone(decodedSlug);
   } catch (err) {
-    console.error(`Phone not found: ${decodedSlug}`, err);
+    if (process.env.NODE_ENV === 'development') {
+      console.warn(`Phone not found: ${decodedSlug}`);
+    }
     notFound();
   }
 
