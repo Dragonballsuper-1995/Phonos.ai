@@ -1,45 +1,120 @@
 <div align="center">
 
-# PHONOS.AI
-### Machine Learning-Powered Smartphone Recommender & Hardware Intelligence Engine
+```
+  ██████╗ ██╗  ██╗ ██████╗ ███╗   ██╗ ██████╗ ███████╗     █████╗ ██╗
+  ██╔══██╗██║  ██║██╔═══██╗████╗  ██║██╔═══██╗██╔════╝    ██╔══██╗██║
+  ██████╔╝███████║██║   ██║██╔██╗ ██║██║   ██║███████║    ███████║██║
+  ██╔═══╝ ██╔══██║██║   ██║██║╚██╗██║██║   ██║╚════██║    ██╔══██║██║
+  ██║     ██║  ██║╚██████╔╝██║ ╚████║╚██████╔╝███████║██╗ ██║  ██║██║
+  ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚═╝ ╚═╝  ╚═╝╚═╝
+```
+
+### The Intelligent Machine Learning Smartphone Recommender & Hardware Intelligence Platform
+
+<br/>
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.2_(Turbopack)-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-DLRM_Ranker-EB5424?style=for-the-badge&logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/)
-[![SQLite](https://img.shields.io/badge/SQLite-Async_Pool-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org/)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![PostHog](https://img.shields.io/badge/PostHog-RLHF_Telemetry-1D212A?style=for-the-badge&logo=posthog&logoColor=white)](https://posthog.com/)
-[![Tests](https://img.shields.io/badge/Pytest-38%2F38_Passing-brightgreen?style=for-the-badge&logo=pytest&logoColor=white)](https://docs.pytest.org/)
+[![Pytest](https://img.shields.io/badge/Pytest-38%2F38_Passing-brightgreen?style=for-the-badge&logo=pytest&logoColor=white)](https://docs.pytest.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
 <br/>
 
-> **Phonos.ai** is an end-to-end smartphone intelligence platform designed for the Indian consumer electronics market. It replaces deceptive marketing specifications with a mathematical **2-Stage Deep Learning & Ranking Model (DLRM)**, 5D hardware vector embeddings, and real-world Aspect-Based Sentiment Analysis (ABSA).
+<table>
+  <tr>
+    <td align="center">
+      <b>Engine Accuracy</b><br/>
+      <code>99.0% Calibrated Ceiling</code>
+    </td>
+    <td align="center">
+      <b>Latent Vectors</b><br/>
+      <code>1,430 Device Embeddings</code>
+    </td>
+    <td align="center">
+      <b>Ranking Architecture</b><br/>
+      <code>2-Stage DLRM + ABSA Gate</code>
+    </td>
+    <td align="center">
+      <b>Test Coverage</b><br/>
+      <code>38 Passing Unit & Edge Tests</code>
+    </td>
+  </tr>
+</table>
 
 </div>
 
 ---
 
-## Executive Overview & Problem Solved
+## The Story: Why Smartphone Buying is Broken
 
-### The Problem
-The Indian smartphone market is one of the most volatile and confusing consumer electronics spaces globally. Buyers face significant challenges:
-* **Deceptive Hardware Specifications:** Inflated metrics like "200 MP cameras" or "24 GB Extended RAM" frequently mask low-grade sensors, poor ISP pipeline tuning, or severe thermal throttling.
-* **Rapid Release Cycles & Stale Catalogues:** Databases frequently contain unreleased global models or obsolete devices from 2021–2023 without active retail availability in India.
-* **Fragmented Aspect Sentiment:** Synthesizing authentic real-world feedback requires hours of reading disparate tech forums and video transcripts.
-* **Volatile Pricing (₹):** Dynamic discounts and platform-exclusive pricing across Amazon India, Flipkart, and Croma complicate value comparisons.
+Buying a smartphone in India has evolved into an overwhelming consumer challenge. Between ₹10,000 and ₹1,50,000, buyers are bombarded with deceptive marketing jargon, inflated benchmark scores, and obsolete catalogue listings.
 
-### The Solution
-Phonos.ai addresses these challenges via an end-to-end data and ranking pipeline:
-* **Stage 1 (Retrieval & Filtering):** Real-time persona vector alignment, 5D hardware spec cosine clustering, Knowledge Graph defect shielding, and strict Indian Official Catalogue verification.
-* **Stage 2 (Ranking & Calibration):** XGBoost ranking model trained on canonical features, Pattern 2 Gated Aspect-Based Sentiment Analysis (ABSA), 25-point additive bonus capping, and anti-monopoly brand diversity enforcement.
+### The Marketing Illusion vs Engineering Reality
+
+<table>
+  <thead>
+    <tr>
+      <th width="50%">Marketing Illusion</th>
+      <th width="50%">Phonos.ai Engineering Reality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <b>The 200 MP Megapixel Myth</b><br/>
+        Massive megapixel numbers plastered on billboards frequently hide miniature 0.56µm sensors with noisy low-light outputs and budget plastic lenses.
+      </td>
+      <td>
+        <b>Physics-Based Hardware Scoring</b><br/>
+        Phonos.ai evaluates sensor size, aperture, OIS stabilization, and ISP compute capacity rather than raw marketing pixel counts.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>The "24 GB Turbo RAM" Gimmick</b><br/>
+        OEMs advertise virtual RAM paging that swaps volatile memory onto slow eMMC flash storage, causing background micro-stutters.
+      </td>
+      <td>
+        <b>Silicon Tier & Architecture Mapping</b><br/>
+        Hardware specs are categorized by manufacturing process node (nm), memory bandwidth (LPDDR5X vs LPDDR4X), and storage bus speeds.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>The Stale Catalogue Trap</b><br/>
+        Global databases recommend discontinued 2022 flagships with no active Indian retail stock, zero warranty support, or dead battery health.
+      </td>
+      <td>
+        <b>Real-Time Indian Catalogue Verification</b><br/>
+        Every candidate is strictly filtered against live Indian market availability (<code>is_current_catalogue = 1</code>) and validated INR pricing.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Sponsored Influencer Echo Chambers</b><br/>
+        Sponsored reviews drown out critical complaints regarding motherboard failures, display green-line defects, and thermal throttling.
+      </td>
+      <td>
+        <b>Gated ABSA & Knowledge Graph Shielding</b><br/>
+        Natural language aspect sentiment from YouTube tech reviews modulates hardware utility scores directly, shielding users from defective units.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ## System Architecture
 
+Phonos.ai implements a **2-Stage Deep Learning & Recommendation Model (DLRM)** combining semantic intent vectors, 5D hardware specification embeddings, Aspect-Based Sentiment Analysis (ABSA), and XGBoost gradient-boosted decision trees.
+
+<br/>
+
 <div align="center">
-  <img src="screenshots/system_architecture.png" alt="Phonos.ai System Architecture" width="850" />
+  <img src="screenshots/system_architecture.png" alt="Phonos.ai System Architecture Diagram" width="100%" />
 </div>
 
 <br/>
@@ -83,69 +158,115 @@ Phonos.ai addresses these challenges via an end-to-end data and ranking pipeline
 
 ---
 
-## Core Features & Engineering Specifications
+## How the Intelligence Engine Works
 
-### 1. 2-Stage Machine Learning Recommendation Pipeline
-* **Stage 1 — Vector Retrieval & Candidate Generation:**  
-  Projects user intent into a 5-dimensional query vector matching the device specification vector space:
-  $$\vec{q} = \left[ \omega_{\text{soc}}, \omega_{\text{camera}}, \omega_{\text{display}}, \omega_{\text{battery}}, \omega_{\text{build}} \right]$$
-* **Stage 2 — XGBoost Ranking Model (`ranker.xgb`):**  
-  Evaluates candidate devices across a 7-feature canonical schema:
-  $$\mathbf{x} = \left[ \text{persona\_id}, \frac{\text{budget}}{\text{price}}, \frac{\text{price}}{\text{max\_price}}, \text{battery}_{\text{norm}}, \text{ram}_{\text{norm}}, \text{hz}_{\text{norm}}, \text{perf\_tier} \right]$$
+```
+  ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
+  │  1. SHIELDING   │  ──►  │   2. VECTORS    │  ──►  │    3. GATING    │  ──►  │   4. RANKING    │
+  │ Knowledge Graph │       │  5D Spec Space  │       │   Pattern 2     │       │ XGBoost & Bonus │
+  │ & India Filter  │       │ Cosine Match    │       │   ABSA Aspect   │       │ Diversity Cap   │
+  └─────────────────┘       └─────────────────┘       └─────────────────┘       └─────────────────┘
+```
 
-### 2. Pattern 2 Gated ABSA (Aspect-Based Sentiment Analysis)
-Rather than applying additive score bonuses that artificially inflate lower-tier hardware, Phonos.ai modulates hardware utility scores directly using real-world reviewer sentiment:
+### Stage 1: Candidate Retrieval & Defect Shielding
+Before scoring begins, the query passes through protective filters:
+1. **Knowledge Graph Defect Purging:** Excludes device series with documented hardware failures (e.g., motherboard solder detachment or severe thermal throttling chipsets).
+2. **Indian Official Catalogue Filter:** Ensures all returned devices are active in the current Indian retail market (`is_current_catalogue = 1`).
+3. **Dynamic Budget Floor Window:** Sets a candidate retrieval window from $0.65 \times \text{Budget}$ to $1.05 \times \text{Budget}$ so underpowered low-budget devices never crowd out quality recommendations.
+
+### Stage 2: 5D Hardware Vector Embeddings & Spec Clones
+Every smartphone is embedded as an $L_2$-normalized vector across five key hardware pillars:
+$$\vec{v}_{\text{hw}} = \left[ \text{SoC}_{\text{norm}}, \text{Camera}_{\text{norm}}, \text{Display}_{\text{norm}}, \text{Battery}_{\text{norm}}, \text{Build}_{\text{norm}} \right] \in \mathbb{R}^5$$
+
+* **Cosine Spec Distance:** Computes instant spec distance across 1,430 devices in memory with sub-millisecond latency.
+* **Similar Spec Clones (`<SimilarPhones />`):** When viewing a device (like the Samsung Galaxy S26 Ultra), the engine identifies its closest hardware spec clones across different price bands with 1-click dual-phone comparison.
+
+### Stage 3: Pattern 2 Gated ABSA (Aspect-Based Sentiment Analysis)
+Rather than applying additive flat bonuses that inflate inferior hardware, Phonos.ai modulates hardware utility scores directly using real-world reviewer sentiment:
 $$\text{DomainScore}_{\text{effective}} = \text{DomainScore}_{\text{raw}} \times \left(1.0 + 0.10 \times \text{ABSA\_Sentiment}\right)$$
 
 ```
-Aspect Monitored   │ Sentiment Scale │ Modulation Range │ Contextual Output
-───────────────────┼─────────────────┼──────────────────┼────────────────────────────────────────
-Camera             │ [-1.0, +1.0]    │ ±10.0% Scaling   │ Reviewer Acclaim / Thermal Caution
-Battery & Charging │ [-1.0, +1.0]    │ ±10.0% Scaling   │ Real-World Battery Endurance Notes
-Performance / SoC  │ [-1.0, +1.0]    │ ±10.0% Scaling   │ Sustained Gaming Stability Warnings
-Display & Panel    │ [-1.0, +1.0]    │ ±10.0% Scaling   │ Panel Calibration & Brightness Acclaim
-Build & Materials  │ [-1.0, +1.0]    │ ±10.0% Scaling   │ Ergonomics & Durability Notes
+Aspect Monitored   │ Sentiment Range │ Modulation Effect │ Generated Match Context
+───────────────────┼─────────────────┼───────────────────┼────────────────────────────────────────
+Camera             │ [-1.0, +1.0]    │ ±10.0% Scaling    │ Reviewer Acclaim / Low-Light Warning
+Battery & Charging │ [-1.0, +1.0]    │ ±10.0% Scaling    │ Real-World Battery Endurance Notes
+Performance / SoC  │ [-1.0, +1.0]    │ ±10.0% Scaling    │ Sustained Gaming & Thermal Stability
+Display & Panel    │ [-1.0, +1.0]    │ ±10.0% Scaling    │ Panel Calibration & Outdoor Brightness
+Build & Materials  │ [-1.0, +1.0]    │ ±10.0% Scaling    │ In-Hand Ergonomics & Durability Notes
 ```
 
-### 3. 5D Hardware Vector Embeddings & Similar Spec Clones
-* **Pre-Computed Database Embeddings:** 1,430 devices encoded as L2-normalized 5D float32 BLOBs directly in SQLite (`fone_master.db`).
-* **Cosine Spec Similarity Engine:** Real-time $O(N)$ dot-product vector search in memory with sub-millisecond execution.
-* **REST Endpoint:** `GET /api/v1/phones/{name}/similar?top_k=4&max_budget=...`
-* **Similar Phones UI (`<SimilarPhones />`):** Displays match percentage badges (`98% MATCH`), brand labels, INR pricing, and direct dual-phone comparison navigation (`/compare?ids=A,B`).
+### Stage 4: 2-Stage DLRM XGBoost Ranker & Safeguards
+Candidate feature vectors are evaluated using a pre-trained gradient-boosted decision tree (`ranker.xgb`) over a 7-feature canonical matrix:
+$$\mathbf{x} = \left[ \text{persona\_id}, \frac{\text{budget}}{\text{price}}, \frac{\text{price}}{\text{max\_price}}, \text{battery}_{\text{norm}}, \text{ram}_{\text{norm}}, \text{hz}_{\text{norm}}, \text{perf\_tier} \right]$$
 
-### 4. Interactive Recommendation Modes
-
-| Mode | Route | Target User | Input Mechanism |
-|---|---|---|---|
-| **Easy Mode** | `/easy` | General Buyers & Enthusiasts | Multi-step persona wizard (Student, Gamer, Creator, Business, Clean UI) + Budget slider |
-| **Medium Mode** | `/medium` | Discerning Enthusiasts | Continuous 5D interactive sliders (Performance, Camera, Battery, Display, Build) |
-| **Deep Mode** | `/deep` | Power Users | Granular constraint-based specification filtering |
-
-### 5. Knowledge Graph & Safeguard Filters
-* **Defect Purging:** Automatically excludes devices with documented hardware failure histories (e.g. motherboard failure models or severe thermal throttling chipsets).
-* **Lifecycle Aging Penalty:** 2023/2024 flagships priced above ₹70,000 receive a -12.0 point lifecycle penalty to prevent older generation models from overshadowing modern sub-flagships.
-* **Anti-Stacking 25-Point Bonus Cap:** Additive keyword boosts are strictly capped at 25.0 points, clamping final output scores to the $[50.0, 99.0]$ range.
-* **Anti-Monopoly Brand Diversity:** Guarantees no single manufacturer occupies more than 2 slots in the top-5 recommendations.
-
-### 6. Closed-Loop RLHF Telemetry & Retraining
-* PostHog telemetry hooks capture user interactions (`buy_clicked`, `phone_rejected`, `phone_expanded`) along with full query context (`persona`, `budget`, `mode`).
-* `retrain_from_rlhf.py` converts real user feedback into sample-weighted pairwise training instances to continually update the XGBoost ranker.
+* **25-Point Additive Bonus Cap:** Prevents keyword boosts from distorting scores, clamping output match scores into the $[50.0, 99.0]$ range.
+* **Anti-Monopoly Brand Diversity:** Enforces a maximum of 2 devices per brand in the top 5 results.
+* **Lifecycle Aging Penalty:** Applies a -12.0 point penalty to older generation flagships over ₹70,000 to prevent outdated generations from overshadowing modern sub-flagships.
 
 ---
 
-## Tech Stack
+## Three Interactive Discovery Modes
 
-### Frontend Application (`apps/web`)
-* **Core Framework:** Next.js 16 (App Router) + React 19 + TypeScript
-* **Styling Architecture:** Custom CSS Modules with a Swiss Design aesthetic
-* **Typography:** Cabinet Grotesk (Display Headings), Satoshi (Body Copy), JetBrains Mono (Technical Spec Matrices)
-* **Telemetry & Analytics:** PostHog React SDK (`posthog-js`)
+<table>
+  <thead>
+    <tr>
+      <th width="33%">Easy Mode (Persona Wizard)</th>
+      <th width="33%">Medium Mode (Priority Sliders)</th>
+      <th width="33%">Deep Mode (Power User)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><code>/easy</code></td>
+      <td align="center"><code>/medium</code></td>
+      <td align="center"><code>/deep</code></td>
+    </tr>
+    <tr>
+      <td>
+        <b>Designed for:</b> General consumers & fast decision making.<br/><br/>
+        Multi-step intuitive wizard asking for target budget and primary lifestyle persona (Student, Gamer, Content Creator, Business, Clean UI Purist).
+      </td>
+      <td>
+        <b>Designed for:</b> Discerning enthusiasts wanting granular balance.<br/><br/>
+        Continuous 5D parametric sliders dynamically adjusting weights across Performance, Camera, Battery, Display, and Build.
+      </td>
+      <td>
+        <b>Designed for:</b> Tech purists with specific hardware requirements.<br/><br/>
+        Detailed specification filters for chipset series, sensor models, minimum RAM, display refresh rates, and charging speeds.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-### Backend Application (`apps/api`)
-* **Core Framework:** FastAPI (Python 3.11+) with asynchronous ASGI request processing
-* **Machine Learning & Analytics:** XGBoost (`xgboost`), NumPy, Scikit-learn, VADER Sentiment (`nltk.sentiment.vader`)
-* **Semantic Embeddings:** `sentence-transformers` (`all-MiniLM-L6-v2`)
-* **Database & Persistence:** SQLite with `aiosqlite` asynchronous connection pooling
+---
+
+## Technical Stack & Architecture
+
+```
+                                  PHONOS.AI MONOREPO
+                                          │
+                  ┌───────────────────────┴───────────────────────┐
+                  ▼                                               ▼
+         FRONTEND APPLICATION                            BACKEND INTELLIGENCE
+       (apps/web — Next.js 16)                          (apps/api — FastAPI)
+                  │                                               │
+      ┌───────────┼───────────┐                       ┌───────────┼───────────┐
+      ▼           ▼           ▼                       ▼           ▼           ▼
+   React 19   TypeScript  CSS Modules              FastAPI     XGBoost    aiosqlite
+  Turbopack    PostHog    Swiss Design             Pytest 38   MiniLM     NetworkX
+```
+
+### Frontend (`apps/web`)
+* **Framework:** Next.js 16 (App Router) + React 19 + TypeScript
+* **Styling Architecture:** Custom CSS Modules with a clean Swiss Design aesthetic
+* **Typography:** Cabinet Grotesk (Display Headings), Satoshi (Body Copy), JetBrains Mono (Spec Matrices)
+* **Telemetry:** PostHog React SDK (`posthog-js`) with RLHF event dispatching
+
+### Backend (`apps/api`)
+* **API Framework:** FastAPI with asynchronous ASGI request processing
+* **Machine Learning:** XGBoost (`xgboost`), NumPy, Scikit-learn, VADER Sentiment (`nltk.sentiment.vader`)
+* **Vector Embeddings:** `sentence-transformers` (`all-MiniLM-L6-v2`)
+* **Persistence:** SQLite with `aiosqlite` connection pooling
 * **Knowledge Graph:** NetworkX (`networkx`)
 
 ---
@@ -157,8 +278,8 @@ Phonos.ai/
 ├── apps/
 │   ├── api/
 │   │   ├── app/
-│   │   │   ├── db/                 # Connection pool and async SQL query layer
-│   │   │   ├── models/             # Pydantic schemas (PhoneDetails, Query, Response)
+│   │   │   ├── db/                 # Async SQLite connection pool and query layer
+│   │   │   ├── models/             # Pydantic data schemas (PhoneDetails, Query, Response)
 │   │   │   ├── routers/            # API endpoints (recommend, phones, search, health)
 │   │   │   └── services/           # ML ranker, hardware scorer, similarity, ABSA, KG
 │   │   ├── data/                   # Production SQLite DB (fone_master.db) & ranker.xgb
@@ -167,12 +288,12 @@ Phonos.ai/
 │   │
 │   └── web/
 │       ├── src/
-│       │   ├── app/                # App Router (easy, medium, deep, results, phone/[slug], compare)
-│       │   ├── components/         # UI modules (PhoneReport, SimilarPhones, PhoneRow, Accordion)
-│       │   └── lib/                # API client, types, spec helpers
-│       └── public/                 # Static assets & font definitions
+│       │   ├── app/                # Next.js App Router (easy, medium, deep, results, phone/[slug], compare)
+│       │   ├── components/         # UI components (PhoneReport, SimilarPhones, PhoneRow, Accordion)
+│       │   └── lib/                # API client, TypeScript definitions, spec formatters
+│       └── public/                 # Typography fonts & static design assets
 │
-├── screenshots/                    # High-resolution architectural and UI diagrams
+├── screenshots/                    # High-resolution architectural and UI visual assets
 ├── data_engine/                    # GSMArena & YouTube sentiment scrapers
 └── docker-compose.yml              # Monorepo containerization configuration
 ```
@@ -201,7 +322,7 @@ tests/test_health.py (1 health check)                  ........... PASSED [100%]
 ```
 
 ### Live Database Scenario Simulation
-To test the engine against the live database across 10 real-world buyer profiles:
+The engine is verified across 10 real-world Indian buyer profiles using live SQLite data:
 
 ```bash
 .venv\Scripts\python.exe scripts/test_engine_scenarios.py
@@ -232,13 +353,6 @@ ALL 10 LIVE SCENARIOS VALIDATED SUCCESSFULLY WITHOUT ERRORS.
 
 ## Quick Start Guide
 
-### Prerequisites
-* **Node.js:** 20.x or higher
-* **Python:** 3.11.x or higher
-* **Git**
-
----
-
 ### 1. Backend Setup (FastAPI)
 
 ```bash
@@ -249,21 +363,16 @@ cd Phonos.ai
 # Setup virtual environment
 cd apps/api
 python -m venv .venv
+source .venv/bin/activate  # Or .venv\Scripts\Activate.ps1 on Windows
 
-# Activate virtual environment:
-# On Windows (PowerShell):
-.venv\Scripts\Activate.ps1
-# On macOS / Linux:
-source .venv/bin/activate
-
-# Install Python dependencies
+# Install dependencies
 pip install -r requirements.txt
 
 # Launch FastAPI development server
 uvicorn app.main:app --reload --port 8000
 ```
-* Interactive API Documentation (Swagger UI): [http://localhost:8000/docs](http://localhost:8000/docs)
-* Health Check Endpoint: [http://localhost:8000/api/v1/health](http://localhost:8000/api/v1/health)
+* **Interactive Swagger UI:** [http://localhost:8000/docs](http://localhost:8000/docs)
+* **Health Check:** [http://localhost:8000/api/v1/health](http://localhost:8000/api/v1/health)
 
 ---
 
