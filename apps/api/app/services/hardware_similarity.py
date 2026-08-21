@@ -22,45 +22,48 @@ _cache: Dict[str, Any] = {"matrix": None, "names": None, "brands": None, "ids": 
 def _load_matrix(max_budget: Optional[float] = None):
     current_mtime = os.path.getmtime(DB_PATH) if os.path.exists(DB_PATH) else 0.0
 
-    # Use cache when no budget filter AND db hasn't changed
-    if max_budget is None and _cache["matrix"] is not None and current_mtime == _cache["mtime"]:
-        return _cache["names"], _cache["brands"], _cache["ids"], _cache["prices"], _cache["matrix"]
+    # Build or refresh full cache if needed
+    if _cache["matrix"] is None or current_mtime != _cache["mtime"]:
+        sql = (
+            "SELECT rowid, name, brand, price_numeric, hardware_vector FROM phones "
+            "WHERE hardware_vector IS NOT NULL AND is_current_catalogue = 1 "
+            "AND released_in_india = 1"
+        )
+        conn = sqlite3.connect(DB_PATH, timeout=30.0)
+        rows = conn.execute(sql).fetchall()
+        conn.close()
 
-    sql = (
-        "SELECT rowid, name, brand, price_numeric, hardware_vector FROM phones "
-        "WHERE hardware_vector IS NOT NULL AND is_current_catalogue = 1 "
-        "AND released_in_india = 1"
-    )
-    params = []
-    if max_budget is not None:
-        sql += " AND price_numeric <= ?"
-        params.append(max_budget * 1.05)
+        if not rows:
+            return [], [], [], [], None
 
-    conn = sqlite3.connect(DB_PATH, timeout=30.0)
-    rows = conn.execute(sql, params).fetchall()
-    conn.close()
+        names, brands, ids, prices, vecs = [], [], [], [], []
+        for rid, name, brand, price, blob in rows:
+            if blob:
+                v = np.frombuffer(blob, dtype=np.float32).copy()
+                if v.shape[0] == 5:
+                    names.append(name)
+                    brands.append(brand or "")
+                    ids.append(rid)
+                    prices.append(price or 0.0)
+                    vecs.append(v)
 
-    if not rows:
-        return [], [], [], [], None
+        if not vecs:
+            return [], [], [], [], None
 
-    names, brands, ids, prices, vecs = [], [], [], [], []
-    for rid, name, brand, price, blob in rows:
-        if blob:
-            v = np.frombuffer(blob, dtype=np.float32).copy()
-            if v.shape[0] == 5:
-                names.append(name)
-                brands.append(brand or "")
-                ids.append(rid)
-                prices.append(price or 0.0)
-                vecs.append(v)
+        matrix = np.vstack(vecs)
+        prices_arr = np.array(prices, dtype=np.float32)
+        _cache.update(matrix=matrix, names=names, brands=brands, ids=ids, prices=prices, prices_arr=prices_arr, mtime=current_mtime)
 
-    if not vecs:
-        return [], [], [], [], None
+    names, brands, ids, prices, matrix = _cache["names"], _cache["brands"], _cache["ids"], _cache["prices"], _cache["matrix"]
 
-    matrix = np.vstack(vecs)   # (N, 5)
-
-    if max_budget is None:     # only cache the full-catalogue matrix
-        _cache.update(matrix=matrix, names=names, brands=brands, ids=ids, prices=prices, mtime=current_mtime)
+    if max_budget is not None and matrix is not None:
+        threshold = max_budget * 1.05
+        prices_arr = _cache["prices_arr"]
+        valid_mask = prices_arr <= threshold
+        if not np.any(valid_mask):
+            return [], [], [], [], None
+        indices = np.where(valid_mask)[0]
+        return [names[i] for i in indices], [brands[i] for i in indices], [ids[i] for i in indices], [prices[i] for i in indices], matrix[indices]
 
     return names, brands, ids, prices, matrix
 

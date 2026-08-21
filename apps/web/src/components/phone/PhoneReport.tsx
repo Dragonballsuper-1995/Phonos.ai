@@ -6,6 +6,8 @@ import { usePostHog } from 'posthog-js/react';
 import type { PhoneDetails } from '@/lib/types';
 import { cleanPhoneName, categorizeSpecs } from '@/lib/specHelpers';
 import VerifiedBadge from '@/components/ui/VerifiedBadge';
+import BenchmarkBadge from '@/components/ui/BenchmarkBadge';
+import RadarChart from '@/components/compare/RadarChart';
 import SimilarPhones from './SimilarPhones';
 import styles from './PhoneReport.module.css';
 
@@ -92,6 +94,27 @@ export default function PhoneReport({ phone }: PhoneReportProps) {
             </span>
           </div>
 
+          {/* Scientific Lab Benchmark Badges */}
+          {(phone.dxomark_camera_score || phone.geekbench_multi || phone.antutu_v10_score || phone.gsmarena_battery_hours || phone.vcx_camera_score) && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '12px', marginBottom: '8px' }}>
+              {phone.dxomark_camera_score && (
+                <BenchmarkBadge type="dxomark-camera" value={phone.dxomark_camera_score} />
+              )}
+              {phone.vcx_camera_score && (
+                <BenchmarkBadge type="vcx" value={phone.vcx_camera_score} />
+              )}
+              {phone.geekbench_multi && (
+                <BenchmarkBadge type="geekbench" value={phone.geekbench_multi} />
+              )}
+              {phone.antutu_v10_score && (
+                <BenchmarkBadge type="antutu" value={phone.antutu_v10_score} />
+              )}
+              {phone.gsmarena_battery_hours && (
+                <BenchmarkBadge type="battery" value={phone.gsmarena_battery_hours} />
+              )}
+            </div>
+          )}
+
           {phone.highlights && phone.highlights.length > 0 && (
             <ul className={styles.highlightsList}>
               {phone.highlights.map((h, idx) => (
@@ -131,6 +154,9 @@ export default function PhoneReport({ phone }: PhoneReportProps) {
           </div>
         </div>
       </section>
+
+      {/* 5D Benchmark Radar Chart */}
+      <RadarChart phones={[phone]} />
 
       {/* Translated Capabilities */}
       <section className={styles.capabilitiesGrid} aria-label="Capability Analysis">

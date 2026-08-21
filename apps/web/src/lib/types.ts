@@ -41,6 +41,14 @@ export interface PhoneDetails {
   released_in_india?: number;
   launch_year?: number;
   raw_specs?: Record<string, any>;
+  dxomark_camera_score?: number | null;
+  dxomark_selfie_score?: number | null;
+  dxomark_display_score?: number | null;
+  vcx_camera_score?: number | null;
+  geekbench_single?: number | null;
+  geekbench_multi?: number | null;
+  antutu_v10_score?: number | null;
+  gsmarena_battery_hours?: number | null;
 }
 
 // Alias for convenience

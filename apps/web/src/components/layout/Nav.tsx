@@ -48,6 +48,15 @@ export default function Nav() {
               Deep
             </Link>
           </li>
+          <li className={styles.navItem}>
+            <Link
+              href="/compare"
+              className={`${styles.navLink} ${pathname === '/compare' ? styles.activeLink : ''}`}
+              id="nav-link-compare"
+            >
+              Compare
+            </Link>
+          </li>
         </ul>
       )}
     </nav>

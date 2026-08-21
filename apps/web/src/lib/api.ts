@@ -66,6 +66,55 @@ export const api = {
     });
   },
 
+  streamDeepRecommend: async function* (
+    data: DeepRecommendRequest,
+    signal?: AbortSignal
+  ): AsyncGenerator<{ event: string; data: any }> {
+    const url = `${API_BASE_URL}/recommend/deep-stream`;
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+      signal,
+    });
+
+    if (!response.ok) {
+      throw new ApiError(response.status, `Streaming error: ${response.statusText}`);
+    }
+
+    const reader = response.body?.getReader();
+    if (!reader) throw new Error('Response body is not readable');
+
+    const decoder = new TextDecoder();
+    let buffer = '';
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+      const chunks = buffer.split('\n\n');
+      buffer = chunks.pop() || '';
+
+      for (const chunk of chunks) {
+        if (!chunk.trim()) continue;
+        const eventMatch = chunk.match(/^event:\s*(.+)$/m);
+        const dataMatch = chunk.match(/^data:\s*(.+)$/m);
+
+        if (eventMatch && dataMatch) {
+          const event = eventMatch[1].trim();
+          let parsedData: any = dataMatch[1].trim();
+          try {
+            parsedData = JSON.parse(parsedData);
+          } catch {
+            // Keep as string
+          }
+          yield { event, data: parsedData };
+        }
+      }
+    }
+  },
+
   comparePhones: (ids: (string | number)[]) => {
     const idsStr = ids.join(',');
     return fetchApi<{ phones: PhoneDetails[]; differences: Record<string, any> }>(
