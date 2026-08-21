@@ -233,8 +233,20 @@ async def deep_stream_recommendation(request: DeepRecommendRequest):
 
 
 from pydantic import BaseModel
-from scripts.retrain_rlhf_worker import log_feedback_event, retrain_ranker
 import asyncio
+
+def _get_rlhf_worker():
+    try:
+        from scripts.retrain_rlhf_worker import log_feedback_event, retrain_ranker
+        return log_feedback_event, retrain_ranker
+    except ImportError:
+        import sys, os
+        sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+        try:
+            from scripts.retrain_rlhf_worker import log_feedback_event, retrain_ranker
+            return log_feedback_event, retrain_ranker
+        except Exception:
+            return None, None
 
 class FeedbackRequest(BaseModel):
     phone_id: Optional[int] = None
@@ -250,14 +262,16 @@ async def record_feedback(payload: FeedbackRequest):
     """
     Records a user interaction event to the RLHF feedback store.
     """
-    log_feedback_event(
-        phone_id=payload.phone_id or 0,
-        phone_name=payload.phone_name,
-        persona=payload.persona,
-        budget=payload.budget,
-        event_type=payload.event_type,
-        weight=payload.weight,
-    )
+    log_event_fn, _ = _get_rlhf_worker()
+    if log_event_fn:
+        log_event_fn(
+            phone_id=payload.phone_id or 0,
+            phone_name=payload.phone_name,
+            persona=payload.persona,
+            budget=payload.budget,
+            event_type=payload.event_type,
+            weight=payload.weight,
+        )
     return {"status": "recorded", "event": payload.event_type, "phone": payload.phone_name}
 
 
@@ -266,7 +280,10 @@ async def trigger_retrain(dry_run: bool = False, samples: int = 15000):
     """
     Triggers continuous RLHF retraining of the XGBoost DLRM ranker.
     """
+    _, retrain_fn = _get_rlhf_worker()
+    if not retrain_fn:
+        return {"status": "error", "message": "Retrain worker unavailable in current environment"}
     loop = asyncio.get_event_loop()
-    results = await loop.run_in_executor(None, retrain_ranker, dry_run, samples)
+    results = await loop.run_in_executor(None, retrain_fn, dry_run, samples)
     return results
 
