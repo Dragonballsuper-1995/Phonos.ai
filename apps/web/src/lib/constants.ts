@@ -90,4 +90,12 @@ export const MODES = [
     href: '/deep',
     badge: 'NATURAL LANGUAGE',
   },
+  {
+    id: 'compare',
+    name: 'Compare',
+    tagline: '5D Radar & Benchmarks',
+    description: 'Side-by-side technical matrix comparing performance, cameras, battery life, DxOMark lab scores, and 5D radar.',
+    href: '/compare',
+    badge: '5D RADAR MATRIX',
+  },
 ] as const;

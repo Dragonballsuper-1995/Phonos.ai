@@ -40,45 +40,90 @@ async def search_phones(query_str: str) -> List[PhoneDetails]:
     if not query_str.strip():
         return []
     conn = await get_db_pool()
-    
-    # Tokenize for FTS5 full-text matching (prefix match on terms)
     import re
-    clean_q = re.sub(r'[^\w\s]', '', query_str).strip()
+    import json
+    from rapidfuzz import fuzz, process
+
+    clean_q = re.sub(r'[^\w\s]', ' ', query_str).strip()
     if not clean_q:
         return []
     
-    fts_query = " ".join(f"{w}*" for w in clean_q.split())
+    tokens = clean_q.split()
+    fts_query = " ".join(f"{w}*" for w in tokens)
     
+    seen_ids = set()
+    rows = []
+
+    # 1. Fast FTS5 prefix match
     try:
-        # Perform super-fast join with FTS virtual table
         cursor = await conn.execute(
             """
             SELECT p.rowid as id, p.* 
             FROM phones p 
             JOIN phones_fts f ON p.rowid = f.rowid 
             WHERE phones_fts MATCH ? 
-            ORDER BY p.launch_year DESC, p.rowid DESC 
-            LIMIT 30
+            ORDER BY p.is_current_catalogue DESC, p.launch_year DESC, p.rowid DESC 
+            LIMIT 25
             """,
             (fts_query,)
         )
-        rows = await cursor.fetchall()
-        
-        # Fallback to standard LIKE if FTS yields nothing
-        if not rows:
+        fts_rows = await cursor.fetchall()
+        for r in fts_rows:
+            if r['id'] not in seen_ids:
+                seen_ids.add(r['id'])
+                rows.append(r)
+    except Exception:
+        pass
+
+    # 2. Multi-token substring match fallback
+    if len(rows) < 10:
+        like_clauses = " AND ".join(["(name LIKE ? OR brand LIKE ?)" for _ in tokens])
+        params = []
+        for t in tokens:
+            params.extend([f"%{t}%", f"%{t}%"])
+        params.append(25 - len(rows))
+
+        try:
             cursor = await conn.execute(
-                "SELECT rowid as id, * FROM phones WHERE name LIKE ? OR brand LIKE ? ORDER BY launch_year DESC, rowid DESC LIMIT 30",
-                (f"%{query_str}%", f"%{query_str}%")
+                f"SELECT rowid as id, * FROM phones WHERE {like_clauses} ORDER BY is_current_catalogue DESC, launch_year DESC, rowid DESC LIMIT ?",
+                params
             )
-            rows = await cursor.fetchall()
-    except Exception as e:
-        # Standard query fallback
-        cursor = await conn.execute(
-            "SELECT rowid as id, * FROM phones WHERE name LIKE ? OR brand LIKE ? ORDER BY launch_year DESC, rowid DESC LIMIT 30",
-            (f"%{query_str}%", f"%{query_str}%")
-        )
-        rows = await cursor.fetchall()
-        
+            like_rows = await cursor.fetchall()
+            for r in like_rows:
+                if r['id'] not in seen_ids:
+                    seen_ids.add(r['id'])
+                    rows.append(r)
+        except Exception:
+            pass
+
+    # 3. RapidFuzz fallback for typos (e.g. 'samsng', 'iphne', 'oneplus15')
+    if len(rows) < 5:
+        try:
+            cursor = await conn.execute(
+                "SELECT rowid as id, * FROM phones WHERE is_current_catalogue = 1 OR released_in_india = 1 LIMIT 600"
+            )
+            all_candidates = await cursor.fetchall()
+            candidate_names = [f"{c['brand']} {c['name']}".lower() for c in all_candidates]
+            
+            matches = process.extract(
+                query_str.lower(),
+                candidate_names,
+                scorer=fuzz.partial_ratio,
+                limit=15,
+                score_cutoff=65
+            )
+            
+            for match in matches:
+                matched_idx = match[2]
+                r = all_candidates[matched_idx]
+                if r['id'] not in seen_ids:
+                    seen_ids.add(r['id'])
+                    rows.append(r)
+                    if len(rows) >= 20:
+                        break
+        except Exception:
+            pass
+
     result = []
     for row in rows:
         d = dict(row)

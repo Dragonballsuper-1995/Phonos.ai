@@ -243,19 +243,20 @@ Phonos.ai/
 │   │   ├── app/
 │   │   │   ├── db/                 # Async SQLite connection pool and query layer
 │   │   │   ├── models/             # Pydantic data schemas (PhoneDetails, Query, Response)
-│   │   │   ├── routers/            # API endpoints (recommend, phones, search, health)
-│   │   │   └── services/           # ML ranker, hardware scorer, similarity, ABSA, KG
+│   │   │   ├── routers/            # API endpoints (recommend, phones, search, similar, compare, health)
+│   │   │   └── services/           # ML ranker, hardware scorer, similarity, ABSA, KG, LLM verifier
 │   │   ├── data/                   # Production SQLite DB (fone_master.db) & ranker.xgb
-│   │   ├── scripts/                # Data pipelines, ABSA scorer, RLHF retrainer, diagram generator
+│   │   ├── scripts/                # Data pipelines, ABSA scorer, RLHF retrainer, scenario tests
 │   │   └── tests/                  # 38 granular Pytest unit, integration & edge-case tests
 │   │
 │   └── web/
 │       ├── src/
-│       │   ├── app/                # Next.js App Router (easy, medium, deep, results, phone/[slug], compare)
-│       │   ├── components/         # UI components (PhoneReport, SimilarPhones, PhoneRow, Accordion)
+│       │   ├── app/                # Next.js 16 App Router (easy, medium, deep, results, phone/[slug], compare)
+│       │   ├── components/         # UI components (PhoneReport, SimilarPhones, PhoneRow, ResultsAccordion, LoadingState)
 │       │   └── lib/                # API client, TypeScript definitions, spec formatters
 │       └── public/                 # Typography fonts & static design assets
 │
+├── scraped_official_catalogues/    # Verified Indian smartphone catalogue datasets (BBK, Xiaomi, Apple/Samsung, Nothing, HMD)
 ├── screenshots/                    # High-resolution architectural and UI visual assets
 ├── data_engine/                    # GSMArena & YouTube sentiment scrapers
 └── docker-compose.yml              # Monorepo containerization configuration

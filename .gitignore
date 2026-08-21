@@ -84,9 +84,14 @@ ehthumbs_vista.db
 *.xls
 *.db
 !apps/api/data/fone_master.db
+*.db-shm
+*.db-wal
+*.db-journal
 data/*.json
 !data/sample_phones.json
 !data/examples/
+.tempmediaStorage/
+*.log
 
 
 # Environment

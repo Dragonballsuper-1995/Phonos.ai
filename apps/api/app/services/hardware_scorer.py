@@ -191,15 +191,81 @@ import numpy as np
 
 HW_VECTOR_DIM_ORDER = ["soc_score", "camera_score", "display_score", "battery_charge_score", "build_score"]
 
+def evaluate_hybrid_camera_score(phone: PhoneDetails, raw_str: str = "", name: str = "") -> float:
+    """
+    Hybrid Camera Fusion: Blends DxOMark / VCX lab scores with rule-based optic specs.
+    Falls back gracefully to 100% rule-based spec score when lab benchmarks are missing.
+    """
+    base_spec = evaluate_camera_score(raw_str or str(phone.raw_specs or ""), name or str(phone.name or ""))
+    dxo_score = getattr(phone, "dxomark_camera_score", None)
+    vcx_score = getattr(phone, "vcx_camera_score", None)
+
+    if dxo_score and dxo_score > 0:
+        dxo_norm = min(100.0, max(0.0, (float(dxo_score) / 160.0) * 100.0))
+        return (dxo_norm * 0.55) + (base_spec * 0.45)
+    elif vcx_score and vcx_score > 0:
+        vcx_norm = min(100.0, max(0.0, (float(vcx_score) / 80.0) * 100.0))
+        return (vcx_norm * 0.50) + (base_spec * 0.50)
+
+    return base_spec
+
+
+def evaluate_hybrid_soc_score(phone: PhoneDetails, raw_str: str = "") -> float:
+    """
+    Hybrid SoC Fusion: Blends Geekbench 6 Multi-Core & AnTuTu v10 benchmarks with silicon specs.
+    Falls back gracefully to SoC Benchmark index when external benchmarks are missing.
+    """
+    base_spec = evaluate_soc_score(raw_str or str(phone.raw_specs or ""))
+    gb_multi = getattr(phone, "geekbench_multi", None)
+    antutu = getattr(phone, "antutu_v10_score", None)
+
+    if gb_multi and gb_multi > 0:
+        gb_norm = min(100.0, max(0.0, (float(gb_multi) / 9500.0) * 100.0))
+        return (gb_norm * 0.55) + (base_spec * 0.45)
+    elif antutu and antutu > 0:
+        antutu_norm = min(100.0, max(0.0, (float(antutu) / 3000000.0) * 100.0))
+        return (antutu_norm * 0.50) + (base_spec * 0.50)
+
+    return base_spec
+
+
+def evaluate_hybrid_display_score(phone: PhoneDetails, raw_str: str = "") -> float:
+    """
+    Hybrid Display Fusion: Blends DxOMark Display & Sunlight Legibility with panel specs.
+    """
+    base_spec = evaluate_display_score(raw_str or str(phone.raw_specs or ""))
+    dxo_disp = getattr(phone, "dxomark_display_score", None)
+
+    if dxo_disp and dxo_disp > 0:
+        dxo_disp_norm = min(100.0, max(0.0, (float(dxo_disp) / 160.0) * 100.0))
+        return (dxo_disp_norm * 0.50) + (base_spec * 0.50)
+
+    return base_spec
+
+
+def evaluate_hybrid_battery_score(phone: PhoneDetails, raw_str: str = "") -> float:
+    """
+    Hybrid Battery Fusion: Blends GSMArena Active Use Score (hours) with capacity & charging specs.
+    """
+    base_spec = evaluate_battery_charge_score(raw_str or str(phone.raw_specs or ""))
+    aus_hours = getattr(phone, "gsmarena_battery_hours", None)
+
+    if aus_hours and aus_hours > 0:
+        aus_norm = min(100.0, max(0.0, (float(aus_hours) / 18.5) * 100.0))
+        return (aus_norm * 0.45) + (base_spec * 0.55)
+
+    return base_spec
+
+
 def extract_hardware_spec_vector(phone: PhoneDetails) -> Dict[str, float]:
     raw_str = str(phone.raw_specs or "")
     name = str(phone.name or "")
     
     return {
-        "soc_score": evaluate_soc_score(raw_str),
-        "camera_score": evaluate_camera_score(raw_str, name),
-        "display_score": evaluate_display_score(raw_str),
-        "battery_charge_score": evaluate_battery_charge_score(raw_str),
+        "soc_score": evaluate_hybrid_soc_score(phone, raw_str),
+        "camera_score": evaluate_hybrid_camera_score(phone, raw_str, name),
+        "display_score": evaluate_hybrid_display_score(phone, raw_str),
+        "battery_charge_score": evaluate_hybrid_battery_score(phone, raw_str),
         "build_score": evaluate_build_score(raw_str)
     }
 

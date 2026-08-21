@@ -342,7 +342,19 @@ def ml_score_phones(
             elif ui_info["cleanliness"] <= 0.65:
                 trade_offs.append(f"Pre-installed Apps: May require initial decluttering in {ui_info['name']}")
 
-        # ── 9. REVIEWER SENTIMENT HIGHLIGHTS (ABSA) ───────────────────────────
+        # ── 9. SCIENTIFIC BENCHMARK LAB HIGHLIGHTS ─────────────────────────────
+        if getattr(phone, "dxomark_camera_score", None) and phone.dxomark_camera_score >= 140:
+            reasons.append(f"DxOMark Lab Certified: Elite camera ranking with {int(phone.dxomark_camera_score)} points")
+        elif getattr(phone, "vcx_camera_score", None) and phone.vcx_camera_score >= 65:
+            reasons.append(f"VCX Forum Certified: Objective camera test score of {int(phone.vcx_camera_score)} points")
+
+        if getattr(phone, "geekbench_multi", None) and phone.geekbench_multi >= 7000:
+            reasons.append(f"Geekbench 6 Flagship Compute: {int(phone.geekbench_multi):,} multi-core processing power")
+
+        if getattr(phone, "gsmarena_battery_hours", None) and phone.gsmarena_battery_hours >= 16.5:
+            reasons.append(f"GSMArena Lab Verified: {phone.gsmarena_battery_hours:.1f}h active endurance stamina")
+
+        # ── 10. REVIEWER SENTIMENT HIGHLIGHTS (ABSA) ──────────────────────────
         if sentiment.get("camera", 0) > 0.25:
             reasons.append("Reviewer Acclaim: Top-tier photo and video dynamic range confirmed in field tests")
         elif sentiment.get("camera", 0) < -0.20:

@@ -1,10 +1,12 @@
 'use client';
 
+import Link from 'next/link';
 import { usePostHog } from 'posthog-js/react';
 import type { RecommendedPhone } from '@/lib/types';
 import { cleanPhoneName, categorizeSpecs } from '@/lib/specHelpers';
 import ScoreBar from '@/components/ui/ScoreBar';
 import VerifiedBadge from '@/components/ui/VerifiedBadge';
+import BenchmarkBadge from '@/components/ui/BenchmarkBadge';
 import styles from './PhoneRow.module.css';
 
 interface PhoneRowProps {
@@ -120,6 +122,24 @@ export default function PhoneRow({
             )}
           </div>
           <h3 className={styles.modelName}>{displayName}</h3>
+
+          {/* Scientific Benchmark Chips */}
+          {(phone.dxomark_camera_score || phone.geekbench_multi || phone.antutu_v10_score || phone.gsmarena_battery_hours) && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '6px' }}>
+              {phone.dxomark_camera_score && (
+                <BenchmarkBadge type="dxomark-camera" value={phone.dxomark_camera_score} />
+              )}
+              {phone.geekbench_multi && (
+                <BenchmarkBadge type="geekbench" value={phone.geekbench_multi} />
+              )}
+              {phone.antutu_v10_score && (
+                <BenchmarkBadge type="antutu" value={phone.antutu_v10_score} />
+              )}
+              {phone.gsmarena_battery_hours && (
+                <BenchmarkBadge type="battery" value={phone.gsmarena_battery_hours} />
+              )}
+            </div>
+          )}
         </div>
 
         <div className={styles.scoreBlock}>
@@ -225,7 +245,7 @@ export default function PhoneRow({
 
           {/* 4. Action Bar */}
           <div className={styles.actionBar}>
-            <div style={{ display: 'flex', gap: 'var(--space-md)', alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: 'var(--space-md)', alignItems: 'center', flexWrap: 'wrap' }}>
               <a
                 href={amazonSearchUrl}
                 target="_blank"
@@ -237,6 +257,16 @@ export default function PhoneRow({
                 <span>CHECK LIVE PRICE ON AMAZON</span>
                 <span>&rarr;</span>
               </a>
+
+              <Link
+                href={phone.id ? `/compare?ids=${phone.id}` : `/compare?ids=${encodeURIComponent(phone.slug || phone.model || phone.name || '')}`}
+                className="btn-secondary"
+                id={`compare-btn-${rank}`}
+                style={{ padding: '0.65rem 1.25rem', fontSize: '0.85rem' }}
+              >
+                <span>COMPARE 5D RADAR</span>
+                <span>&rarr;</span>
+              </Link>
             </div>
 
             <button
