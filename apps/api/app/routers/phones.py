@@ -84,7 +84,6 @@ async def get_similar_phones(
     }
 
 
-from scripts.daily_sync_worker import run_daily_sync
 import asyncio
 
 @router.post("/sync/daily")
@@ -92,6 +91,16 @@ async def trigger_daily_sync(dry_run: bool = False):
     """
     Triggers the continuous ingestion & catalog sync worker.
     """
+    try:
+        from scripts.daily_sync_worker import run_daily_sync
+    except ImportError:
+        import sys, os
+        sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+        try:
+            from scripts.daily_sync_worker import run_daily_sync
+        except Exception as e:
+            return {"status": "error", "message": f"Daily sync worker unavailable: {e}"}
+
     loop = asyncio.get_event_loop()
     stats = await loop.run_in_executor(None, run_daily_sync, dry_run)
     return {"status": "success", "stats": stats}
