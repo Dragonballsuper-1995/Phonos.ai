@@ -137,3 +137,6 @@ evaluation_results.json
 apps/api/=3.0.0
 apps/api/data/chroma_db/
 *.sqbpro
+
+# Interview Preparation Documents
+Interview_prep/
