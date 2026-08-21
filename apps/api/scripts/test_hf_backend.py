@@ -26,7 +26,9 @@ def run_test(name, fn):
 def test_root():
     url = f"{HF_BASE_URL}/"
     r = requests.get(url, timeout=30)
-    return f"HTTP {r.status_code} -> {r.json()}"
+    data = r.json()
+    assert data.get("status") == "online", "Status is not online"
+    return f"HTTP {r.status_code} -> {data}"
 
 # 2. Search 'realme' (Check no 'ow' or 'realmeow')
 def test_search_realme():
@@ -48,7 +50,7 @@ def test_search_p4_power():
     details = [f"ID {p.get('id')}: {p.get('name')} (Price: ₹{p.get('price')}, RAM: {p.get('specs', {}).get('ram')}, Storage: {p.get('specs', {}).get('storage')})" for p in data[:3]]
     return f"Found {len(data)} variants:\n  " + "\n  ".join(details)
 
-# 4. Compare Suite (S26, Realme P4 Power, OnePlus 15)
+# 4. Compare Suite (OnePlus 15s, Realme P4 Power, Samsung Galaxy S26)
 def test_compare():
     url = f"{HF_BASE_URL}/api/v1/compare?ids=1370,459,407"
     r = requests.get(url, timeout=30)
@@ -62,20 +64,41 @@ def test_compare():
         )
     return "Compared 3 phones successfully:\n  " + "\n  ".join(summary)
 
-# 5. Recommendation Engine (Student, 35000 budget)
-def test_recommend():
-    url = f"{HF_BASE_URL}/api/v1/recommend"
+# 5. Recommendation Engine Easy Mode (Student Persona, ₹35,000)
+def test_recommend_easy():
+    url = f"{HF_BASE_URL}/api/v1/recommend/easy"
     payload = {
         "budget": 35000,
-        "persona": "student",
-        "preferences": {}
+        "persona": "student"
     }
     r = requests.post(url, json=payload, timeout=45)
     data = r.json()
     recs = data.get('recommendations', [])
     assert len(recs) > 0, "No recommendations returned"
     top = recs[0]
-    return f"Recommended {len(recs)} phones. #1: [{top.get('brand')}] {top.get('name')} (Score: {top.get('matchScore')}%, Price: ₹{top.get('price')})"
+    phone = top.get('phone', {})
+    return f"Recommended {len(recs)} phones. #1: [{phone.get('brand')}] {phone.get('name')} (Score: {top.get('score')}%, Price: ₹{phone.get('price')})"
+
+# 6. Recommendation Engine Medium Mode (Parametric Sliders, ₹60,000)
+def test_recommend_medium():
+    url = f"{HF_BASE_URL}/api/v1/recommend/medium"
+    payload = {
+        "budget": 60000,
+        "weights": {
+            "performance": 9,
+            "camera": 8,
+            "battery": 7,
+            "display": 8,
+            "build": 6
+        }
+    }
+    r = requests.post(url, json=payload, timeout=45)
+    data = r.json()
+    recs = data.get('recommendations', [])
+    assert len(recs) > 0, "No recommendations returned"
+    top = recs[0]
+    phone = top.get('phone', {})
+    return f"Recommended {len(recs)} phones. #1: [{phone.get('brand')}] {phone.get('name')} (Score: {top.get('score')}%, Price: ₹{phone.get('price')})"
 
 if __name__ == "__main__":
     print(f"Testing HuggingFace Deployed Backend at: {HF_BASE_URL}")
@@ -84,7 +107,8 @@ if __name__ == "__main__":
         run_test("Search 'realme' (Hygiene Verification)", test_search_realme),
         run_test("Search 'p4 power' (RAM & Storage Variants)", test_search_p4_power),
         run_test("Compare Suite Multi-Device Differential", test_compare),
-        run_test("ML Recommender Pipeline (Student Persona, ₹35,000)", test_recommend),
+        run_test("ML Recommender Pipeline - Easy Mode (Student, ₹35k)", test_recommend_easy),
+        run_test("ML Recommender Pipeline - Medium Mode (Parametric, ₹60k)", test_recommend_medium),
     ]
 
     total = len(results)
