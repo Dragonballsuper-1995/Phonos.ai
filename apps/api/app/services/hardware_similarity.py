@@ -39,13 +39,28 @@ def _load_matrix(max_budget: Optional[float] = None):
         names, brands, ids, prices, vecs = [], [], [], [], []
         for rid, name, brand, price, blob in rows:
             if blob:
-                v = np.frombuffer(blob, dtype=np.float32).copy()
-                if v.shape[0] == 5:
-                    names.append(name)
-                    brands.append(brand or "")
-                    ids.append(rid)
-                    prices.append(price or 0.0)
-                    vecs.append(v)
+                try:
+                    if isinstance(blob, bytes):
+                        v = np.frombuffer(blob, dtype=np.float32).copy()
+                    elif isinstance(blob, str):
+                        if blob.startswith("b'") or blob.startswith('b"'):
+                            import ast
+                            raw_b = ast.literal_eval(blob)
+                            v = np.frombuffer(raw_b, dtype=np.float32).copy()
+                        else:
+                            import json
+                            v = np.array(json.loads(blob), dtype=np.float32)
+                    else:
+                        continue
+
+                    if v.shape[0] == 5:
+                        names.append(name)
+                        brands.append(brand or "")
+                        ids.append(rid)
+                        prices.append(price or 0.0)
+                        vecs.append(v)
+                except Exception:
+                    continue
 
         if not vecs:
             return [], [], [], [], None

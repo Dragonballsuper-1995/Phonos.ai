@@ -1,6 +1,10 @@
 import os
-import chromadb
-from chromadb.utils import embedding_functions
+try:
+    import chromadb
+    from chromadb.utils import embedding_functions
+except ImportError:
+    chromadb = None
+    embedding_functions = None
 
 CHROMA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data/chroma_db'))
 

@@ -1,7 +1,4 @@
 brand,parent_ecosystem,model_name,full_name,series,price_inr,price_raw,launch_status,sale_start_date,market,official_india_presence,brand_status,catalogue_url,product_url,specs_summary,scraped_at
-Samsung,Mainstream & Flagship,Galaxy S26 Ultra,Samsung Galaxy S26 Ultra,Galaxy S Series,124999.0,"₹124,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.036295
-Samsung,Mainstream & Flagship,Galaxy S26+,Samsung Galaxy S26+,Galaxy S Series,114999.0,"₹114,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.036356
-Samsung,Mainstream & Flagship,Galaxy S26,Samsung Galaxy S26,Galaxy S Series,99999.0,"₹99,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.036366
 Samsung,Mainstream & Flagship,Galaxy S25 Ultra,Samsung Galaxy S25 Ultra,Galaxy S Series,90620.0,"₹90,620",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.036373
 Samsung,Mainstream & Flagship,Galaxy S25,Samsung Galaxy S25,Galaxy S Series,64000.0,"₹64,000",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.036379
 Samsung,Mainstream & Flagship,Galaxy S25 FE,Samsung Galaxy S25 FE,Galaxy S Series,45739.0,"₹45,739",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.036388
@@ -16,12 +13,10 @@ Samsung,Mainstream & Flagship,Galaxy Z Fold7,Samsung Galaxy Z Fold7,Galaxy Z Ser
 Samsung,Mainstream & Flagship,Galaxy Z Flip7,Samsung Galaxy Z Flip7,Galaxy Z Series,121999.0,"₹121,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.036973
 Samsung,Mainstream & Flagship,Galaxy Z Flip7 FE,Samsung Galaxy Z Flip7 FE,Galaxy Z Series,89999.0,"₹89,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.036979
 Samsung,Mainstream & Flagship,Galaxy Z Fold6,Samsung Galaxy Z Fold6,Galaxy Z Series,149999.0,"₹149,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.036984
-Samsung,Mainstream & Flagship,Galaxy Z Flip6,Samsung Galaxy Z Flip6,Galaxy Z Series,75999.0,"₹75,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.036990
 Samsung,Mainstream & Flagship,Galaxy A57 5G,Samsung Galaxy A57 5G,Galaxy A Series,49499.0,"₹49,499",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.036996
 Samsung,Mainstream & Flagship,Galaxy A56 5G,Samsung Galaxy A56 5G,Galaxy A Series,52499.0,"₹52,499",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037002
 Samsung,Mainstream & Flagship,Galaxy A37 5G,Samsung Galaxy A37 5G,Galaxy A Series,36999.0,"₹36,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037007
 Samsung,Mainstream & Flagship,Galaxy A36 5G,Samsung Galaxy A36 5G,Galaxy A Series,37999.0,"₹37,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037012
-Samsung,Mainstream & Flagship,Galaxy A27 5G,Samsung Galaxy A27 5G,Galaxy A Series,31999.0,"₹31,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037017
 Samsung,Mainstream & Flagship,Galaxy A35 5G,Samsung Galaxy A35 5G,Galaxy A Series,29990.0,"₹29,990",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037022
 Samsung,Mainstream & Flagship,Galaxy A55 5G,Samsung Galaxy A55 5G,Galaxy A Series,29998.0,"₹29,998",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037026
 Samsung,Mainstream & Flagship,Galaxy A26 5G,Samsung Galaxy A26 5G,Galaxy A Series,,,available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037031
@@ -32,7 +27,6 @@ Samsung,Mainstream & Flagship,Galaxy A07 5G,Samsung Galaxy A07 5G,Galaxy A Serie
 Samsung,Mainstream & Flagship,Galaxy A07,Samsung Galaxy A07,Galaxy A Series,13499.0,"₹13,499",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037055
 Samsung,Mainstream & Flagship,Galaxy A06 5G,Samsung Galaxy A06 5G,Galaxy A Series,15499.0,"₹15,499",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037060
 Samsung,Mainstream & Flagship,Galaxy A06,Samsung Galaxy A06,Galaxy A Series,,,available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037064
-Samsung,Mainstream & Flagship,Galaxy M47 5G,Samsung Galaxy M47 5G,Galaxy M Series,36999.0,"₹36,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037069
 Samsung,Mainstream & Flagship,Galaxy M17 5G,Samsung Galaxy M17 5G,Galaxy M Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037074
 Samsung,Mainstream & Flagship,Galaxy M17e 5G,Samsung Galaxy M17e 5G,Galaxy M Series,12499.0,"₹12,499",available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037079
 Samsung,Mainstream & Flagship,Galaxy M36 5G,Samsung Galaxy M36 5G,Galaxy M Series,,,available,,India,True,ACTIVE,https://www.samsung.com/in/smartphones/all-smartphones/,,,2026-08-18T23:46:26.037083
@@ -64,47 +58,38 @@ Apple,Mainstream & Flagship,iPhone 17,Apple iPhone 17,iPhone,82900.0,"₹82,900"
 Apple,Mainstream & Flagship,iPhone 17e,Apple iPhone 17e,iPhone,64900.0,"₹64,900",available,,India,True,ACTIVE,https://www.apple.com/in/shop/buy-iphone,,,2026-08-18T23:46:26.092291
 Apple,Mainstream & Flagship,iPhone 16,Apple iPhone 16,iPhone,69900.0,"₹69,900",available,,India,True,ACTIVE,https://www.apple.com/in/shop/buy-iphone,,,2026-08-18T23:46:26.092294
 Apple,Mainstream & Flagship,iPhone 16 Plus,Apple iPhone 16 Plus,iPhone,79900.0,"₹79,900",available,,India,True,ACTIVE,https://www.apple.com/in/shop/buy-iphone,,,2026-08-18T23:46:26.092298
-Xiaomi,Xiaomi Corporation,Xiaomi 17T,Xiaomi 17T,Xiaomi Flagship,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731025
-Xiaomi,Xiaomi Corporation,Xiaomi 17 Ultra,Xiaomi 17 Ultra,Xiaomi Flagship,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731085
-Xiaomi,Xiaomi Corporation,Xiaomi 17,Xiaomi 17,Xiaomi Flagship,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731132
-Xiaomi,Xiaomi Corporation,Xiaomi 17 Pro,Xiaomi 17 Pro,Xiaomi Flagship,89999.0,"₹89,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731157
-Xiaomi,Xiaomi Corporation,Xiaomi 14 Ultra,Xiaomi 14 Ultra,Xiaomi Flagship,99999.0,"₹99,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731172
-Xiaomi,Xiaomi Corporation,Xiaomi 14,Xiaomi 14,Xiaomi Flagship,69999.0,"₹69,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731182
-Xiaomi,Xiaomi Corporation,Xiaomi 14 Civi,Xiaomi 14 Civi,Xiaomi Flagship,39999.0,"₹39,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731191
-Xiaomi,Xiaomi Corporation,Xiaomi 13 Pro,Xiaomi 13 Pro,Xiaomi Flagship,74999.0,"₹74,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731199
-Redmi,Xiaomi Corporation,REDMI Turbo 5,Redmi REDMI Turbo 5,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449627
-Redmi,Xiaomi Corporation,Redmi Note 15 Pro+ 5G,Redmi Note 15 Pro+ 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449706
-Redmi,Xiaomi Corporation,Redmi Note 15 Pro 5G,Redmi Note 15 Pro 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449746
-Redmi,Xiaomi Corporation,Redmi Note 15 SE 5G,Redmi Note 15 SE 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449778
-Redmi,Xiaomi Corporation,Redmi A7 Pro 5G,Redmi A7 Pro 5G,Redmi A Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449808
-Redmi,Xiaomi Corporation,Redmi A7 Pro,Redmi A7 Pro,Redmi A Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449836
-Redmi,Xiaomi Corporation,Redmi A7,Redmi A7,Redmi A Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449861
-Redmi,Xiaomi Corporation,Redmi 15A 5G,Redmi 15A 5G,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449888
-Redmi,Xiaomi Corporation,Redmi Note 15 5G,Redmi Note 15 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449915
-Redmi,Xiaomi Corporation,Redmi 15C 5G,Redmi 15C 5G,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449939
-Redmi,Xiaomi Corporation,Redmi 15 5G,Redmi 15 5G,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449963
-Redmi,Xiaomi Corporation,Redmi Note 14 SE 5G,Redmi Note 14 SE 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449992
-Redmi,Xiaomi Corporation,Redmi A5,Redmi A5,Redmi A Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450015
-Redmi,Xiaomi Corporation,Redmi 14C 5G,Redmi 14C 5G,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450038
-Redmi,Xiaomi Corporation,Redmi Note 14 Pro+ 5G,Redmi Note 14 Pro+ 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450066
-Redmi,Xiaomi Corporation,Redmi Note 14 Pro 5G,Redmi Note 14 Pro 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450094
-Redmi,Xiaomi Corporation,Redmi Note 14 5G,Redmi Note 14 5G,Redmi Note Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450120
-Redmi,Xiaomi Corporation,Redmi A4 5G,Redmi A4 5G,Redmi A Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450144
-Redmi,Xiaomi Corporation,Redmi 13 5G,Redmi 13 5G,Redmi Number Series,,,available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450168
-Redmi,Xiaomi Corporation,Redmi 13C 5G,Redmi 13C 5G,Redmi Number Series,9999.0,"₹9,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450222
-Redmi,Xiaomi Corporation,Redmi A3,Redmi A3,Redmi A Series,6499.0,"₹6,499",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450240
+Xiaomi,Xiaomi Corporation,Xiaomi 17T,Xiaomi 17T,Xiaomi Flagship,89999.0,"₹89,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731025
+Xiaomi,Xiaomi Corporation,Xiaomi 17 Ultra,Xiaomi 17 Ultra,Xiaomi Flagship,139999.0,"₹139,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731085
+Xiaomi,Xiaomi Corporation,Xiaomi 17,Xiaomi 17,Xiaomi Flagship,89999.0,"₹89,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/xiaomi/,,,2026-08-18T23:46:26.731132
+Redmi,Xiaomi Corporation,REDMI Turbo 5,Redmi REDMI Turbo 5,Redmi Number Series,41999.0,"₹41,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449627
+Redmi,Xiaomi Corporation,Redmi Note 15 Pro+ 5G,Redmi Note 15 Pro+ 5G,Redmi Note Series,39999.0,"₹39,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449706
+Redmi,Xiaomi Corporation,Redmi Note 15 Pro 5G,Redmi Note 15 Pro 5G,Redmi Note Series,31999.0,"₹31,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449746
+Redmi,Xiaomi Corporation,Redmi Note 15 SE 5G,Redmi Note 15 SE 5G,Redmi Note Series,25999.0,"₹25,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449778
+Redmi,Xiaomi Corporation,Redmi A7 Pro 5G,Redmi A7 Pro 5G,Redmi A Series,14499.0,"₹14,499",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449808
+Redmi,Xiaomi Corporation,Redmi A7 Pro,Redmi A7 Pro,Redmi A Series,13499.0,"₹13,499",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449836
+Redmi,Xiaomi Corporation,Redmi A7,Redmi A7,Redmi A Series,12499.0,"₹12,499",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449861
+Redmi,Xiaomi Corporation,Redmi 15A 5G,Redmi 15A 5G,Redmi Number Series,15999.0,"₹15,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449888
+Redmi,Xiaomi Corporation,Redmi Note 15 5G,Redmi Note 15 5G,Redmi Note Series,28999.0,"₹28,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449915
+Redmi,Xiaomi Corporation,Redmi 15C 5G,Redmi 15C 5G,Redmi Number Series,18499.0,"₹18,499",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449939
+Redmi,Xiaomi Corporation,Redmi 15 5G,Redmi 15 5G,Redmi Number Series,21499.0,"₹21,499",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449963
+Redmi,Xiaomi Corporation,Redmi Note 14 SE 5G,Redmi Note 14 SE 5G,Redmi Note Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.449992
+Redmi,Xiaomi Corporation,Redmi A5,Redmi A5,Redmi A Series,8499.0,"₹8,499",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450015
+Redmi,Xiaomi Corporation,Redmi 14C 5G,Redmi 14C 5G,Redmi Number Series,9499.0,"₹9,499",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450038
+Redmi,Xiaomi Corporation,Redmi Note 14 Pro+ 5G,Redmi Note 14 Pro+ 5G,Redmi Note Series,28999.0,"₹28,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450066
+Redmi,Xiaomi Corporation,Redmi Note 14 Pro 5G,Redmi Note 14 Pro 5G,Redmi Note Series,23999.0,"₹23,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450094
+Redmi,Xiaomi Corporation,Redmi Note 14 5G,Redmi Note 14 5G,Redmi Note Series,16499.0,"₹16,499",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450120
+Redmi,Xiaomi Corporation,Redmi A4 5G,Redmi A4 5G,Redmi A Series,10999.0,"₹10,999",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450144
+Redmi,Xiaomi Corporation,Redmi 13 5G,Redmi 13 5G,Redmi Number Series,12499.0,"₹12,499",available,,India,True,ACTIVE,https://www.mi.com/in/product-list/redmi/,,,2026-08-18T23:46:27.450168
 POCO,Xiaomi Corporation,POCO X8 Pro Max,POCO X8 Pro Max,POCO X Series,32999.0,"₹32,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/X8ProMax,,2026-08-18T23:46:27.510885
 POCO,Xiaomi Corporation,POCO X8 Pro,POCO X8 Pro,POCO X Series,27999.0,"₹27,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/X8Pro,,2026-08-18T23:46:27.510918
 POCO,Xiaomi Corporation,POCO X7 Pro,POCO X7 Pro,POCO X Series,25999.0,"₹25,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/X7Pro,,2026-08-18T23:46:27.510926
 POCO,Xiaomi Corporation,POCO X7,POCO X7,POCO X Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/X7,,2026-08-18T23:46:27.510934
 POCO,Xiaomi Corporation,POCO F7,POCO F7,POCO F Series,34999.0,"₹34,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/F7,,2026-08-18T23:46:27.510941
-POCO,Xiaomi Corporation,POCO F6,POCO F6,POCO F Series,29999.0,"₹29,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/F6,,2026-08-18T23:46:27.510948
 POCO,Xiaomi Corporation,POCO M8 Power,POCO M8 Power,POCO M Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M8Power,,2026-08-18T23:46:27.510955
 POCO,Xiaomi Corporation,POCO M8 5G,POCO M8 5G,POCO M Series,13999.0,"₹13,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M85G,,2026-08-18T23:46:27.510961
 POCO,Xiaomi Corporation,POCO M7 Plus,POCO M7 Plus,POCO M Series,14999.0,"₹14,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M7Plus,,2026-08-18T23:46:27.510967
 POCO,Xiaomi Corporation,POCO M7 Pro,POCO M7 Pro,POCO M Series,13499.0,"₹13,499",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M7Pro,,2026-08-18T23:46:27.510974
 POCO,Xiaomi Corporation,POCO M7 5G,POCO M7 5G,POCO M Series,10999.0,"₹10,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M75G,,2026-08-18T23:46:27.510980
-POCO,Xiaomi Corporation,POCO M6 Pro 5G,POCO M6 Pro 5G,POCO M Series,9999.0,"₹9,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/M6Pro5G,,2026-08-18T23:46:27.510987
 POCO,Xiaomi Corporation,POCO C85x,POCO C85x,POCO C Series,8999.0,"₹8,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/C85x,,2026-08-18T23:46:27.510993
 POCO,Xiaomi Corporation,POCO C85,POCO C85,POCO C Series,7999.0,"₹7,999",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/C85,,2026-08-18T23:46:27.511000
 POCO,Xiaomi Corporation,POCO C81x,POCO C81x,POCO C Series,7499.0,"₹7,499",available,,India,True,ACTIVE,https://www.poco.in/product-details/,https://www.poco.in/product-details/C81x,,2026-08-18T23:46:27.511006
@@ -123,14 +108,12 @@ vivo,BBK Ecosystem,V70,vivo V70,vivo V Series,,,available,,India,True,ACTIVE,htt
 vivo,BBK Ecosystem,X300 Pro,vivo X300 Pro,vivo X Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766493
 vivo,BBK Ecosystem,X300,vivo X300,vivo X Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766501
 vivo,BBK Ecosystem,X Fold 5,vivo X Fold 5,vivo X Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765541
-vivo,BBK Ecosystem,Y31t 5G,vivo Y31t 5G,vivo Y Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765796
 vivo,BBK Ecosystem,T5x,vivo T5x,vivo T Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765881
 vivo,BBK Ecosystem,T5 Lite 5G,vivo T5 Lite 5G,vivo T Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.765917
 vivo,BBK Ecosystem,T5e,vivo T5e,vivo T Series,,,available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766527
 vivo,BBK Ecosystem,X200 Pro 5G,vivo X200 Pro 5G,vivo X Series,94999.0,"₹94,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766752
 vivo,BBK Ecosystem,X200 5G,vivo X200 5G,vivo X Series,64999.0,"₹64,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766759
 vivo,BBK Ecosystem,X Fold 3 Pro,vivo X Fold 3 Pro,vivo X Series,149999.0,"₹149,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766763
-vivo,BBK Ecosystem,V50 Pro 5G,vivo V50 Pro 5G,vivo V Series,42999.0,"₹42,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766767
 vivo,BBK Ecosystem,V50 5G,vivo V50 5G,vivo V Series,34999.0,"₹34,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766771
 vivo,BBK Ecosystem,V40 Pro 5G,vivo V40 Pro 5G,vivo V Series,49999.0,"₹49,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766774
 vivo,BBK Ecosystem,V40 5G,vivo V40 5G,vivo V Series,34999.0,"₹34,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766778
@@ -143,8 +126,6 @@ vivo,BBK Ecosystem,Y300 5G,vivo Y300 5G,vivo Y Series,21999.0,"₹21,999",availa
 vivo,BBK Ecosystem,Y200 Pro 5G,vivo Y200 Pro 5G,vivo Y Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766804
 vivo,BBK Ecosystem,Y58 5G,vivo Y58 5G,vivo Y Series,19499.0,"₹19,499",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766807
 vivo,BBK Ecosystem,Y28 5G,vivo Y28 5G,vivo Y Series,13999.0,"₹13,999",available,,India,True,ACTIVE,https://www.vivo.com/in/products?choose=all,,,2026-08-18T23:46:27.766811
-iQOO,BBK Ecosystem,iQOO15R,iQOO15R,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576245
-iQOO,BBK Ecosystem,iQOO15R,iQOO15R,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576252
 iQOO,BBK Ecosystem,iQOO 15,iQOO 15,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576266
 iQOO,BBK Ecosystem,iQOO 15,iQOO 15,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576417
 iQOO,BBK Ecosystem,iQOO Neo 10R,iQOO Neo 10R,iQOO Neo Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576300
@@ -152,48 +133,31 @@ iQOO,BBK Ecosystem,iQOO 15R,iQOO 15R,iQOO Number Series,,,available,,India,True,
 iQOO,BBK Ecosystem,iQOO 15R,iQOO 15R,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576388
 iQOO,BBK Ecosystem,iQOO 15,iQOO 15,iQOO Number Series,,,available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576409
 iQOO,BBK Ecosystem,iQOO 13,iQOO 13,iQOO Number Series,54999.0,"₹54,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576497
-iQOO,BBK Ecosystem,iQOO 12 5G,iQOO 12 5G,iQOO Number Series,52999.0,"₹52,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576502
 iQOO,BBK Ecosystem,iQOO Neo 9 Pro 5G,iQOO Neo 9 Pro 5G,iQOO Neo Series,35999.0,"₹35,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576505
 iQOO,BBK Ecosystem,iQOO Neo 7 Pro 5G,iQOO Neo 7 Pro 5G,iQOO Neo Series,32999.0,"₹32,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576508
-iQOO,BBK Ecosystem,iQOO Z9 Turbo,iQOO Z9 Turbo,iQOO Z Series,26999.0,"₹26,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576511
 iQOO,BBK Ecosystem,iQOO Z9s Pro 5G,iQOO Z9s Pro 5G,iQOO Z Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576514
 iQOO,BBK Ecosystem,iQOO Z9s 5G,iQOO Z9s 5G,iQOO Z Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576517
 iQOO,BBK Ecosystem,iQOO Z9 5G,iQOO Z9 5G,iQOO Z Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576519
 iQOO,BBK Ecosystem,iQOO Z9x 5G,iQOO Z9x 5G,iQOO Z Series,12999.0,"₹12,999",available,,India,True,ACTIVE,https://www.iqoo.com/in/products?choose=all,,,2026-08-18T23:46:28.576523
-OPPO,BBK Ecosystem,OPPO Find X9 Ultra,OPPO Find X9 Ultra,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921629
-OPPO,BBK Ecosystem,OPPO Find X9s,OPPO Find X9s,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921681
-OPPO,BBK Ecosystem,OPPO Reno16 5G,OPPO Reno16 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918219
-OPPO,BBK Ecosystem,OPPO Reno16c 5G,OPPO Reno16c 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918258
-OPPO,BBK Ecosystem,OPPO F33 Pro 5G,OPPO F33 Pro 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923169
-OPPO,BBK Ecosystem,OPPO K14 5G,OPPO K14 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923712
-OPPO,BBK Ecosystem,OPPO Pad 5,OPPO Pad 5,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918471
-OPPO,BBK Ecosystem,OPPO Pad SE,OPPO Pad SE,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925123
-OPPO,BBK Ecosystem,OPPO Pad Air,OPPO Pad Air,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918554
-OPPO,BBK Ecosystem,OPPO Enco Air5,OPPO Enco Air5,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918609
-OPPO,BBK Ecosystem,OPPO Enco Air5 Pro,OPPO Enco Air5 Pro,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925132
-OPPO,BBK Ecosystem,OPPO Enco Buds3 Pro+,OPPO Enco Buds3 Pro+,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925149
-OPPO,BBK Ecosystem,OPPO Enco Buds3 Pro,OPPO Enco Buds3 Pro,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925158
-OPPO,BBK Ecosystem,OPPO Enco Air2 Pro,OPPO Enco Air2 Pro,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.919040
-OPPO,BBK Ecosystem,OPPO Bubble,OPPO Bubble,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.919107
-OPPO,BBK Ecosystem,OPPO AI,OPPO AI,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.919503
-OPPO,BBK Ecosystem,OPPO Apex Guard,OPPO Apex Guard,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925199
-OPPO,BBK Ecosystem,OPPO Reno16 5G,OPPO Reno16 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922359
-OPPO,BBK Ecosystem,OPPO Reno16c 5G,OPPO Reno16c 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922405
-OPPO,BBK Ecosystem,OPPO Pad 5NewOPPO Pad SEOPPO Pad Air,OPPO Pad 5NewOPPO Pad SEOPPO Pad Air,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918456
-OPPO,BBK Ecosystem,OPPO Pad 5,OPPO Pad 5,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925115
-OPPO,BBK Ecosystem,OPPO Enco Air5,OPPO Enco Air5,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925140
-OPPO,BBK Ecosystem,OPPO Bubble,OPPO Bubble,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925106
-OPPO,BBK Ecosystem,OPPO A6c 4G,OPPO A6c 4G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924333
-OPPO,BBK Ecosystem,OPPO Find X9 Pro,OPPO Find X9 Pro,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921723
-OPPO,BBK Ecosystem,OPPO Find X9,OPPO Find X9,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921765
+OPPO,BBK Ecosystem,OPPO Find X9 Ultra,OPPO Find X9 Ultra,Find Series,169999.0,"₹169,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921629
+OPPO,BBK Ecosystem,OPPO Find X9s,OPPO Find X9s,Find Series,79999.0,"₹79,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921681
+OPPO,BBK Ecosystem,OPPO Reno16 5G,OPPO Reno16 5G,Reno Series,66999.0,"₹66,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918219
+OPPO,BBK Ecosystem,OPPO Reno16c 5G,OPPO Reno16c 5G,Reno Series,49999.0,"₹49,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.918258
+OPPO,BBK Ecosystem,OPPO F33 Pro 5G,OPPO F33 Pro 5G,F Series,39999.0,"₹39,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923169
+OPPO,BBK Ecosystem,OPPO K14 5G,OPPO K14 5G,K Series,23999.0,"₹23,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923712
+OPPO,BBK Ecosystem,OPPO Reno16 5G,OPPO Reno16 5G,Reno Series,66999.0,"₹66,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922359
+OPPO,BBK Ecosystem,OPPO Reno16c 5G,OPPO Reno16c 5G,Reno Series,49999.0,"₹49,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922405
+OPPO,BBK Ecosystem,OPPO A6c 4G,OPPO A6c 4G,A Series,16999.0,"₹16,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924333
+OPPO,BBK Ecosystem,OPPO Find X9 Pro,OPPO Find X9 Pro,Find Series,84999.0,"₹84,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921723
+OPPO,BBK Ecosystem,OPPO Find X9,OPPO Find X9,Find Series,84999.0,"₹84,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921765
 OPPO,BBK Ecosystem,OPPO Find X8 Pro,OPPO Find X8 Pro,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921808
 OPPO,BBK Ecosystem,OPPO Find X8,OPPO Find X8,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921852
 OPPO,BBK Ecosystem,OPPO Find N3 Flip,OPPO Find N3 Flip,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921954
 OPPO,BBK Ecosystem,OPPO Find N2 Flip,OPPO Find N2 Flip,Find Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.921999
 OPPO,BBK Ecosystem,OPPO Reno15c 5G,OPPO Reno15c 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922445
-OPPO,BBK Ecosystem,OPPO Reno15 Pro 5G,OPPO Reno15 Pro 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922486
-OPPO,BBK Ecosystem,OPPO Reno15 Pro Mini 5G,OPPO Reno15 Pro Mini 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922532
-OPPO,BBK Ecosystem,OPPO Reno15 5G,OPPO Reno15 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922576
+OPPO,BBK Ecosystem,OPPO Reno15 Pro 5G,OPPO Reno15 Pro 5G,Reno Series,67999.0,"₹67,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922486
+OPPO,BBK Ecosystem,OPPO Reno15 Pro Mini 5G,OPPO Reno15 Pro Mini 5G,Reno Series,59999.0,"₹59,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922532
+OPPO,BBK Ecosystem,OPPO Reno15 5G,OPPO Reno15 5G,Reno Series,55999.0,"₹55,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922576
 OPPO,BBK Ecosystem,OPPO Reno14 Pro 5G,OPPO Reno14 Pro 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922618
 OPPO,BBK Ecosystem,OPPO Reno14 5G,OPPO Reno14 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922664
 OPPO,BBK Ecosystem,OPPO Reno13 Pro 5G,OPPO Reno13 Pro 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922706
@@ -202,7 +166,7 @@ OPPO,BBK Ecosystem,OPPO Reno12 Pro 5G,OPPO Reno12 Pro 5G,Reno Series,,,available
 OPPO,BBK Ecosystem,OPPO Reno12 5G,OPPO Reno12 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922839
 OPPO,BBK Ecosystem,OPPO Reno11 Pro 5G,OPPO Reno11 Pro 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922881
 OPPO,BBK Ecosystem,OPPO Reno11 5G,OPPO Reno11 5G,Reno Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.922924
-OPPO,BBK Ecosystem,OPPO F33 5G,OPPO F33 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923212
+OPPO,BBK Ecosystem,OPPO F33 5G,OPPO F33 5G,F Series,34999.0,"₹34,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923212
 OPPO,BBK Ecosystem,OPPO F31 Pro+ 5G,OPPO F31 Pro+ 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923257
 OPPO,BBK Ecosystem,OPPO F31 Pro 5G,OPPO F31 Pro 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923298
 OPPO,BBK Ecosystem,OPPO F31 5G,OPPO F31 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923341
@@ -210,17 +174,17 @@ OPPO,BBK Ecosystem,OPPO F29 Pro 5G,OPPO F29 Pro 5G,F Series,,,available,,India,T
 OPPO,BBK Ecosystem,OPPO F29 5G,OPPO F29 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923421
 OPPO,BBK Ecosystem,OPPO F27 5G,OPPO F27 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923462
 OPPO,BBK Ecosystem,OPPO F27 Pro+ 5G,OPPO F27 Pro+ 5G,F Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923507
-OPPO,BBK Ecosystem,OPPO K14x 5G,OPPO K14x 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923754
+OPPO,BBK Ecosystem,OPPO K14x 5G,OPPO K14x 5G,K Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923754
 OPPO,BBK Ecosystem,OPPO K13 Turbo Pro 5G,OPPO K13 Turbo Pro 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923801
 OPPO,BBK Ecosystem,OPPO K13 Turbo 5G,OPPO K13 Turbo 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923849
 OPPO,BBK Ecosystem,OPPO K13x 5G,OPPO K13x 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923897
 OPPO,BBK Ecosystem,OPPO K13 5G,OPPO K13 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923940
 OPPO,BBK Ecosystem,OPPO K12x 5G,OPPO K12x 5G,K Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.923988
-OPPO,BBK Ecosystem,OPPO A6s 5G,OPPO A6s 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924379
-OPPO,BBK Ecosystem,OPPO A6 5G,OPPO A6 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924423
-OPPO,BBK Ecosystem,OPPO A6x,OPPO A6x,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924467
-OPPO,BBK Ecosystem,OPPO A6 Pro 5G,OPPO A6 Pro 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924508
-OPPO,BBK Ecosystem,OPPO A6x 5G,OPPO A6x 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924547
+OPPO,BBK Ecosystem,OPPO A6s 5G,OPPO A6s 5G,A Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924379
+OPPO,BBK Ecosystem,OPPO A6 5G,OPPO A6 5G,A Series,26999.0,"₹26,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924423
+OPPO,BBK Ecosystem,OPPO A6x,OPPO A6x,A Series,12999.0,"₹12,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924467
+OPPO,BBK Ecosystem,OPPO A6 Pro 5G,OPPO A6 Pro 5G,A Series,32999.0,"₹32,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924508
+OPPO,BBK Ecosystem,OPPO A6x 5G,OPPO A6x 5G,A Series,12999.0,"₹12,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924547
 OPPO,BBK Ecosystem,OPPO A5x,OPPO A5x,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924589
 OPPO,BBK Ecosystem,OPPO A5 5G,OPPO A5 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924631
 OPPO,BBK Ecosystem,OPPO A5x 5G,OPPO A5x 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924674
@@ -229,11 +193,6 @@ OPPO,BBK Ecosystem,OPPO A3 Pro 5G,OPPO A3 Pro 5G,A Series,,,available,,India,Tru
 OPPO,BBK Ecosystem,OPPO A3x 5G,OPPO A3x 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924805
 OPPO,BBK Ecosystem,OPPO A3 5G,OPPO A3 5G,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924847
 OPPO,BBK Ecosystem,OPPO A3x,OPPO A3x,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.924888
-OPPO,BBK Ecosystem,OPPO Update,OPPO Update,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925172
-OPPO,BBK Ecosystem,OPPO Lock,OPPO Lock,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925184
-OPPO,BBK Ecosystem,OPPO Community,OPPO Community,A Series,,,available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925214
-OPPO,BBK Ecosystem,OPPO F25 Pro 5G,OPPO F25 Pro 5G,F Series,23999.0,"₹23,999",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925360
-OPPO,BBK Ecosystem,OPPO A79 5G,OPPO A79 5G,A Series,17499.0,"₹17,499",available,,India,True,ACTIVE,https://www.oppo.com/in/smartphones/,,,2026-08-18T23:46:28.925366
 OnePlus,BBK Ecosystem,OnePlus Nord 6,OnePlus Nord 6,OnePlus Nord Series,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-nord-6,,2026-08-18T23:46:29.150819
 OnePlus,BBK Ecosystem,OnePlus 15R,OnePlus 15R,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-15r,,2026-08-18T23:46:29.150868
 OnePlus,BBK Ecosystem,OnePlus Nord CE 3 Lite 5G,OnePlus Nord CE 3 Lite 5G,OnePlus Nord Series,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-nord-ce-3-lite-5g,,2026-08-18T23:46:29.150928
@@ -256,126 +215,69 @@ OnePlus,BBK Ecosystem,OnePlus 10 Pro 5G,OnePlus 10 Pro 5G,OnePlus Flagship,,,ava
 OnePlus,BBK Ecosystem,OnePlus 13R,OnePlus 13R,OnePlus Flagship,,,available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,https://www.oneplus.in/oneplus-13r,,2026-08-18T23:46:29.151282
 OnePlus,BBK Ecosystem,OnePlus Nord CE4 5G,OnePlus Nord CE4 5G,OnePlus Nord Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,,,2026-08-18T23:46:29.151369
 OnePlus,BBK Ecosystem,OnePlus Nord CE4 Lite 5G,OnePlus Nord CE4 Lite 5G,OnePlus Nord Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.oneplus.in/store/phone,,,2026-08-18T23:46:29.151381
-realme,BBK Ecosystem,realme 16x 5G,realme 16x 5G,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801163
-realme,BBK Ecosystem,realme C100x,realme C100x,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805151
-realme,BBK Ecosystem,realme NARZO 100x 5G,realme NARZO 100x 5G,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802832
-realme,BBK Ecosystem,realme P4R 5G,realme P4R 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801603
-realme,BBK Ecosystem,realme 16T 5G,realme 16T 5G,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801222
-realme,BBK Ecosystem,realme NARZO 100 Lite 5G₹₹,realme NARZO 100 Lite 5G₹₹,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.800569
-realme,BBK Ecosystem,realme NARZO 100 Lite 5G,realme NARZO 100 Lite 5G,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804774
-realme,BBK Ecosystem,realme GT 8 Pro₹₹,realme GT 8 Pro₹₹,GT Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.800991
-realme,BBK Ecosystem,realme GT 8 Pro,realme GT 8 Pro,GT Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801027
-realme,BBK Ecosystem,realme GT 7T₹₹,realme GT 7T₹₹,GT Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801059
-realme,BBK Ecosystem,realme GT 7T,realme GT 7T,GT Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801087
-realme,BBK Ecosystem,realme 16T 5G₹₹,realme 16T 5G₹₹,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801194
-realme,BBK Ecosystem,realme 16 5G₹₹,realme 16 5G₹₹,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801254
-realme,BBK Ecosystem,realme 16 5G,realme 16 5G,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801281
-realme,BBK Ecosystem,realme 16 Pro+ 5G₹₹,realme 16 Pro+ 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801315
-realme,BBK Ecosystem,realme 16 Pro+ 5G,realme 16 Pro+ 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801345
-realme,BBK Ecosystem,realme 16 Pro 5G₹₹,realme 16 Pro 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801377
-realme,BBK Ecosystem,realme 16 Pro 5G,realme 16 Pro 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801407
-realme,BBK Ecosystem,realme 15x 5G₹₹,realme 15x 5G₹₹,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801437
-realme,BBK Ecosystem,realme 15x 5G,realme 15x 5G,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801465
-realme,BBK Ecosystem,realme 15T₹₹,realme 15T₹₹,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801496
-realme,BBK Ecosystem,realme 15T,realme 15T,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801522
-realme,BBK Ecosystem,realme P4 Lite 5G₹₹,realme P4 Lite 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801663
-realme,BBK Ecosystem,realme P4 Lite 5G,realme P4 Lite 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801710
-realme,BBK Ecosystem,realme P4 Lite₹₹,realme P4 Lite₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801756
-realme,BBK Ecosystem,realme P4 Lite,realme P4 Lite,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801796
-realme,BBK Ecosystem,realme P4 Power 5G₹₹,realme P4 Power 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802004
-realme,BBK Ecosystem,realme P4 Power 5G,realme P4 Power 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802053
-realme,BBK Ecosystem,realme P4x 5G₹₹,realme P4x 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802092
-realme,BBK Ecosystem,realme P4x 5G,realme P4x 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802592
-realme,BBK Ecosystem,realme P4 5G₹₹,realme P4 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802639
-realme,BBK Ecosystem,realme P4 5G,realme P4 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802669
-realme,BBK Ecosystem,realme P4 Pro 5G₹₹,realme P4 Pro 5G₹₹,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802701
-realme,BBK Ecosystem,realme P4 Pro 5G,realme P4 Pro 5G,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802730
-realme,BBK Ecosystem,realme NARZO Power 5G₹₹,realme NARZO Power 5G₹₹,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804840
-realme,BBK Ecosystem,realme NARZO Power 5G,realme NARZO Power 5G,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804877
-realme,BBK Ecosystem,realme NARZO 90 5G₹₹,realme NARZO 90 5G₹₹,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804913
-realme,BBK Ecosystem,realme NARZO 90 5G,realme NARZO 90 5G,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804946
-realme,BBK Ecosystem,realme NARZO 90x 5G₹₹,realme NARZO 90x 5G₹₹,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804981
-realme,BBK Ecosystem,realme NARZO 90x 5G,realme NARZO 90x 5G,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805015
-realme,BBK Ecosystem,realme NARZO 80 Lite₹₹,realme NARZO 80 Lite₹₹,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805050
-realme,BBK Ecosystem,realme NARZO 80 Lite,realme NARZO 80 Lite,NARZO Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805082
-realme,BBK Ecosystem,realme C83 5G₹₹,realme C83 5G₹₹,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805185
-realme,BBK Ecosystem,realme C83 5G,realme C83 5G,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805214
-realme,BBK Ecosystem,realme C85 5G₹₹,realme C85 5G₹₹,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805246
-realme,BBK Ecosystem,realme C85 5G,realme C85 5G,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805277
-realme,BBK Ecosystem,realme UI,realme UI,Number Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.807549
-realme,BBK Ecosystem,realme Phones,realme Phones,P Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808027
-realme,BBK Ecosystem,realme Care+,realme Care+,C Series,,,available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808042
-realme,BBK Ecosystem,realme GT 7 Pro,realme GT 7 Pro,GT Series,59999.0,"₹59,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808609
-realme,BBK Ecosystem,realme GT 6,realme GT 6,GT Series,40999.0,"₹40,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808616
-realme,BBK Ecosystem,realme GT 6T,realme GT 6T,GT Series,30999.0,"₹30,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808622
-realme,BBK Ecosystem,realme 15 Pro+ 5G,realme 15 Pro+ 5G,Number Series,31999.0,"₹31,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808626
-realme,BBK Ecosystem,realme 15 Pro 5G,realme 15 Pro 5G,Number Series,25999.0,"₹25,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808630
-realme,BBK Ecosystem,realme 15 5G,realme 15 5G,Number Series,18999.0,"₹18,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808633
-realme,BBK Ecosystem,realme 14 Pro+ 5G,realme 14 Pro+ 5G,Number Series,29999.0,"₹29,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808637
-realme,BBK Ecosystem,realme 14 Pro 5G,realme 14 Pro 5G,Number Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808641
-realme,BBK Ecosystem,realme 14x 5G,realme 14x 5G,Number Series,14999.0,"₹14,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808645
-realme,BBK Ecosystem,realme 13 Pro+ 5G,realme 13 Pro+ 5G,Number Series,29999.0,"₹29,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808649
-realme,BBK Ecosystem,realme 13 Pro 5G,realme 13 Pro 5G,Number Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808653
-realme,BBK Ecosystem,realme 13+ 5G,realme 13+ 5G,Number Series,22999.0,"₹22,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808657
-realme,BBK Ecosystem,realme 13 5G,realme 13 5G,Number Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808661
-realme,BBK Ecosystem,realme P2 Pro 5G,realme P2 Pro 5G,P Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808665
-realme,BBK Ecosystem,realme P1 Pro 5G,realme P1 Pro 5G,P Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808668
-realme,BBK Ecosystem,realme P1 Speed 5G,realme P1 Speed 5G,P Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808672
-realme,BBK Ecosystem,realme P1 5G,realme P1 5G,P Series,14999.0,"₹14,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808675
-realme,BBK Ecosystem,realme NARZO 70 Turbo 5G,realme NARZO 70 Turbo 5G,NARZO Series,16999.0,"₹16,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808678
-realme,BBK Ecosystem,realme NARZO 70 Pro 5G,realme NARZO 70 Pro 5G,NARZO Series,18999.0,"₹18,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808686
-realme,BBK Ecosystem,realme NARZO 70 5G,realme NARZO 70 5G,NARZO Series,14999.0,"₹14,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808689
-realme,BBK Ecosystem,realme NARZO 70x 5G,realme NARZO 70x 5G,NARZO Series,11999.0,"₹11,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808692
-realme,BBK Ecosystem,realme NARZO N65 5G,realme NARZO N65 5G,NARZO Series,11499.0,"₹11,499",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808696
-realme,BBK Ecosystem,realme C67 5G,realme C67 5G,C Series,11999.0,"₹11,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808700
-realme,BBK Ecosystem,realme C65 5G,realme C65 5G,C Series,10499.0,"₹10,499",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808704
-realme,BBK Ecosystem,realme C63 5G,realme C63 5G,C Series,8999.0,"₹8,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808708
-realme,BBK Ecosystem,realme C61,realme C61,C Series,7699.0,"₹7,699",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808712
-Motorola,Mainstream & Flagship,Motorola Signature,Motorola Signature,Moto G Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451335
-Motorola,Mainstream & Flagship,motorolasignature,motorolasignature,Moto G Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451374
-Motorola,Mainstream & Flagship,motorola razr,motorola razr,Razr Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451399
-Motorola,Mainstream & Flagship,motorolarazr fold,motorolarazr fold,Razr Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451424
-Motorola,Mainstream & Flagship,motorolarazr 60,motorolarazr 60,Razr Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451441
-Motorola,Mainstream & Flagship,motorolarazr 60 ultra,motorolarazr 60 ultra,Razr Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451467
-Motorola,Mainstream & Flagship,motorola edge,motorola edge,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451486
-Motorola,Mainstream & Flagship,motorolaedge 70 max,motorolaedge 70 max,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451505
-Motorola,Mainstream & Flagship,motorolaedge 70 pro plus,motorolaedge 70 pro plus,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451525
-Motorola,Mainstream & Flagship,motorolaedge 70 pro,motorolaedge 70 pro,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451543
-Motorola,Mainstream & Flagship,motoedge 70 fusion,Motorola motoedge 70 fusion,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451561
-Motorola,Mainstream & Flagship,motoedge 70,Motorola motoedge 70,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451578
-Motorola,Mainstream & Flagship,motorolaedge 60 fusion,motorolaedge 60 fusion,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451596
-Motorola,Mainstream & Flagship,motorolaedge 60 pro,motorolaedge 60 pro,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451612
-Motorola,Mainstream & Flagship,motorolaedge 50 ultraDeal,motorolaedge 50 ultraDeal,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451632
-Motorola,Mainstream & Flagship,moto g,Motorola moto g,Moto G Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451651
-Motorola,Mainstream & Flagship,moto g37 power,Motorola moto g37 power,Moto G Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451881
-Motorola,Mainstream & Flagship,moto g37,Motorola moto g37,Moto G Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451968
-Motorola,Mainstream & Flagship,motorola edge 70 fusion,motorola edge 70 fusion,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:34.569677
-Motorola,Mainstream & Flagship,motorola edge 60 pro,motorola edge 60 pro,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:39.429404
-Motorola,Mainstream & Flagship,razr family,Motorola razr family,Razr Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:35.627534
-Motorola,Mainstream & Flagship,motorola razr fold,motorola razr fold,Razr Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:35.627576
-Motorola,Mainstream & Flagship,motorola razr 60 ultra,motorola razr 60 ultra,Razr Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:35.627665
-Motorola,Mainstream & Flagship,motorola razr 60,motorola razr 60,Razr Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:35.627747
-Motorola,Mainstream & Flagship,moto edge family,Motorola moto edge family,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:39.429011
-Motorola,Mainstream & Flagship,motorola edge 70 max,motorola edge 70 max,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:39.429170
-Motorola,Mainstream & Flagship,motorola edge 70 pro,motorola edge 70 pro,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:39.429298
-Motorola,Mainstream & Flagship,motorola edge 70 pro plus,motorola edge 70 pro plus,Edge Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:39.429508
-Motorola,Mainstream & Flagship,moto g family,Motorola moto g family,Moto G Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451805
-Motorola,Mainstream & Flagship,moto g57 power 5G,Motorola moto g57 power 5G,Moto G Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452052
-Motorola,Mainstream & Flagship,moto g67 power 5G,Motorola moto g67 power 5G,Moto G Family,,,available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452126
-Motorola,Mainstream & Flagship,motorola razr 50 ultra,motorola razr 50 ultra,Razr Family,89999.0,"₹89,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452193
-Motorola,Mainstream & Flagship,motorola razr 50,motorola razr 50,Razr Family,64999.0,"₹64,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452200
-Motorola,Mainstream & Flagship,motorola razr 40 ultra,motorola razr 40 ultra,Razr Family,69999.0,"₹69,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452203
-Motorola,Mainstream & Flagship,motorola edge 50 ultra,motorola edge 50 ultra,Edge Family,54999.0,"₹54,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452206
-Motorola,Mainstream & Flagship,motorola edge 50 pro,motorola edge 50 pro,Edge Family,31999.0,"₹31,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452210
-Motorola,Mainstream & Flagship,motorola edge 50,motorola edge 50,Edge Family,27999.0,"₹27,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452213
-Motorola,Mainstream & Flagship,motorola edge 50 fusion,motorola edge 50 fusion,Edge Family,22999.0,"₹22,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452216
-Motorola,Mainstream & Flagship,moto g85 5G,Motorola moto g85 5G,Moto G Family,17999.0,"₹17,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452220
+realme,BBK Ecosystem,realme 16x 5G,realme 16x 5G,Number Series,25999.0,"₹25,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801163
+realme,BBK Ecosystem,realme C100x,realme C100x,C Series,16999.0,"₹16,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805151
+realme,BBK Ecosystem,realme NARZO 100x 5G,realme NARZO 100x 5G,NARZO Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802832
+realme,BBK Ecosystem,realme P4R 5G,realme P4R 5G,P Series,18999.0,"₹18,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801603
+realme,BBK Ecosystem,realme 16T 5G,realme 16T 5G,Number Series,30999.0,"₹30,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801222
+realme,BBK Ecosystem,realme NARZO 100 Lite 5G₹₹,realme NARZO 100 Lite 5G₹₹,NARZO Series,15499.0,"₹15,499",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.800569
+realme,BBK Ecosystem,realme NARZO 100 Lite 5G,realme NARZO 100 Lite 5G,NARZO Series,15499.0,"₹15,499",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804774
+realme,BBK Ecosystem,realme GT 8 Pro₹₹,realme GT 8 Pro₹₹,GT Series,72999.0,"₹72,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.800991
+realme,BBK Ecosystem,realme GT 8 Pro,realme GT 8 Pro,GT Series,72999.0,"₹72,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801027
+realme,BBK Ecosystem,realme GT 7T₹₹,realme GT 7T₹₹,GT Series,39999.0,"₹39,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801059
+realme,BBK Ecosystem,realme GT 7T,realme GT 7T,GT Series,39999.0,"₹39,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801087
+realme,BBK Ecosystem,realme 16T 5G₹₹,realme 16T 5G₹₹,Number Series,30999.0,"₹30,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801194
+realme,BBK Ecosystem,realme 16 5G₹₹,realme 16 5G₹₹,Number Series,36999.0,"₹36,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801254
+realme,BBK Ecosystem,realme 16 5G,realme 16 5G,Number Series,36999.0,"₹36,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801281
+realme,BBK Ecosystem,realme 16 Pro+ 5G₹₹,realme 16 Pro+ 5G₹₹,P Series,53999.0,"₹53,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801315
+realme,BBK Ecosystem,realme 16 Pro+ 5G,realme 16 Pro+ 5G,P Series,53999.0,"₹53,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801345
+realme,BBK Ecosystem,realme 15x 5G₹₹,realme 15x 5G₹₹,Number Series,23999.0,"₹23,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801437
+realme,BBK Ecosystem,realme 15x 5G,realme 15x 5G,Number Series,23999.0,"₹23,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801465
+realme,BBK Ecosystem,realme P4 Lite 5G₹₹,realme P4 Lite 5G₹₹,P Series,15999.0,"₹15,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801663
+realme,BBK Ecosystem,realme P4 Lite 5G,realme P4 Lite 5G,P Series,15999.0,"₹15,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801710
+realme,BBK Ecosystem,realme P4 Lite₹₹,realme P4 Lite₹₹,P Series,12999.0,"₹12,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801756
+realme,BBK Ecosystem,realme P4 Lite,realme P4 Lite,P Series,12999.0,"₹12,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.801796
+realme,BBK Ecosystem,realme P4 Power 5G₹₹,realme P4 Power 5G₹₹,P Series,29999.0,"₹29,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802004
+realme,BBK Ecosystem,realme P4 Power 5G,realme P4 Power 5G,P Series,29999.0,"₹29,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802053
+realme,BBK Ecosystem,realme P4x 5G₹₹,realme P4x 5G₹₹,P Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802092
+realme,BBK Ecosystem,realme P4x 5G,realme P4x 5G,P Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802592
+realme,BBK Ecosystem,realme P4 5G₹₹,realme P4 5G₹₹,P Series,25999.0,"₹25,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802639
+realme,BBK Ecosystem,realme P4 5G,realme P4 5G,P Series,25999.0,"₹25,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802669
+realme,BBK Ecosystem,realme P4 Pro 5G₹₹,realme P4 Pro 5G₹₹,P Series,28999.0,"₹28,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802701
+realme,BBK Ecosystem,realme P4 Pro 5G,realme P4 Pro 5G,P Series,28999.0,"₹28,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.802730
+realme,BBK Ecosystem,realme NARZO Power 5G₹₹,realme NARZO Power 5G₹₹,NARZO Series,26999.0,"₹26,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804840
+realme,BBK Ecosystem,realme NARZO Power 5G,realme NARZO Power 5G,NARZO Series,26999.0,"₹26,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804877
+realme,BBK Ecosystem,realme NARZO 90x 5G₹₹,realme NARZO 90x 5G₹₹,NARZO Series,17499.0,"₹17,499",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.804981
+realme,BBK Ecosystem,realme NARZO 90x 5G,realme NARZO 90x 5G,NARZO Series,17499.0,"₹17,499",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805015
+realme,BBK Ecosystem,realme C83 5G₹₹,realme C83 5G₹₹,C Series,18499.0,"₹18,499",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805185
+realme,BBK Ecosystem,realme C83 5G,realme C83 5G,C Series,18499.0,"₹18,499",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805214
+realme,BBK Ecosystem,realme C85 5G₹₹,realme C85 5G₹₹,C Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805246
+realme,BBK Ecosystem,realme C85 5G,realme C85 5G,C Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.805277
+realme,BBK Ecosystem,realme 15 Pro 5G,realme 15 Pro 5G,Number Series,33999.0,"₹33,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808630
+realme,BBK Ecosystem,realme 15 5G,realme 15 5G,Number Series,29999.0,"₹29,999",available,,India,True,ACTIVE,https://www.realme.com/in/search?keyword=realme,,,2026-08-18T23:46:29.808633
+Motorola,Mainstream & Flagship,Motorola Signature,Motorola Signature,Moto G Family,59999.0,"₹59,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451335
+Motorola,Mainstream & Flagship,motoedge 70 fusion,Motorola motoedge 70 fusion,Edge Family,30999.0,"₹30,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451561
+Motorola,Mainstream & Flagship,motoedge 70,Motorola motoedge 70,Edge Family,27999.0,"₹27,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451578
+Motorola,Mainstream & Flagship,moto g37 power,Motorola moto g37 power,Moto G Family,17999.0,"₹17,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451881
+Motorola,Mainstream & Flagship,moto g37,Motorola moto g37,Moto G Family,16999.0,"₹16,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.451968
+Motorola,Mainstream & Flagship,motorola edge 70 fusion,motorola edge 70 fusion,Edge Family,30999.0,"₹30,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:34.569677
+Motorola,Mainstream & Flagship,motorola edge 60 pro,motorola edge 60 pro,Edge Family,37999.0,"₹37,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:39.429404
+Motorola,Mainstream & Flagship,motorola razr fold,motorola razr fold,Razr Family,149999.0,"₹149,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:35.627576
+Motorola,Mainstream & Flagship,motorola razr 60 ultra,motorola razr 60 ultra,Razr Family,79999.0,"₹79,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:35.627665
+Motorola,Mainstream & Flagship,motorola razr 60,motorola razr 60,Razr Family,49999.0,"₹49,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:35.627747
+Motorola,Mainstream & Flagship,motorola edge 70 max,motorola edge 70 max,Edge Family,54999.0,"₹54,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:39.429170
+Motorola,Mainstream & Flagship,motorola edge 70 pro,motorola edge 70 pro,Edge Family,39999.0,"₹39,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:39.429298
+Motorola,Mainstream & Flagship,motorola edge 70 pro plus,motorola edge 70 pro plus,Edge Family,47999.0,"₹47,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:39.429508
+Motorola,Mainstream & Flagship,moto g57 power 5G,Motorola moto g57 power 5G,Moto G Family,21999.0,"₹21,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452052
+Motorola,Mainstream & Flagship,moto g67 power 5G,Motorola moto g67 power 5G,Moto G Family,27999.0,"₹27,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452126
+Motorola,Mainstream & Flagship,motorola edge 50 ultra,motorola edge 50 ultra,Edge Family,34999.0,"₹34,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452206
+Motorola,Mainstream & Flagship,motorola edge 50 fusion,motorola edge 50 fusion,Edge Family,20999.0,"₹20,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452216
+Motorola,Mainstream & Flagship,moto g85 5G,Motorola moto g85 5G,Moto G Family,15999.0,"₹15,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452220
 Motorola,Mainstream & Flagship,moto g64 5G,Motorola moto g64 5G,Moto G Family,14999.0,"₹14,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452223
-Motorola,Mainstream & Flagship,moto g45 5G,Motorola moto g45 5G,Moto G Family,10999.0,"₹10,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452227
-Motorola,Mainstream & Flagship,moto g35 5G,Motorola moto g35 5G,Moto G Family,9999.0,"₹9,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452230
-Motorola,Mainstream & Flagship,moto g05,Motorola moto g05,Moto G Family,7999.0,"₹7,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452233
-Motorola,Mainstream & Flagship,moto g04s,Motorola moto g04s,Moto G Family,6999.0,"₹6,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452237
-Motorola,Mainstream & Flagship,motorola signature,motorola signature,Motorola Signature,49999.0,"₹49,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452240
+Motorola,Mainstream & Flagship,moto g45 5G,Motorola moto g45 5G,Moto G Family,12999.0,"₹12,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452227
+Motorola,Mainstream & Flagship,moto g35 5G,Motorola moto g35 5G,Moto G Family,12499.0,"₹12,499",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452230
+Motorola,Mainstream & Flagship,moto g05,Motorola moto g05,Moto G Family,7499.0,"₹7,499",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452233
+Motorola,Mainstream & Flagship,motorola signature,motorola signature,Motorola Signature,59999.0,"₹59,999",available,,India,True,ACTIVE,https://www.motorola.in/smartphones,,,2026-08-18T23:46:41.452240
 Nothing,Nothing Ecosystem,Phone (4a),Nothing Phone (4a),Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319220
 Nothing,Nothing Ecosystem,Phone (4a) Pro,Nothing Phone (4a) Pro,Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319335
 Nothing,Nothing Ecosystem,Phone (4b),Nothing Phone (4b),Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319435
@@ -383,9 +285,6 @@ Nothing,Nothing Ecosystem,Phone (3),Nothing Phone (3),Nothing Phone Series,,,ava
 Nothing,Nothing Ecosystem,Phone (3a) Lite,Nothing Phone (3a) Lite,Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319599
 Nothing,Nothing Ecosystem,Phone (3a) Pro,Nothing Phone (3a) Pro,Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319652
 Nothing,Nothing Ecosystem,Phone (3a),Nothing Phone (3a),Nothing Phone Series,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319721
-Nothing,Nothing Ecosystem,Phone (2),Nothing Phone (2),Nothing Phone Series,39999.0,"₹39,999",available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319825
-Nothing,Nothing Ecosystem,Phone (2a) Plus,Nothing Phone (2a) Plus,Nothing Phone Series,27999.0,"₹27,999",available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319837
-Nothing,Nothing Ecosystem,Phone (2a),Nothing Phone (2a),Nothing Phone Series,23999.0,"₹23,999",available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.319845
 CMF,Nothing Ecosystem,CMF Phone 2 Pro,CMF Phone 2 Pro,CMF by Nothing,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.696273
 CMF,Nothing Ecosystem,CMF Phone 1,CMF Phone 1,CMF by Nothing,,,available,,India,True,ACTIVE,https://in.nothing.tech/collections/phones,,,2026-08-18T23:46:42.696413
 Google,Mainstream & Flagship,Pixel 11 Pro,Google Pixel 11 Pro,Pixel Series,109999.0,"₹109,999",available,,India,True,ACTIVE,https://store.google.com/in/category/phones?hl=en-IN,,,2026-08-18T23:46:46.198655
@@ -424,7 +323,6 @@ TECNO,Mainstream & Flagship,POVA 6 Pro 5G,TECNO POVA 6 Pro 5G,POVA,19999.0,"₹1
 TECNO,Mainstream & Flagship,POVA 6 Neo 5G,TECNO POVA 6 Neo 5G,POVA,12999.0,"₹12,999",available,,India,True,ACTIVE,https://www.tecno-mobile.in/phones/product-list/,,,2026-08-18T23:46:47.985321
 TECNO,Mainstream & Flagship,PHANTOM V Fold2 5G,TECNO PHANTOM V Fold2 5G,PHANTOM,79999.0,"₹79,999",available,,India,True,ACTIVE,https://www.tecno-mobile.in/phones/product-list/,,,2026-08-18T23:46:47.985325
 TECNO,Mainstream & Flagship,PHANTOM V Flip2 5G,TECNO PHANTOM V Flip2 5G,PHANTOM,49999.0,"₹49,999",available,,India,True,ACTIVE,https://www.tecno-mobile.in/phones/product-list/,,,2026-08-18T23:46:47.985328
-TECNO,Mainstream & Flagship,PHANTOM V Fold 5G,TECNO PHANTOM V Fold 5G,PHANTOM,69999.0,"₹69,999",available,,India,True,ACTIVE,https://www.tecno-mobile.in/phones/product-list/,,,2026-08-18T23:46:47.985331
 TECNO,Mainstream & Flagship,CAMON 30 Premier 5G,TECNO CAMON 30 Premier 5G,CAMON,39999.0,"₹39,999",available,,India,True,ACTIVE,https://www.tecno-mobile.in/phones/product-list/,,,2026-08-18T23:46:47.985335
 TECNO,Mainstream & Flagship,CAMON 30 5G,TECNO CAMON 30 5G,CAMON,22999.0,"₹22,999",available,,India,True,ACTIVE,https://www.tecno-mobile.in/phones/product-list/,,,2026-08-18T23:46:47.985343
 TECNO,Mainstream & Flagship,SPARK 30C 5G,TECNO SPARK 30C 5G,SPARK,9999.0,"₹9,999",available,,India,True,ACTIVE,https://www.tecno-mobile.in/phones/product-list/,,,2026-08-18T23:46:47.985346
@@ -432,45 +330,37 @@ TECNO,Mainstream & Flagship,SPARK 20 Pro 5G,TECNO SPARK 20 Pro 5G,SPARK,15999.0,
 TECNO,Mainstream & Flagship,SPARK 20 5G,TECNO SPARK 20 5G,SPARK,10499.0,"₹10,499",available,,India,True,ACTIVE,https://www.tecno-mobile.in/phones/product-list/,,,2026-08-18T23:46:47.985355
 TECNO,Mainstream & Flagship,POP 9 5G,TECNO POP 9 5G,POP,9499.0,"₹9,499",available,,India,True,ACTIVE,https://www.tecno-mobile.in/phones/product-list/,,,2026-08-18T23:46:47.985359
 TECNO,Mainstream & Flagship,POP 8,TECNO POP 8,POP,6599.0,"₹6,599",available,,India,True,ACTIVE,https://www.tecno-mobile.in/phones/product-list/,,,2026-08-18T23:46:47.985362
-Infinix,Mainstream & Flagship,Note 60 Pro Pininfarina Edition,Infinix Note 60 Pro Pininfarina Edition,NOTE Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.900257
-Infinix,Mainstream & Flagship,Note 60 Pro,Infinix Note 60 Pro,NOTE Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.900464
-Infinix,Mainstream & Flagship,Note 60 Pro CODM Edition,Infinix Note 60 Pro CODM Edition,NOTE Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.900664
-Infinix,Mainstream & Flagship,Smart 20,Infinix Smart 20,SMART Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.900858
-Infinix,Mainstream & Flagship,Note Edge JBL Edition,Infinix Note Edge JBL Edition,NOTE Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.901035
-Infinix,Mainstream & Flagship,Note Edge,Infinix Note Edge,NOTE Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.901246
-Infinix,Mainstream & Flagship,GT 30 Pro 5G+,Infinix GT 30 Pro 5G+,GT Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.901429
-Infinix,Mainstream & Flagship,GT 30 5G+Pro Gaming Smartphone,Infinix GT 30 5G+Pro Gaming Smartphone,GT Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.901583
-Infinix,Mainstream & Flagship,GT 30 5G+,Infinix GT 30 5G+,GT Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.901613
-Infinix,Mainstream & Flagship,Hot 60i 5G,Infinix Hot 60i 5G,HOT Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.901833
-Infinix,Mainstream & Flagship,Smart 10,Infinix Smart 10,SMART Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902026
-Infinix,Mainstream & Flagship,Hot 60 5G+Pro Gaming Experience,Infinix Hot 60 5G+Pro Gaming Experience,HOT Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902186
-Infinix,Mainstream & Flagship,Hot 60 5G+,Infinix Hot 60 5G+,HOT Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902218
-Infinix,Mainstream & Flagship,Note 40 5G,Infinix Note 40 5G,NOTE Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902399
-Infinix,Mainstream & Flagship,ZERO 40 5G,Infinix ZERO 40 5G,ZERO Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902559
-Infinix,Mainstream & Flagship,Zero Flip,Infinix Zero Flip,ZERO Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902733
-Infinix,Mainstream & Flagship,Note 40 Pro 5G Racing,Infinix Note 40 Pro 5G Racing,NOTE Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902905
-Infinix,Mainstream & Flagship,SMART 8 Plus,Infinix SMART 8 Plus,SMART Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.903082
-Infinix,Mainstream & Flagship,Smart 8,Infinix Smart 8,SMART Series,,,available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.903263
-Infinix,Mainstream & Flagship,GT 20 Pro 5G,Infinix GT 20 Pro 5G,GT Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.904788
+Infinix,Mainstream & Flagship,Note 60 Pro Pininfarina Edition,Infinix Note 60 Pro Pininfarina Edition,NOTE Series,40999.0,"₹40,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.900257
+Infinix,Mainstream & Flagship,Note 60 Pro,Infinix Note 60 Pro,NOTE Series,35999.0,"₹35,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.900464
+Infinix,Mainstream & Flagship,Note 60 Pro CODM Edition,Infinix Note 60 Pro CODM Edition,NOTE Series,35999.0,"₹35,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.900664
+Infinix,Mainstream & Flagship,Smart 20,Infinix Smart,SMART Series,13499.0,"₹13,499",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.900858
+Infinix,Mainstream & Flagship,Note Edge JBL Edition,Infinix Note Edge JBL Edition,NOTE Series,29999.0,"₹29,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.901035
+Infinix,Mainstream & Flagship,Note Edge,Infinix Note Edge,NOTE Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.901246
+Infinix,Mainstream & Flagship,GT 30 Pro 5G+,Infinix GT 30 Pro 5G+,GT Series,29999.0,"₹29,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.901429
+Infinix,Mainstream & Flagship,GT 30 5G+,Infinix GT 30 5G+,GT Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.901613
+Infinix,Mainstream & Flagship,Hot 60i 5G,Infinix Hot 60i 5G,HOT Series,15999.0,"₹15,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.901833
+Infinix,Mainstream & Flagship,Smart 10,Infinix Smart,SMART Series,10999.0,"₹10,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902026
+Infinix,Mainstream & Flagship,Hot 60 5G+,Infinix Hot 60 5G+,HOT Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902218
+Infinix,Mainstream & Flagship,Note 40 5G,Infinix Note 40 5G,NOTE Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902399
+Infinix,Mainstream & Flagship,ZERO 40 5G,Infinix ZERO 40 5G,ZERO Series,27999.0,"₹27,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902559
+Infinix,Mainstream & Flagship,Zero Flip,Infinix Zero Flip,ZERO Series,49999.0,"₹49,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902733
+Infinix,Mainstream & Flagship,Note 40 Pro 5G Racing,Infinix Note 40 Pro 5G Racing,NOTE Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.902905
+Infinix,Mainstream & Flagship,SMART 8 Plus,Infinix SMART 8 Plus,SMART Series,7799.0,"₹7,799",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.903082
+Infinix,Mainstream & Flagship,Smart 8,Infinix Smart,SMART Series,6499.0,"₹6,499",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.903263
 Infinix,Mainstream & Flagship,ZERO Flip 5G,Infinix ZERO Flip 5G,ZERO Series,49999.0,"₹49,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.904798
-Infinix,Mainstream & Flagship,NOTE 40 Pro+ 5G,Infinix NOTE 40 Pro+ 5G,NOTE Series,24999.0,"₹24,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.904802
-Infinix,Mainstream & Flagship,NOTE 40 Pro 5G,Infinix NOTE 40 Pro 5G,NOTE Series,21999.0,"₹21,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.904805
-Infinix,Mainstream & Flagship,NOTE 40 5G,Infinix NOTE 40 5G,NOTE Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.904808
-Infinix,Mainstream & Flagship,HOT 50 5G,Infinix HOT 50 5G,HOT Series,10499.0,"₹10,499",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.904815
-Infinix,Mainstream & Flagship,HOT 50 Pro 5G,Infinix HOT 50 Pro 5G,HOT Series,13999.0,"₹13,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.904818
-Infinix,Mainstream & Flagship,SMART 9 HD,Infinix SMART 9 HD,SMART Series,6999.0,"₹6,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.904825
-Infinix,Mainstream & Flagship,SMART 8 5G,Infinix SMART 8 5G,SMART Series,7499.0,"₹7,499",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.904828
+Infinix,Mainstream & Flagship,NOTE 40 5G,Infinix NOTE 40 5G,NOTE Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.904808
+Infinix,Mainstream & Flagship,SMART 8 5G,Infinix SMART 8 5G,SMART Series,6499.0,"₹6,499",available,,India,True,ACTIVE,https://infinixmobiles.in/collections/smartphones,,,2026-08-18T23:46:48.904828
 Lava,Mainstream & Flagship,Agni 3 5G,Lava Agni 3 5G,Agni Series,20999.0,"₹20,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357641
-Lava,Mainstream & Flagship,Agni 2 5G,Lava Agni 2 5G,Agni Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357671
+Lava,Mainstream & Flagship,Agni 2 5G,Lava Agni 2 5G,Agni Series,19999.0,"₹19,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357671
 Lava,Mainstream & Flagship,Blaze Curve 5G,Lava Blaze Curve 5G,Blaze Series,17999.0,"₹17,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357681
 Lava,Mainstream & Flagship,Blaze 3 5G,Lava Blaze 3 5G,Blaze Series,11499.0,"₹11,499",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357689
-Lava,Mainstream & Flagship,Blaze Duo 5G,Lava Blaze Duo 5G,Blaze Series,13999.0,"₹13,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357703
-Lava,Mainstream & Flagship,Blaze 2 5G,Lava Blaze 2 5G,Blaze Series,9999.0,"₹9,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357714
-Lava,Mainstream & Flagship,Storm 5G,Lava Storm 5G,Storm Series,11999.0,"₹11,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357723
+Lava,Mainstream & Flagship,Blaze Duo 5G,Lava Blaze Duo 5G,Blaze Series,16999.0,"₹16,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357703
+Lava,Mainstream & Flagship,Blaze 2 5G,Lava Blaze 2 5G,Blaze Series,8999.0,"₹8,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357714
+Lava,Mainstream & Flagship,Storm 5G,Lava Storm 5G,Storm Series,13499.0,"₹13,499",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357723
 Lava,Mainstream & Flagship,Yuva 5G,Lava Yuva 5G,Yuva Series,9499.0,"₹9,499",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357731
-Lava,Mainstream & Flagship,Yuva 3 Pro,Lava Yuva 3 Pro,Yuva Series,8999.0,"₹8,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357738
-Lava,Mainstream & Flagship,Yuva 3,Lava Yuva 3,Yuva Series,6799.0,"₹6,799",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357746
-Lava,Mainstream & Flagship,Yuva Star,Lava Yuva Star,Yuva Series,6499.0,"₹6,499",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357754
+Lava,Mainstream & Flagship,Yuva 3 Pro,Lava Yuva 3 Pro,Yuva Series,7999.0,"₹7,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357738
+Lava,Mainstream & Flagship,Yuva 3,Lava Yuva 3,Yuva Series,6999.0,"₹6,999",available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357746
+Lava,Mainstream & Flagship,Yuva Star,Lava Yuva Star,Yuva Series,,,available,,India,True,ACTIVE,https://www.lavamobiles.com/smartphones?subCat=all,,,2026-08-18T23:46:49.357754
 ASUS,Mainstream & Flagship,ROG Phone 9 Pro,ASUS ROG Phone 9 Pro,ROG Gaming Series,104999.0,"₹104,999",active_limited,,India,True,ACTIVE_LIMITED,https://www.asus.com/mobile-handhelds/phones/all-series/,,,2026-08-18T23:46:49.602117
 ASUS,Mainstream & Flagship,ROG Phone 9,ASUS ROG Phone 9,ROG Gaming Series,89999.0,"₹89,999",active_limited,,India,True,ACTIVE_LIMITED,https://www.asus.com/mobile-handhelds/phones/all-series/,,,2026-08-18T23:46:49.602139
 ASUS,Mainstream & Flagship,ROG Phone 8 Pro,ASUS ROG Phone 8 Pro,ROG Gaming Series,94999.0,"₹94,999",active_limited,,India,True,ACTIVE_LIMITED,https://www.asus.com/mobile-handhelds/phones/all-series/,,,2026-08-18T23:46:49.602146

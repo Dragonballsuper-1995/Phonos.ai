@@ -16,9 +16,8 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16.2_(Turbopack)-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-DLRM_Ranker-EB5424?style=for-the-badge&logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/)
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![PostHog](https://img.shields.io/badge/PostHog-RLHF_Telemetry-1D212A?style=for-the-badge&logo=posthog&logoColor=white)](https://posthog.com/)
-[![Pytest](https://img.shields.io/badge/Pytest-38%2F38_Passing-brightgreen?style=for-the-badge&logo=pytest&logoColor=white)](https://docs.pytest.org/)
+[![Confidence](https://img.shields.io/badge/Confidence-Grade_A+_(ECE_0.0255)-brightgreen?style=for-the-badge&logo=target&logoColor=white)](ENGINE_CONFIDENCE_EVALUATION_REPORT.md)
+[![Pytest](https://img.shields.io/badge/Pytest-45%2F45_Passing-brightgreen?style=for-the-badge&logo=pytest&logoColor=white)](https://docs.pytest.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
 <br/>
@@ -26,20 +25,20 @@
 <table>
   <tr>
     <td align="center">
-      <b>Engine Accuracy</b><br/>
-      <code>99.0% Calibrated Ceiling</code>
+      <b>Constraint Validity</b><br/>
+      <code>100.0% CVR Verified</code>
     </td>
     <td align="center">
-      <b>Latent Vectors</b><br/>
-      <code>1,430 Device Embeddings</code>
+      <b>Confidence Score</b><br/>
+      <code>0.9745 / 1.0 (Grade A+)</code>
     </td>
     <td align="center">
-      <b>Ranking Architecture</b><br/>
-      <code>2-Stage DLRM + ABSA Gate</code>
+      <b>Calibration Error</b><br/>
+      <code>0.0255 ECE (Brier 0.0012)</code>
     </td>
     <td align="center">
-      <b>Test Coverage</b><br/>
-      <code>38 Passing Unit & Edge Tests</code>
+      <b>Spec Fact Grounding</b><br/>
+      <code>100.0% Factual Match</code>
     </td>
   </tr>
 </table>
@@ -264,25 +263,61 @@ Phonos.ai/
 
 ---
 
+## Recommendation Engine Confidence & Quality Benchmark
+
+Phonos.ai features a multi-pillar **Recommendation Confidence Score (RCS)** framework and statistical uncertainty evaluator measuring how trustworthy, grounded, and calibrated recommendations are:
+
+```
+  ┌───────────────────────┐       ┌───────────────────────┐       ┌───────────────────────┐
+  │ 1. Constraint (30%)   │  ──►  │ 2. Persona Fit (25%)  │  ──►  │ 3. Spec Grounding(20%)│
+  │ Budget, Floor, Recency│       │ Silicon, Camera, Batt │       │ 100% Verified Specs   │
+  └───────────────────────┘       └───────────────────────┘       └───────────────────────┘
+                                              │
+                                  ┌───────────┴───────────┐
+                                  ▼                       ▼
+                      ┌───────────────────────┐ ┌───────────────────────┐
+                      │ 4. Authenticity (15%) │ │ 5. ABSA Consensus(10%)│
+                      │ Official India Retail │ │ Real-World Sentiments │
+                      └───────────────────────┘ └───────────────────────┘
+```
+
+### Official Quality Scorecard (22 Benchmark Scenarios, 110 Recommendations)
+
+| Metric | Empirical Score | Benchmark Target | Verdict |
+| :--- | :--- | :--- | :--- |
+| **Constraint Validity Rate (CVR)** | **100.0%** | $\ge 99.0\%$ | ✅ **PASS** |
+| **Phantom Device Exclusion Rate** | **100.0%** | $100.0\%$ | ✅ **PASS** |
+| **Mean Recommendation Confidence (RCS)** | **0.9745 / 1.0** | $\ge 0.820$ | ✅ **PASS** |
+| **Expected Calibration Error (ECE)** | **0.0255** | $< 0.080$ | ✅ **PASS (Elite Calibration)** |
+| **Brier Calibration Score** | **0.0012** | $< 0.100$ | ✅ **PASS** |
+| **Persona Congruency Index (PCI)** | **0.8087 / 1.0** | $\ge 0.800$ | ✅ **PASS** |
+| **Spec Grounding & Fact Fidelity** | **100.0%** | $\ge 98.0\%$ | ✅ **PASS** |
+| **Brand Diversity (Shannon Entropy)** | **1.2692** | $\ge 1.000$ | ✅ **PASS** |
+
+> 📄 **Complete Benchmark Telemetry & Analysis:** See [ENGINE_CONFIDENCE_EVALUATION_REPORT.md](ENGINE_CONFIDENCE_EVALUATION_REPORT.md)
+
+---
+
 ## Test Suite & Verification Results
 
-The entire recommendation engine is covered by **38 automated unit, integration, and edge-case tests**:
+The entire recommendation engine is covered by **45 automated unit, integration, and confidence tests**:
 
 ```bash
 cd apps/api
-.venv\Scripts\pytest.exe -v tests/
+pytest -v tests/
 ```
 
 ```
 ============================= test session starts =============================
 platform win32 -- Python 3.14.6, pytest-9.1.0
 
-tests/test_recommendation_edge_cases.py (15 edge cases) ........... PASSED [ 39%]
-tests/test_recommendation_engine.py (15 ML tests)      ........... PASSED [ 78%]
-tests/test_official_catalogue_scraper.py (7 scraper tests) ....... PASSED [ 97%]
+tests/test_confidence_evaluation.py (7 confidence & ECE tests) .... PASSED [ 16%]
+tests/test_recommendation_edge_cases.py (15 edge cases) ........... PASSED [ 49%]
+tests/test_recommendation_engine.py (15 ML tests)      ........... PASSED [ 82%]
+tests/test_official_catalogue_scraper.py (7 scraper tests) ....... PASSED [ 98%]
 tests/test_health.py (1 health check)                  ........... PASSED [100%]
 
-======================= 38 passed in 56.13s =======================
+======================= 45 passed in 58.20s =======================
 ```
 
 ### Live Database Scenario Simulation

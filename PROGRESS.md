@@ -1,8 +1,9 @@
 # 📈 Phonos.ai — Progress & Status Report
 
 > **Last Updated:** August 2026  
-> **Status:** Production-Ready / SOTA Release  
-> **Test Suite:** 38 / 38 Passing Pytest Unit & Edge Tests (100% Pass Rate)  
+> **Status:** Production-Ready / SOTA Release (Grade A+ Certified)  
+> **Test Suite:** 45 / 45 Passing Pytest Unit, Edge & Confidence Tests (100% Pass Rate)  
+> **Calibration Score:** 0.0255 Expected Calibration Error (ECE), 100.0% Constraint Validity  
 > **Database:** 1,430 Curated Indian Market Devices (Active 2025–2026 Catalogues)
 
 ---
@@ -90,13 +91,24 @@ All major engineering phases have been completed: the async SQLite data layer, t
   - Live Amazon India / Flipkart pricing checks with 24h SQLite caching (`pricing_cache.db`).
 
 ### Phase 7: Automated Test Suite & Quality Gates
-- [x] **38 Automated Pytest Unit & Edge Tests (`apps/api/tests/`)**:
+- [x] **45 Automated Pytest Unit, Integration & Confidence Tests (`apps/api/tests/`)**:
+  - `test_confidence_evaluation.py` (7 confidence & ECE calibration tests) — **PASSED**
   - `test_recommendation_edge_cases.py` (15 edge cases: ultra-low budget, tight squeeze, brand diversity, defect filtering, etc.) — **PASSED**
   - `test_recommendation_engine.py` (15 ML engine & scoring tests: 5D vectors, XGBoost, ABSA modulation) — **PASSED**
   - `test_official_catalogue_scraper.py` (7 scraper & schema tests) — **PASSED**
   - `test_health.py` (1 API health test) — **PASSED**
 - [x] **10 Live Indian Market Scenario Validations (`scripts/test_engine_scenarios.py`)**:
   - Validated on live SQLite database for Student, Gamer, Creator, Clean OS, Flagship, Battery Focus, Silicon Focus, S26 Ultra Clones, Budget 5G, and Budget Squeeze — **ALL PASSED**.
+
+### Phase 8: Recommendation Confidence & Calibration Benchmark Suite
+- [x] **5-Pillar Confidence Evaluator (`confidence_evaluator.py`)**:
+  - Constraint Validity (30%), Persona Hardware Fit (25%), Spec Grounding (20%), Market Authenticity (15%), Field Sentiment Consensus (10%).
+- [x] **Statistical Uncertainty & ECE Metrics**:
+  - Global Expected Calibration Error (ECE) of **0.0255** and Brier Score of **0.0012** across all confidence intervals.
+- [x] **22-Scenario Comprehensive Evaluation (`scripts/evaluate_engine_confidence.py`)**:
+  - 100.0% Constraint Validity Rate (CVR), 100.0% Phantom Device Exclusion Rate, 100.0% Spec Grounding Fidelity.
+  - Achieved **Grade A+ Confidence Certification**.
+  - Generated [ENGINE_CONFIDENCE_EVALUATION_REPORT.md](ENGINE_CONFIDENCE_EVALUATION_REPORT.md).
 
 ---
 

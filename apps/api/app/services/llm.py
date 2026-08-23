@@ -163,6 +163,7 @@ def generate_json(prompt: str, max_tokens: int = 4096) -> dict:
                 max_tokens=max_tokens,
                 temperature=0.05,
                 response_format={"type": "json_object"},
+                timeout=2.0,
             )
             raw = response.choices[0].message.content.strip()
             return json.loads(raw)

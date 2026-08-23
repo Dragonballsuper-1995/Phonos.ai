@@ -135,6 +135,8 @@ screenshot_capture.py
 capture_expanded_results.py
 
 evaluation_results.json
+evaluation_confidence_report.json
+apps/api/evaluation_confidence_report.json
 apps/api/=3.0.0
 apps/api/data/chroma_db/
 *.sqbpro

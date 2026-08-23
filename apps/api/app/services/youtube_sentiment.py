@@ -51,10 +51,5 @@ def fetch_live_sentiment(phone_name: str) -> Dict[str, float]:
     if not phone_name:
         return NEUTRAL
     key = phone_name.lower().strip()
-    if key in _cache:
-        return _cache[key]
-    for k, v in _cache.items():
-        if k in key or key in k:
-            return v
-    return NEUTRAL
+    return _cache.get(key, NEUTRAL)
 
