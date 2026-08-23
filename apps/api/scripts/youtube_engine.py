@@ -10,13 +10,19 @@ DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_
 CSV_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/absa_phone_summary.csv'))
 
 def get_youtube_client():
-    return build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
+    if not YOUTUBE_API_KEY:
+        print("[YouTubeEngine] Error: YOUTUBE_API_KEY is not set or empty.")
+        print("[YouTubeEngine] Please add YOUTUBE_API_KEY to your GitHub repository secrets.")
+        return None
+    return build('youtube', 'v3', developerKey=YOUTUBE_API_KEY, credentials=None)
 
 def fetch_top_video_comments(phone_name: str, max_comments=50):
     """
     Search YouTube for phone reviews and fetch top comments to analyze sentiment.
     """
     youtube = get_youtube_client()
+    if not youtube:
+        return []
     try:
         print(f"[YouTubeEngine] Searching for: {phone_name} review")
         search_response = youtube.search().list(
