@@ -80,6 +80,7 @@ ehthumbs_vista.db
 # Data files
 *.csv
 !scraped_official_catalogues/*.csv
+!apps/api/data/absa_phone_summary.csv
 *.xlsx
 *.xls
 *.db
@@ -140,3 +141,4 @@ apps/api/data/chroma_db/
 
 # Interview Preparation Documents
 Interview_prep/
+github_action_error/
