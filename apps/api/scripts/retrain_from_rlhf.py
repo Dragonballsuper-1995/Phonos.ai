@@ -34,6 +34,7 @@ from app.models.phone import PhoneDetails
 from app.services.recommender import extract_features, FEATURE_COLS, MAX_PRICE_NORM, persona_name_to_idx
 
 DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
+MODEL_JSON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/ranker.json'))
 MODEL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/ranker.xgb'))
 
 POSTHOG_KEY = os.getenv("POSTHOG_API_KEY", "")
@@ -221,7 +222,8 @@ def main():
     )
     model.fit(df_X, sr_y, sample_weight=sample_weights)
 
-    print(f"[RLHF] Saving retrained ranker to {MODEL_PATH}...")
+    print(f"[RLHF] Saving retrained ranker to {MODEL_JSON_PATH} and {MODEL_PATH}...")
+    model.save_model(MODEL_JSON_PATH)
     model.save_model(MODEL_PATH)
     print("✅ [RLHF] Retraining complete!")
 

@@ -7,6 +7,7 @@ import random
 import re
 
 DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
+MODEL_JSON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/ranker.json'))
 MODEL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/ranker.xgb'))
 
 # ── CANONICAL FEATURE SCHEMA (must match recommender.py exactly) ──────────────
@@ -154,7 +155,8 @@ def main():
     )
     model.fit(df_X, sr_y)
 
-    print(f"Saving model to {MODEL_PATH}...")
+    print(f"Saving model to {MODEL_JSON_PATH} and {MODEL_PATH}...")
+    model.save_model(MODEL_JSON_PATH)
     model.save_model(MODEL_PATH)
     print("Phase 1 Ranker training complete!")
 

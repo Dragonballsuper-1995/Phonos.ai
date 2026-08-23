@@ -16,6 +16,7 @@ try:
 except ImportError:
     xgb = None
 
+MODEL_JSON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data/ranker.json'))
 MODEL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data/ranker.xgb'))
 
 _ranker_model = None
@@ -23,11 +24,12 @@ _ranker_model = None
 def get_ranker_model():
     global _ranker_model
     if _ranker_model is None and xgb is not None:
-        if os.path.exists(MODEL_PATH):
+        target_path = MODEL_JSON_PATH if os.path.exists(MODEL_JSON_PATH) else MODEL_PATH
+        if os.path.exists(target_path):
             _ranker_model = xgb.XGBClassifier()
-            _ranker_model.load_model(MODEL_PATH)
+            _ranker_model.load_model(target_path)
         else:
-            print(f"[Ranker] Warning: Model not found at {MODEL_PATH}.")
+            print(f"[Ranker] Warning: Model not found at {target_path}.")
     return _ranker_model
 
 def parse_price(price_str) -> float:

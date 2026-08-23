@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, Field, ConfigDict, model_validator
 from typing import List, Optional, Dict, Any
 
 class PhoneSpecs(BaseModel):
@@ -280,8 +280,7 @@ class PhoneDetails(BaseModel):
             
         return data
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 class PhoneListResponse(BaseModel):
     phones: List[PhoneDetails]

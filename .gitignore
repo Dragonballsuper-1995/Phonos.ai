@@ -90,6 +90,8 @@ ehthumbs_vista.db
 *.db-journal
 data/*.json
 !data/sample_phones.json
+!apps/api/data/sample_phones.json
+!apps/api/data/ranker.json
 !data/examples/
 .tempmediaStorage/
 *.log

@@ -31,6 +31,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from scripts.train_ranker import FEATURE_COLS, MAX_PRICE_NORM, extract_features
 
 DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
+MODEL_JSON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/ranker.json'))
 MODEL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/ranker.xgb'))
 FEEDBACK_DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/feedback_events.db'))
 
@@ -248,7 +249,8 @@ def retrain_ranker(
 
     # 5. Hot-swap and save
     if not dry_run:
-        print(f"\n💾 Saving retrained model to {MODEL_PATH}...")
+        print(f"\n💾 Saving retrained model to {MODEL_JSON_PATH} and {MODEL_PATH}...")
+        model.save_model(MODEL_JSON_PATH)
         model.save_model(MODEL_PATH)
         print("✅ Production model hot-swapped successfully!")
 
