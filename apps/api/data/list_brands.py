@@ -1,7 +1,7 @@
 import sqlite3
 
 def main():
-    conn = sqlite3.connect('C:/Users/sujal/Documents/Projects/Phonos.ai/apps/api/data/fone_master.db')
+    conn = sqlite3.connect('C:/Users/sujal/Documents/Projects/Phonos.ai/apps/api/data/phonos_ai.db')
     cursor = conn.cursor()
     cursor.execute('SELECT brand, COUNT(*) FROM phones GROUP BY brand ORDER BY brand COLLATE NOCASE')
     results = cursor.fetchall()

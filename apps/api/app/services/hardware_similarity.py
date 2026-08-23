@@ -4,7 +4,7 @@ hardware_similarity.py — Hardware-Space Nearest-Neighbour Search
 Loads pre-normalised hardware_vector BLOBs from SQLite into a NumPy matrix.
 Since all vectors are L2-normalised at storage time, dot product == cosine similarity.
 
-The full-catalogue matrix is cached in-process and only rebuilt when fone_master.db
+The full-catalogue matrix is cached in-process and only rebuilt when phonos_ai.db
 changes on disk (file mtime check).
 """
 import os
@@ -13,7 +13,7 @@ import numpy as np
 from typing import List, Dict, Any, Optional
 
 DB_PATH = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '../../data/fone_master.db')
+    os.path.join(os.path.dirname(__file__), '../../data/phonos_ai.db')
 )
 
 # ── In-process cache ─────────────────────────────────────────────────────────

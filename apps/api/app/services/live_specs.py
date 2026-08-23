@@ -6,7 +6,7 @@ import requests
 from typing import Optional, Dict, Any, List
 from app.core.config import settings
 
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data/phonos_ai.db'))
 
 def clean_phone_name(brand: str, raw_name: str) -> str:
     """Strip redundant brand prefixes and RAM/ROM brackets."""
@@ -154,7 +154,7 @@ def fetch_gsmarena_specs(query: str) -> Optional[Dict[str, Any]]:
         return None
 
 def save_phone_to_db(phone: Dict[str, Any]) -> bool:
-    """Persist a live fetched phone into fone_master.db."""
+    """Persist a live fetched phone into phonos_ai.db."""
     try:
         conn = sqlite3.connect(DB_PATH)
         cur = conn.cursor()

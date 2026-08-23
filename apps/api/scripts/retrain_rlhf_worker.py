@@ -30,7 +30,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 from scripts.train_ranker import FEATURE_COLS, MAX_PRICE_NORM, extract_features
 
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 MODEL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/ranker.xgb'))
 FEEDBACK_DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/feedback_events.db'))
 

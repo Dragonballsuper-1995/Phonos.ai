@@ -7,7 +7,7 @@ import sys
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-db_path = 'data/fone_master.db'
+db_path = 'data/phonos_ai.db'
 conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
 

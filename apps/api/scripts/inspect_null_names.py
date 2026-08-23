@@ -5,7 +5,7 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-conn = sqlite3.connect('apps/api/data/fone_master.db')
+conn = sqlite3.connect('apps/api/data/phonos_ai.db')
 conn.row_factory = sqlite3.Row
 cursor = conn.cursor()
 

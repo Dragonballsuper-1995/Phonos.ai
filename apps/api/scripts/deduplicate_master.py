@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('data/fone_master.db')
+conn = sqlite3.connect('data/phonos_ai.db')
 c = conn.cursor()
 
 # 1. Clean names where brand is duplicated in model, e.g. "Vivo iQOO Neo 10R" -> "iQOO Neo 10R"

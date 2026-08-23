@@ -6,7 +6,7 @@ import os
 import random
 import re
 
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 MODEL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/ranker.xgb'))
 
 # ── CANONICAL FEATURE SCHEMA (must match recommender.py exactly) ──────────────

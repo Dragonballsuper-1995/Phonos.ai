@@ -7,7 +7,7 @@ import ast
 
 # Define paths
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
-DB_PATH = os.path.join(DATA_DIR, 'fone_master.db')
+DB_PATH = os.path.join(DATA_DIR, 'phonos_ai.db')
 CSV_OUT_PATH = os.path.join(DATA_DIR, 'master_dataset.csv')
 
 def safe_eval(val):

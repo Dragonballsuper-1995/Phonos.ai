@@ -19,7 +19,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..'))
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 
 def clean_name_string(name: str) -> str:
     if not name:
@@ -77,7 +77,7 @@ def sanitize_database():
             updated_count += 1
 
     conn.commit()
-    print(f"[Sanitize DB] Updated {updated_count} phone names in fone_master.db.")
+    print(f"[Sanitize DB] Updated {updated_count} phone names in phonos_ai.db.")
 
     # 3. Rebuild FTS5 index
     try:

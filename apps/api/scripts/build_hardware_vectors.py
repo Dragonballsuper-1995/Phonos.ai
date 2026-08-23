@@ -1,7 +1,7 @@
 """
 build_hardware_vectors.py
 =========================
-Precomputes L2-normalized hardware vectors for all phones in fone_master.db.
+Precomputes L2-normalized hardware vectors for all phones in phonos_ai.db.
 Run this after any database re-seed:
   python scripts/build_hardware_vectors.py
 
@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from app.models.phone import PhoneDetails
 from app.services.hardware_scorer import normalize_hardware_vector
 
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 
 def migrate(conn):
     try:

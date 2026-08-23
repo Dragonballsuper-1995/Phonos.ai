@@ -26,7 +26,7 @@ from app.services.scrapers.official_catalogues import (
 from app.services.scrapers.official_catalogues.csv_exporter import export_catalogues_to_csv
 from app.services.catalogue_matcher import CatalogueMatcher
 
-DB_PATH = os.path.join(API_ROOT, "data", "fone_master.db")
+DB_PATH = os.path.join(API_ROOT, "data", "phonos_ai.db")
 DEFAULT_CSV_DIR = os.path.join(PROJECT_ROOT, "scraped_official_catalogues")
 
 def ensure_db_schema(conn: sqlite3.Connection):
@@ -205,7 +205,7 @@ def main():
     parser.add_argument("--output-dir", type=str, default=DEFAULT_CSV_DIR, help="Output directory for generated CSVs")
     parser.add_argument("--export-json", type=str, help="Path to export full JSON snapshot")
     parser.add_argument("--dry-run", action="store_true", help="Perform scraping and comparison without database writes")
-    parser.add_argument("--update-db", action="store_true", help="Update fone_master.db with official verification data")
+    parser.add_argument("--update-db", action="store_true", help="Update phonos_ai.db with official verification data")
     args = parser.parse_args()
 
     if not args.brand and not args.all:
@@ -285,7 +285,7 @@ def main():
     # Sync to API root copy if updating DB
     if args.update_db and not args.dry_run:
         import shutil
-        alt_db_path = os.path.join(API_ROOT, "fone_master.db")
+        alt_db_path = os.path.join(API_ROOT, "phonos_ai.db")
         try:
             shutil.copy2(DB_PATH, alt_db_path)
             print(f"💾 Synced master database copy to: {alt_db_path}")

@@ -2,7 +2,7 @@
 import_benchmarks.py — Scientific Benchmark Ingestion & Backfill Engine
 ========================================================================
 Ingests lab-tested benchmark scores (DxOMark, VCX Forum, Geekbench 6, AnTuTu v10, GSMArena Battery)
-into fone_master.db.
+into phonos_ai.db.
 
 Features:
 1. Safe SQLite schema migration (adds benchmark columns if missing).
@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 
 BENCHMARK_COLUMNS = {
     "dxomark_camera_score": "REAL",

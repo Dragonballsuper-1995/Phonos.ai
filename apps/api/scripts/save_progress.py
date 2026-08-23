@@ -2,7 +2,7 @@ import sqlite3
 import re
 import os
 
-DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'fone_master.db')
+DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'phonos_ai.db')
 LOG_PATH = r"C:\Users\sujal\.gemini\antigravity-cli\brain\cd6941ad-b51f-4bc0-8be4-3f7f8d4dc917\.system_generated\tasks\task-379.log"
 
 def main():

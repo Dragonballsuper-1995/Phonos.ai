@@ -7,7 +7,7 @@ from groq import Groq
 from ddgs import DDGS
 import json
 
-DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'fone_master.db')
+DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'phonos_ai.db')
 
 def setup_db():
     conn = sqlite3.connect(DB_PATH)

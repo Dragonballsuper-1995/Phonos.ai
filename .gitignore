@@ -84,7 +84,7 @@ ehthumbs_vista.db
 *.xlsx
 *.xls
 *.db
-!apps/api/data/fone_master.db
+!apps/api/data/phonos_ai.db
 *.db-shm
 *.db-wal
 *.db-journal

@@ -33,7 +33,7 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '../.env'))
 from app.models.phone import PhoneDetails
 from app.services.recommender import extract_features, FEATURE_COLS, MAX_PRICE_NORM, persona_name_to_idx
 
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 MODEL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/ranker.xgb'))
 
 POSTHOG_KEY = os.getenv("POSTHOG_API_KEY", "")

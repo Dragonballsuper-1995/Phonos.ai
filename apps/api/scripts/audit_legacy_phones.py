@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('data/fone_master.db')
+conn = sqlite3.connect('data/phonos_ai.db')
 c = conn.cursor()
 
 # Find phones that are feature phones, vintage phones, or have prices < 4000

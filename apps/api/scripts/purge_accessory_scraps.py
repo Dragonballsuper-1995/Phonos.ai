@@ -2,7 +2,7 @@
 purge_accessory_scraps.py — Deep Accessory & Website UI Scrape Purger
 ====================================================================
 Permanently deletes non-smartphone accessories and website navigation scraps
-from SQLite DB (fone_master.db) and CSV catalogues in scraped_official_catalogues/ and data/.
+from SQLite DB (phonos_ai.db) and CSV catalogues in scraped_official_catalogues/ and data/.
 """
 
 import sqlite3
@@ -15,7 +15,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..'))
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 
 # Comprehensive regex of non-smartphone accessories, store navigation, and UI junk
 JUNK_NAME_PATTERNS = [
@@ -60,7 +60,7 @@ def purge_database():
         ids_to_del = [r[0] for r in to_delete]
         cursor.executemany("DELETE FROM phones WHERE rowid = ?", [(i,) for i in ids_to_del])
         conn.commit()
-        print(f"[Purge DB] Successfully deleted {len(ids_to_del)} scrap rows from fone_master.db.")
+        print(f"[Purge DB] Successfully deleted {len(ids_to_del)} scrap rows from phonos_ai.db.")
 
     # Rebuild FTS5 full text search index
     try:

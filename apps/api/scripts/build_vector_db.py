@@ -4,7 +4,7 @@ import os
 import chromadb
 from chromadb.utils import embedding_functions
 
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 CHROMA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/chroma_db'))
 
 def build_rich_text(row):

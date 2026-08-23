@@ -19,7 +19,7 @@ All major engineering phases have been completed: the async SQLite data layer, t
 
 ### Phase 1: Core Architecture & Data Engine
 - [x] **Monorepo Structure**: Set up clean separation between `apps/web` (Next.js frontend) and `apps/api` (FastAPI backend).
-- [x] **Embedded Async Data Layer**: Transitioned to zero-latency SQLite using `aiosqlite` with FTS5 token-prefix full-text search (`apps/api/data/fone_master.db`).
+- [x] **Embedded Async Data Layer**: Transitioned to zero-latency SQLite using `aiosqlite` with FTS5 token-prefix full-text search (`apps/api/data/phonos_ai.db`).
 - [x] **Vector Database**: Integrated ChromaDB with `sentence-transformers/all-MiniLM-L6-v2` for 384-dimensional dense semantic intent matching.
 - [x] **Multi-LLM Fallback Chain**: Built resilient fallback provider (`llm.py`): Nvidia NIM (`meta/llama-3.3-70b-instruct`) → Google Gemini 2.5 Flash → Groq Cloud (`openai/gpt-oss-120b`).
 
@@ -107,7 +107,7 @@ All major engineering phases have been completed: the async SQLite data layer, t
 | **Frontend** | Next.js 16.2.9 (App Router) + React 19.2.4 | Vanilla CSS Modules, Barlow Condensed & DM Sans, Framer Motion |
 | **Backend** | FastAPI 0.110+ (Python 3.11/3.14) | Async ASGI, SQLite (`aiosqlite`), Lifespan model pre-warming |
 | **Scoring / ML** | 2-Stage DLRM + XGBoost + 5D Vectors | NumPy normalized vectors, Pattern 2 Gated ABSA ($\pm 10\%$), ranker.xgb |
-| **Database** | SQLite + ChromaDB | 1,430 curated devices in `fone_master.db`, `all-MiniLM-L6-v2` embeddings |
+| **Database** | SQLite + ChromaDB | 1,430 curated devices in `phonos_ai.db`, `all-MiniLM-L6-v2` embeddings |
 | **Verification** | Multi-pass LLM + SQLite Cache | Hardcoded rules + `verifier_cache.db` + Nvidia NIM / Gemini / Groq |
 | **Telemetry** | PostHog JS & Python | First-party proxy rewrites (`/ingest/*`), RLHF click & rejection tracking |
 | **Deployment** | Vercel (Web) + Hugging Face (API) | Monorepo configuration, Dockerfile for API (port 7860/8000) |

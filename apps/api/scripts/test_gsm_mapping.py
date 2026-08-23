@@ -8,7 +8,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
-DB_PATH = os.path.join(DATA_DIR, 'fone_master.db')
+DB_PATH = os.path.join(DATA_DIR, 'phonos_ai.db')
 
 conn = sqlite3.connect(DB_PATH)
 conn.row_factory = sqlite3.Row

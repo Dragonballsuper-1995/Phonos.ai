@@ -245,7 +245,7 @@ Phonos.ai/
 │   │   │   ├── models/             # Pydantic data schemas (PhoneDetails, Query, Response)
 │   │   │   ├── routers/            # API endpoints (recommend, phones, search, similar, compare, health)
 │   │   │   └── services/           # ML ranker, hardware scorer, similarity, ABSA, KG, LLM verifier
-│   │   ├── data/                   # Production SQLite DB (fone_master.db) & ranker.xgb
+│   │   ├── data/                   # Production SQLite DB (phonos_ai.db) & ranker.xgb
 │   │   ├── scripts/                # Data pipelines, ABSA scorer, RLHF retrainer, scenario tests
 │   │   └── tests/                  # 38 granular Pytest unit, integration & edge-case tests
 │   │

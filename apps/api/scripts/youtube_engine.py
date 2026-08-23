@@ -6,7 +6,7 @@ import json
 import time
 
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "")
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 CSV_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/absa_phone_summary.csv'))
 
 def get_youtube_client():

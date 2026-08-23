@@ -2,7 +2,7 @@
 purge_realmeow.py — Purge Mascot & Brand Character Scraps
 =========================================================
 Permanently deletes 'realmeow' (ID 16877) and any other non-phone merchandise/mascots
-from SQLite DB (fone_master.db) and CSV catalogues.
+from SQLite DB (phonos_ai.db) and CSV catalogues.
 """
 
 import sqlite3
@@ -15,7 +15,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..'))
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 
 MASCOT_PATTERNS = [
     r'\brealmeow\b',
@@ -54,7 +54,7 @@ def purge_db():
         ids = [r[0] for r in to_delete]
         cursor.executemany("DELETE FROM phones WHERE rowid = ?", [(i,) for i in ids])
         conn.commit()
-        print(f"[Purge DB] Deleted {len(ids)} rows from fone_master.db.")
+        print(f"[Purge DB] Deleted {len(ids)} rows from phonos_ai.db.")
 
     try:
         cursor.execute("DELETE FROM phones_fts")

@@ -21,7 +21,7 @@ FastAPI asynchronous backend and SOTA machine learning engine powering **Phonos.
 * **Pattern 2 Gated ABSA**: Aspect-Based Sentiment Analysis from verified Indian tech reviews modulating hardware domain scores by $\pm 10\%$.
 * **Knowledge Graph Defect Purging**: NetworkX directed graph filtering out known hardware failure nodes (e.g., thermal-throttling SoCs, motherboard detachment issues).
 * **Multi-LLM Fallback Verifier**: Multi-pass verification chain (Nvidia NIM Llama 3.3 70B → Google Gemini 2.5 Flash → Groq GPT OSS 120B) confirming active Indian retail availability and generating expert persona pitches.
-* **Official Indian Smartphone Catalogue**: 1,430+ verified devices (`fone_master.db`) with FTS5 token-prefix full-text search.
+* **Official Indian Smartphone Catalogue**: 1,430+ verified devices (`phonos_ai.db`) with FTS5 token-prefix full-text search.
 
 ---
 
@@ -67,7 +67,7 @@ API_V1_STR=/api/v1
 BACKEND_CORS_ORIGINS=["http://localhost:3000","https://phonos-ai.vercel.app"]
 
 # Database Paths
-DATABASE_URL=sqlite+aiosqlite:///data/fone_master.db
+DATABASE_URL=sqlite+aiosqlite:///data/phonos_ai.db
 
 # AI Provider Keys
 NVIDIA_NIM_API_KEY=your_nvidia_nim_key_here
@@ -114,7 +114,7 @@ python scripts/test_engine_scenarios.py
 
 ## 📂 Key Data Files (`apps/api/data/`)
 
-* `fone_master.db`: SQLite database with 1,430+ curated Indian market smartphones.
+* `phonos_ai.db`: SQLite database with 1,430+ curated Indian market smartphones.
 * `ranker.xgb`: Serialized XGBoost recommendation model.
 * `verifier_cache.db`: SQLite cache storing LLM market verification results.
 * `pricing_cache.db`: SQLite cache storing live retail prices.

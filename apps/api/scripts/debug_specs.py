@@ -1,7 +1,7 @@
 import sqlite3
 import json
 
-conn = sqlite3.connect('data/fone_master.db')
+conn = sqlite3.connect('data/phonos_ai.db')
 cursor = conn.cursor()
 
 phones = cursor.execute("""

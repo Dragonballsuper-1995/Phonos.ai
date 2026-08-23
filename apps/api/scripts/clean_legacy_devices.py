@@ -1,7 +1,7 @@
 import sqlite3
 import json
 
-conn = sqlite3.connect('data/fone_master.db')
+conn = sqlite3.connect('data/phonos_ai.db')
 c = conn.cursor()
 
 # 1. Update phones that are obviously keypad/feature phones or vintage models

@@ -1,7 +1,7 @@
 import sqlite3
 import re
 
-db_path = 'C:/Users/sujal/Documents/Projects/Phonos.ai/apps/api/data/fone_master.db'
+db_path = 'C:/Users/sujal/Documents/Projects/Phonos.ai/apps/api/data/phonos_ai.db'
 txt_path = 'C:/Users/sujal/Documents/Projects/Phonos.ai/brands_to_be_deleted_completely.txt'
 
 brands_to_delete = set()

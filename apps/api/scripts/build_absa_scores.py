@@ -1,7 +1,7 @@
 """
 build_absa_scores.py
 ====================
-Scales ABSA sentiment analysis to top phones in fone_master.db.
+Scales ABSA sentiment analysis to top phones in phonos_ai.db.
 Writes scores directly into SQLite columns (absa_camera, absa_battery, etc.).
 
 Usage:
@@ -27,7 +27,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from youtube_transcript_api import YouTubeTranscriptApi
 import yt_dlp
 
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 YOUTUBE_KEY = os.getenv("YOUTUBE_API_KEY", "")
 EXISTING_CSV_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data_engine/youtube_reviews.csv'))
 SUMMARY_CSV_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data_engine/absa_phone_summary.csv'))

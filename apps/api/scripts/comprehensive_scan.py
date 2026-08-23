@@ -9,7 +9,7 @@ from typing import Dict, Any, Optional, Tuple
 sys.stdout.reconfigure(encoding='utf-8')
 
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
-DB_PATH = os.path.join(DATA_DIR, 'fone_master.db')
+DB_PATH = os.path.join(DATA_DIR, 'phonos_ai.db')
 
 print("=================================================================")
 print(" PHONOS.AI - COMPREHENSIVE DATABASE SCAN & RECTIFICATION ENGINE ")

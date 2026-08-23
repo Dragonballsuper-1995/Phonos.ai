@@ -5,7 +5,7 @@ Validates:
 1. SQLite schema extension (DxOMark, VCX, Geekbench, AnTuTu, GSMArena Battery).
 2. Pydantic PhoneDetails model deserialization and serialization.
 3. Brand-aware fuzzy matching precision against benchmark datasets.
-4. Data integrity and non-null values in fone_master.db.
+4. Data integrity and non-null values in phonos_ai.db.
 """
 
 import os
@@ -104,7 +104,7 @@ def test_database_queries_with_benchmarks():
     rows = cursor.fetchall()
     conn.close()
 
-    assert len(rows) > 0, "No benchmarked rows found in fone_master.db"
+    assert len(rows) > 0, "No benchmarked rows found in phonos_ai.db"
     for r in rows:
         assert r["dxomark_camera_score"] > 0
         assert r["geekbench_multi"] > 0

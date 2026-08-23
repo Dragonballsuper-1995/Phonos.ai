@@ -18,7 +18,7 @@ from typing import Dict, Any, List
 # Ensure app is in path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 DEFAULT_SQL_DUMP = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/supabase_migration_dump.sql'))
 
 

@@ -5,7 +5,7 @@ import sys
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-conn = sqlite3.connect('data/fone_master.db')
+conn = sqlite3.connect('data/phonos_ai.db')
 cursor = conn.cursor()
 
 # Find any remaining mascot, brand scrap, or suspicious entries

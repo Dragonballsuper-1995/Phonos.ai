@@ -1,6 +1,6 @@
 import sqlite3
 
-db_path = 'C:/Users/sujal/Documents/Projects/Phonos.ai/apps/api/data/fone_master.db'
+db_path = 'C:/Users/sujal/Documents/Projects/Phonos.ai/apps/api/data/phonos_ai.db'
 
 try:
     conn = sqlite3.connect(db_path)

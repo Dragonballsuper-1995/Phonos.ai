@@ -5,7 +5,7 @@ import sys
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-conn = sqlite3.connect('data/fone_master.db')
+conn = sqlite3.connect('data/phonos_ai.db')
 cursor = conn.cursor()
 rows = cursor.execute("SELECT rowid, brand, name, price, raw_specs, gsmarena_battery_hours FROM phones WHERE name LIKE '%P4 Power%' OR name LIKE '%P4%'").fetchall()
 print(f"Found {len(rows)} matching phones:")

@@ -3,7 +3,7 @@ daily_sync_worker.py — Automated Continuous Ingestion & Catalog Sync Worker
 ===========================================================================
 Performs the 5-step daily catalog synchronization pipeline:
 1. Scrapes official brand catalogs across Indian market portals.
-2. Upserts newly launched models into fone_master.db with official pricing.
+2. Upserts newly launched models into phonos_ai.db with official pricing.
 3. Extracts & updates Aspect-Based Sentiment Analysis (ABSA) across tech review consensus.
 4. Auto-matches & links scientific benchmarks (DxOMark, Geekbench 6, VCX, AnTuTu, Battery).
 5. Standardizes & validates image CDN assets with WebP/SVG fallbacks.
@@ -39,7 +39,7 @@ from app.services.scrapers.official_catalogues.scrapers import (
 from app.services.image_optimizer import get_standard_image_url
 from scripts.import_benchmarks import BENCHMARK_KNOWLEDGE_BASE, match_benchmark_entry
 
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/fone_master.db'))
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/phonos_ai.db'))
 
 ALL_SCRAPERS = [
     SamsungScraper,
@@ -111,7 +111,7 @@ def run_daily_sync(dry_run: bool = False) -> Dict[str, Any]:
     stats["scraped_models_total"] = len(all_scraped)
     print(f"\n📊 Total Official Catalog Devices Harvested: {len(all_scraped)}")
 
-    # ── STEP 2: Upsert into fone_master.db ────────────────────────────────────
+    # ── STEP 2: Upsert into phonos_ai.db ────────────────────────────────────
     print("\n💾 STEP 2: Upserting Official Indian Catalog into Database...")
     for item in all_scraped:
         brand = item.brand

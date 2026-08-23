@@ -1,7 +1,7 @@
 """
 youtube_sentiment.py — SQLite-Backed Aspect Sentiment Store
 ===========================================================
-Reads ABSA aspect scores directly from fone_master.db.
+Reads ABSA aspect scores directly from phonos_ai.db.
 In-process memory cache with lazy loading ensures 0ms latency during recommendation scoring.
 """
 import os
@@ -9,7 +9,7 @@ import sqlite3
 from typing import Dict
 
 DB_PATH = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '../../data/fone_master.db')
+    os.path.join(os.path.dirname(__file__), '../../data/phonos_ai.db')
 )
 
 _cache: Dict[str, Dict[str, float]] = {}
@@ -45,7 +45,7 @@ def _load():
 
 def fetch_live_sentiment(phone_name: str) -> Dict[str, float]:
     """
-    Fetches sentiment scores instantly from in-memory cache backed by fone_master.db.
+    Fetches sentiment scores instantly from in-memory cache backed by phonos_ai.db.
     """
     _load()
     if not phone_name:

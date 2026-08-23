@@ -10,7 +10,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from app.services.recommender import extract_features, get_ranker_model, ml_score_phones
 from app.models.phone import PhoneDetails
 
-conn = sqlite3.connect('apps/api/data/fone_master.db')
+conn = sqlite3.connect('apps/api/data/phonos_ai.db')
 conn.row_factory = sqlite3.Row
 c = conn.cursor()
 
