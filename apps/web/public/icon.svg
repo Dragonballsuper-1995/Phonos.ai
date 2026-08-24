@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="10" fill="#1A1916" />
+  <!-- Stylized Telemetry Pulse forming a P -->
+  <path d="M14 52 L14 16 C14 12 18 8 26 8 L36 8 C46 8 52 14 52 24 C52 34 46 40 36 40 L24 40 L24 52 Z" fill="none" stroke="#F0EDE6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Electric Pulse Wave inside loop -->
+  <polyline points="14,24 24,24 29,14 34,34 39,24 48,24" fill="none" stroke="#E8420A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
