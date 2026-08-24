@@ -21,7 +21,10 @@ export default function PhoneReport({ phone }: PhoneReportProps) {
 
   const brand = phone.brand || 'Unknown';
   const rawFullName = phone.fullName || phone.name || phone.model || 'Unknown';
-  const displayName = cleanPhoneName(rawFullName, brand);
+  const rawModelName = cleanPhoneName(rawFullName, brand);
+  const fullDisplayName = rawModelName.toLowerCase().startsWith(brand.toLowerCase())
+    ? rawModelName
+    : `${brand} ${rawModelName}`;
   const formattedPrice = phone.price
     ? `₹${phone.price.toLocaleString('en-IN')}`
     : 'N/A';
@@ -46,7 +49,7 @@ export default function PhoneReport({ phone }: PhoneReportProps) {
   };
 
   const amazonSearchUrl = `https://www.amazon.in/s?k=${encodeURIComponent(
-    `${brand} ${displayName}`
+    fullDisplayName
   )}`;
 
   return (
@@ -59,7 +62,7 @@ export default function PhoneReport({ phone }: PhoneReportProps) {
         <span>/</span>
         <span style={{ color: 'var(--color-ink)' }}>{brand}</span>
         <span>/</span>
-        <span>{displayName}</span>
+        <span>{fullDisplayName}</span>
       </nav>
 
       {/* Hero Section */}
@@ -68,7 +71,7 @@ export default function PhoneReport({ phone }: PhoneReportProps) {
           {phone.imageUrl ? (
             <img
               src={phone.imageUrl}
-              alt={`${brand} ${displayName}`}
+              alt={fullDisplayName}
               className={styles.phoneImg}
             />
           ) : (
@@ -85,7 +88,7 @@ export default function PhoneReport({ phone }: PhoneReportProps) {
             <VerifiedBadge title="AI verified Indian catalog data" />
           </div>
 
-          <h1 className={styles.modelTitle}>{displayName}</h1>
+          <h1 className={styles.modelTitle}>{fullDisplayName}</h1>
 
           <div className={styles.priceBlock}>
             <span className={styles.price}>{formattedPrice}</span>

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import styles from './QuerySummary.module.css';
 
@@ -52,14 +53,19 @@ export default function QuerySummary({
         </div>
       </div>
 
-      <button
-        type="button"
-        className={styles.refineBtn}
-        onClick={() => router.back()}
-        id="refine-parameters-btn"
-      >
-        &larr; REFINE PARAMETERS
-      </button>
+      <div className={styles.actionGroup}>
+        <Link href="/" className={styles.homeBtn} id="results-home-btn">
+          <span>&larr;</span> HOME
+        </Link>
+        <button
+          type="button"
+          className={styles.refineBtn}
+          onClick={() => router.back()}
+          id="refine-parameters-btn"
+        >
+          REFINE PARAMETERS
+        </button>
+      </div>
     </div>
   );
 }

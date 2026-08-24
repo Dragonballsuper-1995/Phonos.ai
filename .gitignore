@@ -1,25 +1,55 @@
-# Node.js
+# ==============================================================================
+# Phonos.ai - Production-Grade Git Ignore Specification
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment & Secrets (Security Critical)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.*.example
+apps/api/.env
+apps/web/.env.local
+apps/web/.env.*.local
+*.env
+
+# ------------------------------------------------------------------------------
+# 2. Node.js & Next.js Builds
+# ------------------------------------------------------------------------------
 node_modules/
 .next/
 out/
 build/
+dist/
+.pnp
+.pnp.js
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnp.*
+pnpm-debug.log*
+lerna-debug.log*
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
 
-# Python
+# ------------------------------------------------------------------------------
+# 3. Python, Virtual Environments & Bytecode
+# ------------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
-*$py.class
+*.class
 .Python
-build/
+.venv/
+venv/
+ENV/
+env/
 develop-eggs/
-dist/
-downloads/
 eggs/
 .eggs/
-# Python lib directories (scoped to not catch apps/web/src/lib)
+*.egg-info/
+.installed.cfg
+*.egg
 apps/api/lib/
 apps/api/lib64/
 lib64/
@@ -28,15 +58,55 @@ sdist/
 var/
 wheels/
 share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-.venv/
-venv/
-ENV/
-env/
+=3.0.0
+apps/api/=3.0.0
 
-# IDEs, Editors & AI Assistants
+# ------------------------------------------------------------------------------
+# 4. Testing, Coverage & Profiling
+# ------------------------------------------------------------------------------
+.pytest_cache/
+apps/api/.pytest_cache/
+coverage/
+.coverage
+.coverage.*
+htmlcov/
+playwright-report/
+test-results/
+
+# ------------------------------------------------------------------------------
+# 5. Databases, Vector Stores & Runtime Caches
+# ------------------------------------------------------------------------------
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqbpro
+apps/api/fone_master.db
+apps/api/phonos.db
+apps/api/data/pricing_cache.db
+apps/api/data/feedback_events.db
+apps/api/data/chroma_db/
+docker-data/
+postgres_data/
+
+# ------------------------------------------------------------------------------
+# 6. Data Dumps & Intermediate CSVs
+# ------------------------------------------------------------------------------
+apps/api/data/*.csv
+!apps/api/data/absa_phone_summary.csv
+
+# ------------------------------------------------------------------------------
+# 7. Evaluation Reports & Test Dumps
+# ------------------------------------------------------------------------------
+evaluation_results.json
+evaluation_confidence_report.json
+apps/evaluation_results.json
+apps/api/evaluation_confidence_report.json
+*.log
+.tempmediaStorage/
+
+# ------------------------------------------------------------------------------
+# 8. IDE, OS & Assistant Artifacts
+# ------------------------------------------------------------------------------
 .vscode/
 .idea/
 .claude/
@@ -45,104 +115,22 @@ env/
 *.njsproj
 *.sln
 *.sw?
-
-# Testing & Coverage
-.pytest_cache/
-coverage/
-.coverage
-htmlcov/
-playwright-report/
-test-results/
-
-# Build & Vercel
-.vercel/
-*.tsbuildinfo
-
-# OS Files
 .DS_Store
 .AppleDouble
 .LSOverride
 Icon
 ._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
 Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
-*.stackdump
 [Dd]esktop.ini
+*.stackdump
 
-# Data files
-*.csv
-!scraped_official_catalogues/*.csv
-!apps/api/data/absa_phone_summary.csv
-*.xlsx
-*.xls
-*.db
-!apps/api/data/phonos_ai.db
-*.db-shm
-*.db-wal
-*.db-journal
-data/*.json
-!data/sample_phones.json
-!apps/api/data/sample_phones.json
-!apps/api/data/ranker.json
-!data/examples/
-.tempmediaStorage/
-*.log
-
-
-# Environment
-.env
-.env.*.local
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Docker
-docker-data/
-postgres_data/
-
-# Local Transcripts & Conversation Logs
+# ------------------------------------------------------------------------------
+# 9. Transcripts, Scratch Notes & Visual Testing Captures
+# ------------------------------------------------------------------------------
 Previous Conversations/
 Models(Nvidia)/
-research/
-Dataset Research/
-
-brands_to_be_deleted_completely.md
-SOTA_Master_Plan.md
-api.md
-models.md
-praw.md
-CONTEXT.md
-PROGRESS.md
-guide-1.md
-guide-2.md
-what_is_design.md
-REBUILT_PROMPT.md
-walkthrough.md
-FRONTEND_IMPLEMENTATION_PLAN.md
-ML_ENGINE_SUGGESTIONS_ANALYSIS.md
-
-# Screenshots & Capture Scripts
+github_action_error/
 screenshots/*
 !screenshots/system_architecture.png
-screenshot_capture.py
-capture_expanded_results.py
-
-evaluation_results.json
-evaluation_confidence_report.json
-apps/api/evaluation_confidence_report.json
-apps/api/=3.0.0
-apps/api/data/chroma_db/
-*.sqbpro
-
-# Interview Preparation Documents
-Interview_prep/
-github_action_error/

@@ -1,12 +1,12 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePostHog } from 'posthog-js/react';
 import type { RecommendedPhone } from '@/lib/types';
-import { cleanPhoneName, categorizeSpecs } from '@/lib/specHelpers';
+import { cleanPhoneName, categorizeSpecs, compute5DVector } from '@/lib/specHelpers';
 import ScoreBar from '@/components/ui/ScoreBar';
 import VerifiedBadge from '@/components/ui/VerifiedBadge';
-import BenchmarkBadge from '@/components/ui/BenchmarkBadge';
 import styles from './PhoneRow.module.css';
 
 interface PhoneRowProps {
@@ -30,12 +30,17 @@ export default function PhoneRow({
   budget,
   mode,
 }: PhoneRowProps) {
+  const [showSpecs, setShowSpecs] = useState(false);
   const posthog = usePostHog();
   const phone = item.phone;
   const brand = phone.brand || 'Unknown';
   const rawFullName = phone.fullName || phone.name || phone.model || 'Unknown';
-  const displayName = cleanPhoneName(rawFullName, brand);
+  const rawModelName = cleanPhoneName(rawFullName, brand);
+  const fullDisplayName = rawModelName.toLowerCase().startsWith(brand.toLowerCase())
+    ? rawModelName
+    : `${brand} ${rawModelName}`;
 
+  const isFlagship = (phone.price || 0) >= 55000;
   const isTopRank = rank === 1;
   const rankLabel = rank.toString().padStart(2, '0');
   const priceFormatted = phone.price
@@ -44,12 +49,19 @@ export default function PhoneRow({
 
   const categorized = categorizeSpecs(phone.specs, phone.raw_specs);
   const launchYear = phone.launch_year || 2025;
+  const vector5D = compute5DVector(phone);
+  const hasLabBenchmarks = Boolean(
+    phone.dxomark_camera_score ||
+    phone.geekbench_multi ||
+    phone.antutu_v10_score ||
+    phone.gsmarena_battery_hours
+  );
 
   const handleBuyClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (posthog) {
       posthog.capture('buy_clicked', {
-        phone_name: phone.fullName || phone.name || phone.model,
+        phone_name: fullDisplayName,
         phone_model: phone.model,
         brand: phone.brand,
         price: phone.price,
@@ -65,7 +77,7 @@ export default function PhoneRow({
     e.stopPropagation();
     if (posthog) {
       posthog.capture('phone_rejected', {
-        phone_name: phone.fullName || phone.name || phone.model,
+        phone_name: fullDisplayName,
         phone_model: phone.model,
         brand: phone.brand,
         ai_rank: rank,
@@ -78,7 +90,7 @@ export default function PhoneRow({
   };
 
   const amazonSearchUrl = `https://www.amazon.in/s?k=${encodeURIComponent(
-    `${brand} ${displayName}`
+    fullDisplayName
   )}`;
 
   return (
@@ -105,41 +117,24 @@ export default function PhoneRow({
         </span>
 
         <div className={styles.nameBlock}>
-          <div className={styles.brandRow}>
-            <span className={styles.brandLabel}>{brand}</span>
-            {item.ai_verified && (
-              <VerifiedBadge title="Official Indian market launch" />
-            )}
-            {launchYear >= 2026 && (
-              <span className={`${styles.yearBadge} ${styles.yearBadge2026}`}>
-                2026 RELEASE
-              </span>
-            )}
-            {launchYear === 2025 && (
-              <span className={styles.yearBadge}>
-                2025 FLAGSHIP
-              </span>
-            )}
-          </div>
-          <h3 className={styles.modelName}>{displayName}</h3>
-
-          {/* Scientific Benchmark Chips */}
-          {(phone.dxomark_camera_score || phone.geekbench_multi || phone.antutu_v10_score || phone.gsmarena_battery_hours) && (
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '6px' }}>
-              {phone.dxomark_camera_score && (
-                <BenchmarkBadge type="dxomark-camera" value={phone.dxomark_camera_score} />
+          <div className={styles.titleRow}>
+            <h3 className={styles.modelName}>{fullDisplayName}</h3>
+            <div className={styles.badgeGroup}>
+              {item.ai_verified && (
+                <VerifiedBadge title="Official Indian market launch" />
               )}
-              {phone.geekbench_multi && (
-                <BenchmarkBadge type="geekbench" value={phone.geekbench_multi} />
+              {launchYear >= 2026 && (
+                <span className={`${styles.yearBadge} ${styles.yearBadge2026}`}>
+                  {isFlagship ? '2026 FLAGSHIP' : '2026 RELEASE'}
+                </span>
               )}
-              {phone.antutu_v10_score && (
-                <BenchmarkBadge type="antutu" value={phone.antutu_v10_score} />
-              )}
-              {phone.gsmarena_battery_hours && (
-                <BenchmarkBadge type="battery" value={phone.gsmarena_battery_hours} />
+              {launchYear === 2025 && (
+                <span className={`${styles.yearBadge} ${isFlagship ? styles.yearBadgeFlagship : ''}`}>
+                  {isFlagship ? '2025 FLAGSHIP' : '2025 RELEASE'}
+                </span>
               )}
             </div>
-          )}
+          </div>
         </div>
 
         <div className={styles.scoreBlock}>
@@ -176,7 +171,109 @@ export default function PhoneRow({
             </div>
           )}
 
-          {/* 2. Strengths & Tradeoffs */}
+          {/* 2. Scientific Lab & Architectural Benchmark Scores */}
+          <div className={styles.benchmarksSection}>
+            <div className={styles.benchmarksHeader}>
+              <span className={styles.benchmarksTitle}>
+                {hasLabBenchmarks ? 'SCIENTIFIC LAB BENCHMARK SCORES' : '5D HARDWARE ARCHITECTURAL PROFILE'}
+              </span>
+              <span className={styles.benchmarksSubtitle}>
+                {hasLabBenchmarks ? 'Lab Verified Testing Suite' : 'Algorithmic Hardware Vector (0-100)'}
+              </span>
+            </div>
+
+            {hasLabBenchmarks ? (
+              <div className={styles.benchmarkMetricsGrid}>
+                {phone.dxomark_camera_score && (
+                  <div className={`${styles.metricCard} ${styles.metricDxomark}`}>
+                    <div className={styles.metricCardTop}>
+                      <span className={styles.metricIcon}>📷</span>
+                      <span className={styles.metricName}>DxOMark Optics</span>
+                    </div>
+                    <div className={styles.metricValue}>{Math.round(phone.dxomark_camera_score)}</div>
+                    <span className={styles.metricDesc}>Camera Sensor & Lens Score</span>
+                  </div>
+                )}
+
+                {phone.geekbench_multi && (
+                  <div className={`${styles.metricCard} ${styles.metricGeekbench}`}>
+                    <div className={styles.metricCardTop}>
+                      <span className={styles.metricIcon}>⚡</span>
+                      <span className={styles.metricName}>Geekbench 6</span>
+                    </div>
+                    <div className={styles.metricValue}>{phone.geekbench_multi.toLocaleString('en-IN')}</div>
+                    <span className={styles.metricDesc}>Multi-Core CPU Compute</span>
+                  </div>
+                )}
+
+                {phone.antutu_v10_score && (
+                  <div className={`${styles.metricCard} ${styles.metricAntutu}`}>
+                    <div className={styles.metricCardTop}>
+                      <span className={styles.metricIcon}>🚀</span>
+                      <span className={styles.metricName}>AnTuTu v10</span>
+                    </div>
+                    <div className={styles.metricValue}>
+                      {phone.antutu_v10_score >= 1000000 
+                        ? `${(phone.antutu_v10_score / 1000000).toFixed(2)}M`
+                        : phone.antutu_v10_score.toLocaleString('en-IN')}
+                    </div>
+                    <span className={styles.metricDesc}>Full Hardware Pipeline Score</span>
+                  </div>
+                )}
+
+                {phone.gsmarena_battery_hours && (
+                  <div className={`${styles.metricCard} ${styles.metricBattery}`}>
+                    <div className={styles.metricCardTop}>
+                      <span className={styles.metricIcon}>🔋</span>
+                      <span className={styles.metricName}>Active Battery</span>
+                    </div>
+                    <div className={styles.metricValue}>{phone.gsmarena_battery_hours.toFixed(1)} hrs</div>
+                    <span className={styles.metricDesc}>Active Screen Endurance (AUS)</span>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className={styles.benchmarkMetricsGrid}>
+                <div className={`${styles.metricCard} ${styles.metricGeekbench}`}>
+                  <div className={styles.metricCardTop}>
+                    <span className={styles.metricIcon}>⚡</span>
+                    <span className={styles.metricName}>Compute Power</span>
+                  </div>
+                  <div className={styles.metricValue}>{Math.round(vector5D.performance)}/100</div>
+                  <span className={styles.metricDesc}>{phone.specs?.processor || 'SoC Hardware Index'}</span>
+                </div>
+
+                <div className={`${styles.metricCard} ${styles.metricDxomark}`}>
+                  <div className={styles.metricCardTop}>
+                    <span className={styles.metricIcon}>📷</span>
+                    <span className={styles.metricName}>Optics Index</span>
+                  </div>
+                  <div className={styles.metricValue}>{Math.round(vector5D.camera)}/100</div>
+                  <span className={styles.metricDesc}>{phone.specs?.mainCamera ? 'Camera Architecture' : 'Sensor Profile'}</span>
+                </div>
+
+                <div className={`${styles.metricCard} ${styles.metricBattery}`}>
+                  <div className={styles.metricCardTop}>
+                    <span className={styles.metricIcon}>🔋</span>
+                    <span className={styles.metricName}>Endurance Index</span>
+                  </div>
+                  <div className={styles.metricValue}>{Math.round(vector5D.battery)}/100</div>
+                  <span className={styles.metricDesc}>{phone.specs?.battery || 'Power Management'}</span>
+                </div>
+
+                <div className={`${styles.metricCard} ${styles.metricAntutu}`}>
+                  <div className={styles.metricCardTop}>
+                    <span className={styles.metricIcon}>🖥️</span>
+                    <span className={styles.metricName}>Display Quality</span>
+                  </div>
+                  <div className={styles.metricValue}>{Math.round(vector5D.display)}/100</div>
+                  <span className={styles.metricDesc}>{phone.specs?.display || 'Visual Calibration'}</span>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* 3. Strengths & Tradeoffs */}
           <div className={styles.twoColGrid}>
             <div className={styles.insightCard}>
               <span className={styles.insightTitle}>KEY STRENGTHS & ADVANTAGES</span>
@@ -224,26 +321,57 @@ export default function PhoneRow({
             )}
           </div>
 
-          {/* 3. Specs Table */}
-          <div className={styles.specsContainer}>
-            <span className="label-caps">HARDWARE ARCHITECTURE SPECIFICATIONS</span>
-
-            {Object.entries(categorized).map(([category, specsObj]) => (
-              <div key={category} className={styles.specBlock}>
-                <span className={styles.specCategoryHeader}>{category}</span>
-                <div className={styles.specGrid}>
-                  {Object.entries(specsObj).map(([key, val]) => (
-                    <div key={key} className={styles.specPair}>
-                      <span className={styles.specKey}>{key}</span>
-                      <span className={styles.specValue}>{val}</span>
-                    </div>
-                  ))}
-                </div>
+          {/* 4. Collapsible Hardware Architecture Specifications Dropdown */}
+          <div className={styles.specsDropdownContainer}>
+            <button
+              type="button"
+              className={styles.specsDropdownToggle}
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowSpecs(!showSpecs);
+              }}
+              aria-expanded={showSpecs}
+              id={`specs-toggle-${rank}`}
+            >
+              <div className={styles.specsToggleLeft}>
+                <span className="label-caps" style={{ color: 'var(--color-ink)', fontWeight: 700 }}>
+                  HARDWARE ARCHITECTURE SPECIFICATIONS
+                </span>
+                <span className={styles.specsToggleHint}>
+                  {showSpecs ? 'Click to collapse full technical breakdown' : 'Click to expand full technical breakdown'}
+                </span>
               </div>
-            ))}
+
+              <div className={styles.specsToggleRight}>
+                <span className={styles.specsToggleActionText}>
+                  {showSpecs ? 'HIDE SPECS' : 'VIEW SPECS'}
+                </span>
+                <span className={`${styles.specsChevron} ${showSpecs ? styles.specsChevronOpen : ''}`}>
+                  ▼
+                </span>
+              </div>
+            </button>
+
+            {showSpecs && (
+              <div className={styles.specsContainer}>
+                {Object.entries(categorized).map(([category, specsObj]) => (
+                  <div key={category} className={styles.specBlock}>
+                    <span className={styles.specCategoryHeader}>{category}</span>
+                    <div className={styles.specGrid}>
+                      {Object.entries(specsObj).map(([key, val]) => (
+                        <div key={key} className={styles.specPair}>
+                          <span className={styles.specKey}>{key}</span>
+                          <span className={styles.specValue}>{val}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
-          {/* 4. Action Bar */}
+          {/* 5. Action Bar */}
           <div className={styles.actionBar}>
             <div style={{ display: 'flex', gap: 'var(--space-md)', alignItems: 'center', flexWrap: 'wrap' }}>
               <a

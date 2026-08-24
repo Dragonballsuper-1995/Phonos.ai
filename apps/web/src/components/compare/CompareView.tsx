@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
+import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { api } from '@/lib/api';
 import type { PhoneDetails } from '@/lib/types';
@@ -360,16 +361,21 @@ export default function CompareView() {
               <span className="label-caps">SIDE-BY-SIDE MATRIX</span>
               <h1 className={styles.pageTitle}>SMARTPHONE SPEC COMPARISON</h1>
             </div>
-            {phones.length > 0 && (
-              <button
-                type="button"
-                className={styles.newCompareBtn}
-                onClick={handleClearAll}
-                title="Clear all devices and start a new comparison"
-              >
-                <span>🔄</span> START NEW COMPARISON
-              </button>
-            )}
+            <div className={styles.actionGroup}>
+              <Link href="/" className={styles.homeBtn} id="compare-home-btn">
+                <span>&larr;</span> HOME
+              </Link>
+              {phones.length > 0 && (
+                <button
+                  type="button"
+                  className={styles.newCompareBtn}
+                  onClick={handleClearAll}
+                  title="Clear all devices and start a new comparison"
+                >
+                  <span>🔄</span> START NEW COMPARISON
+                </button>
+              )}
+            </div>
           </div>
         </div>
         <p className="body-md">

@@ -77,7 +77,10 @@ export default function SimilarPhones({
       ) : (
         <div className={styles.grid}>
           {similarPhones.map((phone) => {
-            const displayName = cleanPhoneName(phone.name, phone.brand);
+            const rawModel = cleanPhoneName(phone.name, phone.brand);
+            const fullDisplayName = rawModel.toLowerCase().startsWith((phone.brand || '').toLowerCase())
+              ? rawModel
+              : `${phone.brand} ${rawModel}`;
             const matchPct = Math.min(99, Math.max(50, Math.round(phone.similarity_score * 100)));
             const priceFormatted = phone.price
               ? `₹${phone.price.toLocaleString('en-IN')}`
@@ -90,10 +93,9 @@ export default function SimilarPhones({
               <div key={phone.id} className={styles.card}>
                 <div>
                   <div className={styles.cardTop}>
-                    <span className={styles.brandLabel}>{phone.brand}</span>
                     <span className={styles.matchBadge}>{matchPct}% MATCH</span>
                   </div>
-                  <h4 className={styles.phoneName}>{displayName}</h4>
+                  <h4 className={styles.phoneName}>{fullDisplayName}</h4>
                   <div className={styles.price}>{priceFormatted}</div>
                 </div>
 

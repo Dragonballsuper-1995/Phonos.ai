@@ -247,6 +247,9 @@ export default function DeepStreamView() {
         <section className={styles.resultsSection} aria-label="Deep Mode Recommendations">
           <div className={styles.resultsHeader}>
             <span className="label-caps">TOP VERIFIED ARCHITECTURAL CHOICES ({recommendations.length})</span>
+            <Link href="/" className={styles.homeBtn} id="deep-home-btn">
+              <span>&larr;</span> HOME
+            </Link>
           </div>
 
           {recommendations.map((item, idx) => {

@@ -137,8 +137,24 @@ async def search_phones(query_str: str) -> List[PhoneDetails]:
 
 async def get_phone_by_slug(slug: str) -> Optional[PhoneDetails]:
     conn = await get_db_pool()
-    cursor = await conn.execute("SELECT rowid as id, * FROM phones WHERE name = ?", (slug,))
+    # 1. Direct name match
+    cursor = await conn.execute("SELECT rowid as id, * FROM phones WHERE name = ? COLLATE NOCASE", (slug,))
     row = await cursor.fetchone()
+    if not row:
+        # 2. Slug match: replace '-' with space or match brand + name
+        clean_slug = slug.replace('-', ' ').strip()
+        cursor = await conn.execute(
+            "SELECT rowid as id, * FROM phones WHERE name = ? COLLATE NOCASE OR (brand || ' ' || name) = ? COLLATE NOCASE OR name LIKE ?",
+            (clean_slug, clean_slug, f"%{clean_slug}%")
+        )
+        row = await cursor.fetchone()
+    if not row:
+        # 3. Fallback search
+        matches = await search_phones(slug)
+        if matches:
+            return matches[0]
+        return None
+
     if row:
         d = dict(row)
         if 'raw_specs' in d and isinstance(d['raw_specs'], str):
