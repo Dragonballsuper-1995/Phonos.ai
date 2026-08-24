@@ -30,6 +30,19 @@ export const metadata: Metadata = {
   description:
     'AI-powered smartphone intelligence and recommendation system for the Indian market. Precision filtering, multi-factor ranking, and explainable choices.',
   keywords: ['smartphone recommendation', 'mobile phone advisor', 'india smartphone buying guide', 'phonos ai'],
+  icons: {
+    icon: [
+      { url: '/favicon.ico?v=2', sizes: 'any' },
+      { url: '/icon.svg?v=2', type: 'image/svg+xml' },
+      { url: '/favicon-32x32.png?v=2', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png?v=2', sizes: '16x16', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico?v=2',
+    apple: [
+      { url: '/apple-touch-icon.png?v=2', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/site.webmanifest?v=2',
 };
 
 export default function RootLayout({

@@ -1,0 +1,31 @@
+{
+  "name": "Phonos.ai \u2014 Smartphone Intelligence for India",
+  "short_name": "Phonos.ai",
+  "description": "AI-powered smartphone intelligence and recommendation system for the Indian market.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F0EDE6",
+  "theme_color": "#1A1916",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
